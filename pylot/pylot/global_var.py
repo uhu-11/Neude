@@ -1,0 +1,1 @@
+COV_FILE_PATH = '/media/lzq/D/lzq/pylot_test/coverage_test'

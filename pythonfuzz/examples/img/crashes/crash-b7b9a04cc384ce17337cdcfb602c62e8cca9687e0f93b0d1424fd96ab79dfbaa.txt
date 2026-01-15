@@ -1,0 +1,2 @@
+img=bytearray(b'/media/lzq/D/lzq/pyth\xefnfuzz-pylot/examples/img/bird.png')
+y=4

@@ -1,0 +1,2 @@
+img=/media/lzq/D/lzq/pythonfuzz-pylot/exams/img/bird.png
+y=9

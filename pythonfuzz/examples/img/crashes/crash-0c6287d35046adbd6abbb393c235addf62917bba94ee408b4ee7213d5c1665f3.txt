@@ -1,0 +1,2 @@
+img=<PIL.Image.Image image mode=RGBA size=1272x928 at 0x7F556C6FFE80>
+y=2

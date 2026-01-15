@@ -1,0 +1,2 @@
+img=bytearray(b'/media/lzq/D/lzq/pythonfuzz-pylot/examples/img/bird.p\x14g')
+y=9

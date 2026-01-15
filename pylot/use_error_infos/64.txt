@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pythonfuzz/pythonfuzz/fuzzer.py", line 226, in worker
+    raise ValueError(error_content)
+ValueError: error:Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/coverage_decorator.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/planning/planning_operator.py", line 219, in on_watermark
+    speed_factor_stop) = self._world.stop_for_agents(timestamp)
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/planning/world.py", line 262, in stop_for_agents
+    self.waypoints.remove_completed(self.ego_transform.location)
+AttributeError: 'NoneType' object has no attribute 'remove_completed'
+

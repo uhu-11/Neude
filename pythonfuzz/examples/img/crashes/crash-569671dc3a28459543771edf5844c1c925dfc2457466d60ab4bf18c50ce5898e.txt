@@ -1,0 +1,3 @@
+img=bytearray(b'/media/lzq/D/lzq/fuzz_tool/demo/inpu@_images')
+y=7
+choice=-72

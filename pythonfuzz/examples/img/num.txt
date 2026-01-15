@@ -1,0 +1,1 @@
+img=/media/lzq/D/lzq/pythonfuzz-pylot/examples/img/5.png

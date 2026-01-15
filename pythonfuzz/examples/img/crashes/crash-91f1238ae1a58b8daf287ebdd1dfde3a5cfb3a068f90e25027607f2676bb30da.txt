@@ -1,0 +1,2 @@
+data_x=/home/lzq/train_x.npy
+data_y=/home/lzq/train_y.npy

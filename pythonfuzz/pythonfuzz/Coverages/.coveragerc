@@ -1,0 +1,3 @@
+[run]
+source = my_package
+omit = */pythonfuzz/*

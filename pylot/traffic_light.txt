@@ -1,0 +1,168 @@
+I1009 19:17:52.088770 138804512252992 component_creator.py:136] Using ground obstacles from the simulator...
+I1009 19:17:52.089577 138804512252992 component_creator.py:175] Adding traffic light camera...
+I1009 19:17:52.106966 138804512252992 component_creator.py:188] Using traffic light detection...
+2025-10-09 19:17:52.337986: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+I1009 19:17:53.294713 138804512252992 tpu_cluster_resolver.py:35] Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+I1009 19:17:53.658845 138804512252992 __init__.py:47] Creating converter from 7 to 5
+I1009 19:17:53.658977 138804512252992 __init__.py:47] Creating converter from 5 to 7
+I1009 19:17:53.659017 138804512252992 __init__.py:47] Creating converter from 7 to 5
+I1009 19:17:53.659051 138804512252992 __init__.py:47] Creating converter from 5 to 7
+W1009 19:17:55.851224 138804512252992 operator_creator.py:194] have connect TrafficLightDetOperator
+I1009 19:17:55.871483 138804512252992 component_creator.py:538] Not using prediction...
+I1009 19:17:55.872402 138804512252992 component_creator.py:568] Using behavior planning...
+I1009 19:17:55.893569 138804512252992 component_creator.py:572] Using planning...
+I1009 19:17:55.916976 138804512252992 component_creator.py:609] Using the manual control/autopilot...
+I1009 19:17:55.917769 138804512252992 component_creator.py:619] Synchronizing ticking using the waypoints stream
+Connect Obstacle Detection Stream: <erdos.streams.WriteStream object at 0x7e3de5d1f490>
+W1009 19:17:56.177213 138801330517568 CustomImageStream_obstacle.py:41] Initializing ObstacleDetectionStream
+2025-10-09 19:17:56.220846: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-10-09 19:17:56.247940: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:56.248125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-10-09 19:17:56.248193: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-10-09 19:17:56.254586: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-10-09 19:17:56.254690: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-10-09 19:17:56.257982: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-10-09 19:17:56.259577: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-10-09 19:17:56.265689: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-10-09 19:17:56.267812: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-10-09 19:17:56.268501: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-10-09 19:17:56.268618: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:56.268750: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:56.269030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-10-09 19:17:57.790883: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-09 19:17:57.791611: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:57.791718: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-10-09 19:17:57.791766: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:57.791915: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:57.791976: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-10-09 19:17:57.792284: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-10-09 19:17:58.224460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-10-09 19:17:58.224522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-10-09 19:17:58.224540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-10-09 19:17:58.224693: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:58.224787: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:58.224854: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:17:58.224926: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3579 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-10-09 19:17:58.252152: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2025-10-09 19:17:58.253720: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3494400000 Hz
+I1009 19:18:00.019754 138801196299840 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I1009 19:18:00.024592 138801196299840 geos.py:49] Library path: 'libgeos_c.so.1'
+I1009 19:18:00.024696 138801196299840 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7e3d50240840 at 0x7e3ddc4c8e20>
+I1009 19:18:00.034018 138801196299840 geos.py:32] Trying `CDLL(libc.so.6)`
+I1009 19:18:00.034384 138801196299840 geos.py:49] Library path: 'libc.so.6'
+I1009 19:18:00.034474 138801196299840 geos.py:50] DLL: <CDLL 'libc.so.6', handle 7e3df1b63760 at 0x7e3ddc4dc1c0>
+I1009 19:18:00.056195 138801196299840 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I1009 19:18:00.059891 138801196299840 geos.py:49] Library path: 'libgeos_c.so.1'
+I1009 19:18:00.060016 138801196299840 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7e3d50408b40 at 0x7e3de3639ca0>
+I1009 19:18:00.069851 138801196299840 geos.py:32] Trying `CDLL(libc.so.6)`
+I1009 19:18:00.070250 138801196299840 geos.py:49] Library path: 'libc.so.6'
+I1009 19:18:00.070359 138801196299840 geos.py:50] DLL: <CDLL 'libc.so.6', handle 7e3df1b63760 at 0x7e3de3639d60>
+W1009 19:18:08.317970 138801330517568 CustomImageStream_obstacle.py:103] send msg
+2025-10-09 19:18:08.973854: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-10-09 19:18:09.423602: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8900
+2025-10-09 19:18:09.587691: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-10-09 19:18:09.587937: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-10-09 19:18:10.364449: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+2025-10-09 19:18:10.595517: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-10-09 19:18:10.615565: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.615708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-10-09 19:18:10.615755: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-10-09 19:18:10.618738: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-10-09 19:18:10.618844: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-10-09 19:18:10.619910: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-10-09 19:18:10.620268: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-10-09 19:18:10.623337: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-10-09 19:18:10.624162: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-10-09 19:18:10.624453: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-10-09 19:18:10.624558: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.624711: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.624814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-10-09 19:18:10.625332: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-09 19:18:10.626163: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.626275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-10-09 19:18:10.626359: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.626476: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.626561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-10-09 19:18:10.626605: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-10-09 19:18:10.893328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-10-09 19:18:10.893509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-10-09 19:18:10.893597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-10-09 19:18:10.893756: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.893863: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.893944: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:10.894020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 822 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-10-09 19:18:11.012584: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-10-09 19:18:11.015544: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.015679: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-10-09 19:18:11.015712: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-10-09 19:18:11.017165: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-10-09 19:18:11.017235: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-10-09 19:18:11.017848: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-10-09 19:18:11.018109: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-10-09 19:18:11.019727: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-10-09 19:18:11.020493: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-10-09 19:18:11.020702: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-10-09 19:18:11.020769: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.020857: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.020929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-10-09 19:18:11.021220: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-09 19:18:11.021859: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.021938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-10-09 19:18:11.021976: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.022036: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.022082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-10-09 19:18:11.022117: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-10-09 19:18:11.286932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-10-09 19:18:11.287120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-10-09 19:18:11.287215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-10-09 19:18:11.287365: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.287465: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.287532: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-10-09 19:18:11.287599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 517 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+W1009 19:18:25.771081 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:18:39.369453 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:18:55.638878 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:19:08.488270 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:19:22.794288 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:19:37.211274 138801330517568 CustomImageStream_obstacle.py:103] send msg
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+记录时的[3116]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0908435583114624), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3116], 0)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0908435583114624), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 1
+记录时的[3166]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.037673089653253555), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3166], 50)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.037673089653253555), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 2
+记录时的[3216]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.015683535486459732), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3216], 100)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.015683535486459732), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 3
+记录时的[3266]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009216060861945152), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3266], 150)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009216060861945152), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 4
+记录时的[3316]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009872036054730415), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3316], 200)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009872036054730415), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 5
+记录时的[3366]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.013308925554156303), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3366], 250)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.013308925554156303), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 6
+记录时的[3416]第一个车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.01740282028913498), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+记录时的([3416], 300)第一个转换后的车辆信息: Obstacle(id: 259, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0040429686196148396, y=2.115964825577521e-08, z=0.7188605070114136), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=2.4508416652679443, y=1.0641621351242065, z=0.7553732395172119))) at Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.01740282028913498), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0))
+保存记录的场景数据到文件. 7
+记录时的[3466]第一个车辆信息: W1009 19:19:51.389755 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:20:04.996157 138801330517568 CustomImageStream_obstacle.py:103] send msg
+W1009 19:20:20.333405 138801330517568 CustomImageStream_obstacle.py:103] send msg

@@ -1,0 +1,30 @@
+I1011 21:25:00.402251 124120019326016 component_creator.py:277] Adding left and right cameras for depth estimation...
+I1011 21:25:00.443979 124120019326016 component_creator.py:284] Using camera depth estimation...
+I1011 21:25:01.038028 124120019326016 component_creator.py:136] Using ground obstacles from the simulator...
+I1011 21:25:01.039260 124120019326016 component_creator.py:246] Using ground traffic lights from the simulator...
+I1011 21:25:01.039332 124120019326016 component_creator.py:538] Not using prediction...
+I1011 21:25:01.039394 124120019326016 component_creator.py:568] Using behavior planning...
+I1011 21:25:01.063158 124120019326016 component_creator.py:572] Using planning...
+I1011 21:25:01.090826 124120019326016 component_creator.py:609] Using the manual control/autopilot...
+I1011 21:25:01.091725 124120019326016 component_creator.py:619] Synchronizing ticking using the waypoints stream
+Connect Obstacle Detection Stream: <erdos.streams.WriteStream object at 0x70e2e5cbf430>
+pygame 1.9.6
+Hello from the pygame community. https://www.pygame.org/contribute.html
+W1011 21:25:01.450530 124117491635776 CustomImageStream_obstacle.py:41] Initializing ObstacleDetectionStream
+I1011 21:25:03.707255 124117500028480 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I1011 21:25:03.710634 124117500028480 geos.py:49] Library path: 'libgeos_c.so.1'
+I1011 21:25:03.710727 124117500028480 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 70e244228a30 at 0x70e2dc48ba00>
+I1011 21:25:03.717211 124117500028480 geos.py:32] Trying `CDLL(libc.so.6)`
+I1011 21:25:03.717490 124117500028480 geos.py:49] Library path: 'libc.so.6'
+I1011 21:25:03.717558 124117500028480 geos.py:50] DLL: <CDLL 'libc.so.6', handle 70e2f1ba2760 at 0x70e2dc48bbb0>
+I1011 21:25:03.741241 124117491635776 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I1011 21:25:03.744066 124117491635776 geos.py:49] Library path: 'libgeos_c.so.1'
+I1011 21:25:03.744165 124117491635776 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 70e2503ed3c0 at 0x70e2e162db20>
+I1011 21:25:03.750128 124117491635776 geos.py:32] Trying `CDLL(libc.so.6)`
+I1011 21:25:03.750447 124117491635776 geos.py:49] Library path: 'libc.so.6'
+I1011 21:25:03.750522 124117491635776 geos.py:50] DLL: <CDLL 'libc.so.6', handle 70e2f1ba2760 at 0x70e2e162daf0>
+W1011 21:25:11.706836 124117491635776 CustomImageStream_obstacle.py:103] send msg
+W1011 21:25:28.267806 124117500028480 CustomImageStream_obstacle.py:103] send msg
+XIO:  fatal IO error 2 (No such file or directory) on X server ":1"
+      after 10 requests (10 known processed) with 0 events remaining.
+W1011 21:25:43.269087 124117500028480 CustomImageStream_obstacle.py:103] send msg

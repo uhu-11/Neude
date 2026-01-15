@@ -1,0 +1,996 @@
+2025-04-24 18:34:57.643126: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4827 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-04-24 18:34:57.669528: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2025-04-24 18:34:57.669831: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3494400000 Hz
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+W0424 18:34:58.959177 130862618248768 detection_operator.py:65] self._flags.path_coco_labels:dependencies/models/pylot.names
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+I0424 18:35:02.562762 130862777632320 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0424 18:35:02.566626 130862777632320 geos.py:49] Library path: 'libgeos_c.so.1'
+I0424 18:35:02.566692 130862777632320 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7704b043e660 at 0x77056e434eb0>
+I0424 18:35:02.575983 130862777632320 geos.py:32] Trying `CDLL(libc.so.6)`
+I0424 18:35:02.576245 130862777632320 geos.py:49] Library path: 'libc.so.6'
+I0424 18:35:02.576296 130862777632320 geos.py:50] DLL: <CDLL 'libc.so.6', handle 770586252760 at 0x77056e434f70>
+I0424 18:35:02.587767 130862618248768 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0424 18:35:02.590825 130862618248768 geos.py:49] Library path: 'libgeos_c.so.1'
+I0424 18:35:02.590886 130862618248768 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7704cc283490 at 0x77056637ffa0>
+I0424 18:35:02.598586 130862618248768 geos.py:32] Trying `CDLL(libc.so.6)`
+I0424 18:35:02.598875 130862618248768 geos.py:49] Library path: 'libc.so.6'
+I0424 18:35:02.598925 130862618248768 geos.py:50] DLL: <CDLL 'libc.so.6', handle 770586252760 at 0x77056639a160>
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+点云数据....： [[39.88832    28.882929   13.195797  ]
+ [39.52588    30.603672   13.394484  ]
+ [30.914648   26.414413   10.895459  ]
+ ...
+ [ 3.2683008  -0.21039063 -1.8908435 ]
+ [ 3.271211   -0.15777344 -1.8908435 ]
+ [ 3.2745898  -0.05257813 -1.8908435 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0908435583114624), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 1.7771731615066528, velocity vector: Vector3D(x=0.0, y=0.0, z=-1.7771731615066528))
+relative_time: 0
+跟踪模块接收到的pose信息： {timestamp: [6207], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0908435583114624), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 1.7771731615066528, velocity vector: Vector3D(x=0.0, y=0.0, z=-1.7771731615066528))}
+(1080, 1920, 3)
+W0424 18:35:10.500307 130862767146560 CustomImageStream_obstacle.py:103] send msg
+I0424 18:35:10.564633 130862618248768 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0424 18:35:10.566302 130862618248768 geos.py:49] Library path: 'libgeos_c.so.1'
+I0424 18:35:10.566366 130862618248768 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7704cdfae7c0 at 0x77056e7eda30>
+I0424 18:35:10.575570 130862618248768 geos.py:32] Trying `CDLL(libc.so.6)`
+I0424 18:35:10.575806 130862618248768 geos.py:49] Library path: 'libc.so.6'
+I0424 18:35:10.575840 130862618248768 geos.py:50] DLL: <CDLL 'libc.so.6', handle 770586252760 at 0x77056e7eda00>
+2025-04-24 18:35:11.188574: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-24 18:35:11.519718: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8900
+2025-04-24 18:35:11.632997: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-24 18:35:11.633195: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-24 18:35:12.357951: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+障碍物保存npy完毕.......
+1轮检测到的对象:car,分数：0.999953031539917,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=812.4905>, <tf.Tensor: shape=(), dtype=float32, numpy=578.8332>, <tf.Tensor: shape=(), dtype=float32, numpy=1093.5325>, <tf.Tensor: shape=(), dtype=float32, numpy=809.8984>]
+1轮检测到的对象:car,分数：0.9849907755851746,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=866.6289>, <tf.Tensor: shape=(), dtype=float32, numpy=537.22455>, <tf.Tensor: shape=(), dtype=float32, numpy=915.7157>, <tf.Tensor: shape=(), dtype=float32, numpy=555.70105>]
+2025-04-24 18:35:12.497227: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-04-24 18:35:12.501823: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.501906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-24 18:35:12.501928: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-24 18:35:12.501938: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-04-24 18:35:12.503283: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-24 18:35:12.503324: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-24 18:35:12.503893: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-04-24 18:35:12.504133: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-04-24 18:35:12.504408: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.504479: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-24 18:35:12.504497: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-24 18:35:12.505477: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-04-24 18:35:12.506115: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-04-24 18:35:12.506183: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-24 18:35:12.506217: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-24 18:35:12.506444: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-24 18:35:12.506503: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.506582: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.506627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-24 18:35:12.506953: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-24 18:35:12.507126: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-04-24 18:35:12.507449: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.507510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-24 18:35:12.507536: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.507584: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.507619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-24 18:35:12.507621: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-04-24 18:35:12.507637: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-24 18:35:12.510618: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-04-24 18:35:12.511661: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-04-24 18:35:12.512037: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-24 18:35:12.512179: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.515366: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.515456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-24 18:35:12.515964: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-24 18:35:12.516806: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.516929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-24 18:35:12.516985: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.517145: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.517257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-24 18:35:12.517297: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-24 18:35:12.805296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-24 18:35:12.805327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-24 18:35:12.805331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-24 18:35:12.805494: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.805578: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.805632: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.805710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 387 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [1], runtime: 1976.78542137146, obstacles: [Obstacle(id: 0, label: car, confidence: 0.999953031539917, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)), Obstacle(id: 1, label: car, confidence: 0.9849907755851746, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555))])
+2025-04-24 18:35:12.821551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-24 18:35:12.821576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-24 18:35:12.821581: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-24 18:35:12.821742: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.821837: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.821895: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-24 18:35:12.821959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 377 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+更新的跟踪模块的障碍物信息： [Obstacle(id: 0, label: car, confidence: 0.999953031539917, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)), Obstacle(id: 1, label: car, confidence: 0.9849907755851746, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555))]
+W0424 18:35:12.860464 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=952, y=693)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8908435583114624), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=395.75, y=237.875, z=-2.69140625)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=890, y=546)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8908435583114624), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=389.25, y=157.875, z=-22.953125)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)) at Transform(location: Location(x=395.75, y=237.875, z=-2.69140625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.783203125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [1], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)) at Transform(location: Location(x=395.75, y=237.875, z=-2.69140625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.783203125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [1], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 812, xmax: 1093, ymin: 578, ymax: 809)) at Transform(location: Location(x=395.75, y=237.875, z=-2.69140625), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=11.5546875, y=-0.2099609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:13.502136 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.009500672460645338, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[32.60252    24.415234   10.913871  ]
+ [39.418125   30.520233   13.357951  ]
+ [27.954355   35.219257   12.048291  ]
+ ...
+ [ 3.1791992  -0.15335937 -1.837673  ]
+ [ 3.1812499  -0.10226563 -1.837673  ]
+ [ 3.1825194  -0.05109375 -1.837673  ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.037673089653253555), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.7912288308143989, velocity vector: Vector3D(x=-2.430382721740898e-07, y=-1.5872759773216671e-09, z=-0.7912288308143616))
+relative_time: 50
+跟踪模块接收到的pose信息： {timestamp: [6257], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.037673089653253555), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.7912288308143989, velocity vector: Vector3D(x=-2.430382721740898e-07, y=-1.5872759773216671e-09, z=-0.7912288308143616))}
+(1080, 1920, 3)
+W0424 18:35:13.654851 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+2轮检测到的对象:car,分数：0.9999113082885742,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=830.79504>, <tf.Tensor: shape=(), dtype=float32, numpy=576.03296>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.9806>, <tf.Tensor: shape=(), dtype=float32, numpy=788.91187>]
+2轮检测到的对象:car,分数：0.9985905289649963,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=778.62537>, <tf.Tensor: shape=(), dtype=float32, numpy=536.29126>, <tf.Tensor: shape=(), dtype=float32, numpy=835.40326>, <tf.Tensor: shape=(), dtype=float32, numpy=557.21484>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [2], runtime: 188.68350982666016, obstacles: [Obstacle(id: 2, label: car, confidence: 0.9999113082885742, bbox: BoundingBox2D(xmin: 830, xmax: 1080, ymin: 576, ymax: 788)), Obstacle(id: 3, label: car, confidence: 0.9985905289649963, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 2, label: car, confidence: 0.9999113082885742, bbox: BoundingBox2D(xmin: 830, xmax: 1080, ymin: 576, ymax: 788)), Obstacle(id: 3, label: car, confidence: 0.9985905289649963, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557))]
+//media/lzq/D/lzq/pylot_test/pylot/dependencies/sort/utils.py:121: FutureWarning: The linear_assignment function is deprecated in 0.21 and will be removed from 0.23. Use scipy.optimize.linear_sum_assignment instead.
+  warnings.warn(
+W0424 18:35:13.949027 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 837, xmax: 1074, ymin: 577, ymax: 775)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555)), Obstacle(id: 3, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 837, xmax: 1074, ymin: 577, ymax: 775)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555)), Obstacle(id: 3, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=955, y=676)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8376730896532536), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=396.0, y=236.375, z=-3.19921875)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=890, y=546)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8376730896532536), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=389.25, y=157.875, z=-23.0)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=806, y=546)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8376730896532536), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=381.0, y=158.5, z=-22.828125)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 837, xmax: 1074, ymin: 577, ymax: 775)) at Transform(location: Location(x=396.0, y=236.375, z=-3.19921875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.728515625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.236328125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [2], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 837, xmax: 1074, ymin: 577, ymax: 775)) at Transform(location: Location(x=396.0, y=236.375, z=-3.19921875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.728515625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.236328125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [2], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 837, xmax: 1074, ymin: 577, ymax: 775)) at Transform(location: Location(x=396.0, y=236.375, z=-3.19921875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=14.554687500000002, y=0.29010009765625, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=16.054687500000004, y=0.540130615234375, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=17.554687500000007, y=0.7901611328125, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=19.054687500000007, y=1.040191650390625, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=20.554687500000007, y=1.29022216796875, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=22.05468750000001, y=1.540252685546875, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=23.554687500000014, y=1.790283203125, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=25.054687500000014, y=2.040313720703125, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=26.554687500000014, y=2.29034423828125, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0)), Transform(location: Location(x=28.054687500000018, y=2.540374755859375, z=0.0), rotation: Rotation(pitch=0, yaw=9.463456384885232, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:14.463444 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.028787390938408493, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.038338   29.235077   13.068371  ]
+ [31.553223   26.094608   10.971305  ]
+ [27.823242   35.05414    11.991814  ]
+ ...
+ [ 3.1346874  -0.25234374 -1.8156836 ]
+ [ 3.1383202  -0.20195311 -1.8156836 ]
+ [ 3.1412108  -0.1515625  -1.8156836 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.015683535486459732), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.30131602287303527, velocity vector: Vector3D(x=-2.5800082426030713e-07, y=3.787150315570642e-10, z=-0.3013160228729248))
+跟踪模块接收到的pose信息： {timestamp: [6307], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.015683535486459732), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.30131602287303527, velocity vector: Vector3D(x=-2.5800082426030713e-07, y=3.787150315570642e-10, z=-0.3013160228729248))}
+relative_time: 100
+(1080, 1920, 3)
+W0424 18:35:14.592354 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+3轮检测到的对象:car,分数：0.999953031539917,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=840.9503>, <tf.Tensor: shape=(), dtype=float32, numpy=573.44446>, <tf.Tensor: shape=(), dtype=float32, numpy=1067.5698>, <tf.Tensor: shape=(), dtype=float32, numpy=766.6221>]
+3轮检测到的对象:car,分数：0.9996582269668579,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=683.3229>, <tf.Tensor: shape=(), dtype=float32, numpy=534.9222>, <tf.Tensor: shape=(), dtype=float32, numpy=735.5427>, <tf.Tensor: shape=(), dtype=float32, numpy=554.8638>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [3], runtime: 180.44042587280273, obstacles: [Obstacle(id: 4, label: car, confidence: 0.999953031539917, bbox: BoundingBox2D(xmin: 840, xmax: 1067, ymin: 573, ymax: 766)), Obstacle(id: 5, label: car, confidence: 0.9996582269668579, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 4, label: car, confidence: 0.999953031539917, bbox: BoundingBox2D(xmin: 840, xmax: 1067, ymin: 573, ymax: 766)), Obstacle(id: 5, label: car, confidence: 0.9996582269668579, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554))]
+W0424 18:35:14.867551 130862788118080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 847, xmax: 1059, ymin: 573, ymax: 753)), Obstacle(id: 3, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557)), Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 847, xmax: 1059, ymin: 573, ymax: 753)), Obstacle(id: 3, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557)), Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=953, y=663)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8156835354864598), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=395.75, y=233.875, z=-4.04296875)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=806, y=546)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8156835354864598), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=381.0, y=158.5, z=-22.84375)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=709, y=544)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8156835354864598), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=373.25, y=164.125, z=-21.109375)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 847, xmax: 1059, ymin: 573, ymax: 753)) at Transform(location: Location(x=395.75, y=233.875, z=-4.04296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.70703125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.21484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.05859375), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [3], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 847, xmax: 1059, ymin: 573, ymax: 753)) at Transform(location: Location(x=395.75, y=233.875, z=-4.04296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.70703125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.21484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.05859375), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [3], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 847, xmax: 1059, ymin: 573, ymax: 753)) at Transform(location: Location(x=395.75, y=233.875, z=-4.04296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=17.388020833333325, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=19.388020833333325, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=21.388020833333325, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=23.388020833333325, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=25.38802083333332, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=27.38802083333332, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=29.38802083333332, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=31.38802083333332, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=33.38802083333332, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0)), Transform(location: Location(x=35.38802083333332, y=-0.12661743164062494, z=0.0), rotation: Rotation(pitch=0, yaw=-5.711285623168609, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:15.334957 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.19204407832240006, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009216060861945152), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.06338853389117736, velocity vector: Vector3D(x=-3.433655706430727e-07, y=-2.3579298513709546e-09, z=-0.06338853389024734))
+点云数据....： [[31.546484   26.088984   10.968957  ]
+ [27.784746   35.00551    11.975194  ]
+ [18.169569   27.104218    8.743399  ]
+ ...
+ [ 3.1009374  -0.4516406  -1.809216  ]
+ [ 3.1078124  -0.40171874 -1.809216  ]
+ [ 3.113867   -0.35171875 -1.809216  ]]
+跟踪模块接收到的pose信息： {timestamp: [6357], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009216060861945152), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.06338853389117736, velocity vector: Vector3D(x=-3.433655706430727e-07, y=-2.3579298513709546e-09, z=-0.06338853389024734))}
+relative_time: 150
+(1080, 1920, 3)
+W0424 18:35:15.466770 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+4轮检测到的对象:car,分数：0.9999536275863647,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=848.3941>, <tf.Tensor: shape=(), dtype=float32, numpy=573.72876>, <tf.Tensor: shape=(), dtype=float32, numpy=1064.5513>, <tf.Tensor: shape=(), dtype=float32, numpy=753.7264>]
+4轮检测到的对象:car,分数：0.9630759358406067,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=587.9763>, <tf.Tensor: shape=(), dtype=float32, numpy=534.74286>, <tf.Tensor: shape=(), dtype=float32, numpy=640.78265>, <tf.Tensor: shape=(), dtype=float32, numpy=553.9202>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [4], runtime: 178.7586212158203, obstacles: [Obstacle(id: 6, label: car, confidence: 0.9999536275863647, bbox: BoundingBox2D(xmin: 848, xmax: 1064, ymin: 573, ymax: 753)), Obstacle(id: 7, label: car, confidence: 0.9630759358406067, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 6, label: car, confidence: 0.9999536275863647, bbox: BoundingBox2D(xmin: 848, xmax: 1064, ymin: 573, ymax: 753)), Obstacle(id: 7, label: car, confidence: 0.9630759358406067, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+W0424 18:35:15.775056 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 857, xmax: 1054, ymin: 574, ymax: 740)), Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554)), Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 857, xmax: 1054, ymin: 574, ymax: 740)), Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554)), Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=955, y=657)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8092160608619452), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=396.0, y=233.875, z=-3.93359375)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=709, y=544)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8092160608619452), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=386.0, y=211.625, z=-8.1484375)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=613, y=543)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8092160608619452), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=384.0, y=216.375, z=-6.82421875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 857, xmax: 1054, ymin: 574, ymax: 740)) at Transform(location: Location(x=396.0, y=233.875, z=-3.93359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.701171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.208984375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.05078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.943359375), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554)) at Transform(location: Location(x=386.0, y=211.625, z=-8.1484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=37.8125, y=-9.9609375, z=-8.15625), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553)) at Transform(location: Location(x=384.0, y=216.375, z=-6.82421875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=33.0625, y=-11.9609375, z=-6.83203125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [4], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 857, xmax: 1054, ymin: 574, ymax: 740)) at Transform(location: Location(x=396.0, y=233.875, z=-3.93359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.701171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.208984375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.05078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.943359375), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554)) at Transform(location: Location(x=386.0, y=211.625, z=-8.1484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=37.8125, y=-9.9609375, z=-8.15625), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553)) at Transform(location: Location(x=384.0, y=216.375, z=-6.82421875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=33.0625, y=-11.9609375, z=-6.83203125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [4], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 857, xmax: 1054, ymin: 574, ymax: 740)) at Transform(location: Location(x=396.0, y=233.875, z=-3.93359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=17.554687500000004, y=0.04010009765625006, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=19.004687500000003, y=0.09011535644531259, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=20.454687500000006, y=0.14013061523437512, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=21.9046875, y=0.19014587402343763, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=23.354687500000004, y=0.24016113281250015, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=24.804687500000004, y=0.29017639160156267, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=26.254687500000003, y=0.34019165039062516, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=27.704687500000002, y=0.3902069091796877, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=29.1546875, y=0.44022216796875024, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=30.6046875, y=0.49023742675781273, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0))], Prediction for obstacle Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553)) at Transform(location: Location(x=384.0, y=216.375, z=-6.82421875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=33.0625, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 5, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554)) at Transform(location: Location(x=386.0, y=211.625, z=-8.1484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=37.8125, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:16.865925 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.0188083804238896, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009872036054730415), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.040986742825860914, velocity vector: Vector3D(x=3.558640173650929e-07, y=-7.649358924055605e-10, z=0.040986742824316025))
+点云数据....： [[39.82742    28.838827   13.1756735 ]
+ [38.9991     29.205585   13.055222  ]
+ [39.355156   30.471523   13.3366375 ]
+ ...
+ [ 3.124668   -0.25164062 -1.8098719 ]
+ [ 3.1311524  -0.15105468 -1.8098719 ]
+ [ 3.1343749  -0.0503125  -1.8098719 ]]
+跟踪模块接收到的pose信息： {timestamp: [6407], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009872036054730415), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.040986742825860914, velocity vector: Vector3D(x=3.558640173650929e-07, y=-7.649358924055605e-10, z=0.040986742824316025))}
+relative_time: 200
+(1080, 1920, 3)
+W0424 18:35:16.986002 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+5轮检测到的对象:car,分数：0.9999454021453857,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=850.51117>, <tf.Tensor: shape=(), dtype=float32, numpy=568.9927>, <tf.Tensor: shape=(), dtype=float32, numpy=1065.123>, <tf.Tensor: shape=(), dtype=float32, numpy=749.9087>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [5], runtime: 169.59023475646973, obstacles: [Obstacle(id: 8, label: car, confidence: 0.9999454021453857, bbox: BoundingBox2D(xmin: 850, xmax: 1065, ymin: 568, ymax: 749))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 8, label: car, confidence: 0.9999454021453857, bbox: BoundingBox2D(xmin: 850, xmax: 1065, ymin: 568, ymax: 749))]
+W0424 18:35:17.237014 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 860, xmax: 1055, ymin: 571, ymax: 735)), Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 860, xmax: 1055, ymin: 571, ymax: 735)), Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=957, y=653)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8098720360547305), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=396.0, y=233.875, z=-3.873046875)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=613, y=543)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8098720360547305), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=365.0, y=165.25, z=-20.71875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 860, xmax: 1055, ymin: 571, ymax: 735)) at Transform(location: Location(x=396.0, y=233.875, z=-3.873046875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.701171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.208984375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.0546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.943359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.8828125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [5], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 860, xmax: 1055, ymin: 571, ymax: 735)) at Transform(location: Location(x=396.0, y=233.875, z=-3.873046875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=11.5546875, y=-0.2099609375, z=-2.701171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.208984375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.0546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.943359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.8828125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [5], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 860, xmax: 1055, ymin: 571, ymax: 735)) at Transform(location: Location(x=396.0, y=233.875, z=-3.873046875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=17.404687499999994, y=0.09011535644531249, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=18.45468749999999, y=0.14013061523437498, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=19.504687499999992, y=0.19014587402343747, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=20.554687499999993, y=0.24016113281249996, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=21.60468749999999, y=0.29017639160156244, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=22.65468749999999, y=0.34019165039062493, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=23.70468749999999, y=0.3902069091796874, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=24.75468749999999, y=0.4402221679687499, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=25.80468749999999, y=0.4902374267578124, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0)), Transform(location: Location(x=26.85468749999999, y=0.5402526855468749, z=0.0), rotation: Rotation(pitch=0, yaw=90.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:17.659257 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.013298562284879268, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.013308925554156303), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07750482112225562, velocity vector: Vector3D(x=-2.953903504021582e-07, y=2.9507145615781383e-09, z=0.07750482112169266))
+点云数据....： [[39.829998   28.840702   13.176527  ]
+ [39.022343   29.223045   13.063002  ]
+ [39.36293    30.47754    13.339273  ]
+ ...
+ [ 3.1208594  -0.3525     -1.8133088 ]
+ [ 3.1370897  -0.15136719 -1.8133088 ]
+ [ 3.1391015  -0.10089844 -1.8133088 ]]
+跟踪模块接收到的pose信息： {timestamp: [6457], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.013308925554156303), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07750482112225562, velocity vector: Vector3D(x=-2.953903504021582e-07, y=2.9507145615781383e-09, z=0.07750482112169266))}
+relative_time: 250
+(1080, 1920, 3)
+W0424 18:35:17.786243 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+6轮检测到的对象:car,分数：0.9999418258666992,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=816.6772>, <tf.Tensor: shape=(), dtype=float32, numpy=568.9723>, <tf.Tensor: shape=(), dtype=float32, numpy=1057.1543>, <tf.Tensor: shape=(), dtype=float32, numpy=743.07605>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [6], runtime: 213.06371688842773, obstacles: [Obstacle(id: 9, label: car, confidence: 0.9999418258666992, bbox: BoundingBox2D(xmin: 816, xmax: 1057, ymin: 568, ymax: 743))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 9, label: car, confidence: 0.9999418258666992, bbox: BoundingBox2D(xmin: 816, xmax: 1057, ymin: 568, ymax: 743))]
+W0424 18:35:18.070658 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 834, xmax: 1042, ymin: 568, ymax: 733))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 834, xmax: 1042, ymin: 568, ymax: 733))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=938, y=650)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8133089255541563), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=395.5, y=233.875, z=-3.8359375)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 834, xmax: 1042, ymin: 568, ymax: 733)) at Transform(location: Location(x=395.5, y=233.875, z=-3.8359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.212890625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.0546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.947265625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.88671875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.4599609375, z=-3.849609375), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [6], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 834, xmax: 1042, ymin: 568, ymax: 733)) at Transform(location: Location(x=395.5, y=233.875, z=-3.8359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=13.0546875, y=0.040069580078125, z=-3.212890625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.0546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.947265625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.88671875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.4599609375, z=-3.849609375), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [6], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 834, xmax: 1042, ymin: 568, ymax: 733)) at Transform(location: Location(x=395.5, y=233.875, z=-3.8359375), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=16.55468749999999, y=-0.3349304199218749, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=17.05468749999999, y=-0.4099304199218749, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=17.554687499999986, y=-0.4849304199218749, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=18.054687499999986, y=-0.5599304199218749, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=18.554687499999982, y=-0.6349304199218748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=19.054687499999982, y=-0.7099304199218748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=19.55468749999998, y=-0.7849304199218748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=20.05468749999998, y=-0.8599304199218748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=20.554687499999975, y=-0.9349304199218748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=21.054687499999975, y=-1.0099304199218748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:18.475811 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.055685531000858275, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.01740282028913498), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.08176997304248672, velocity vector: Vector3D(x=-6.838300805611652e-07, y=-6.56276588628657e-09, z=0.08176997303962708))
+点云数据....： [[39.04996    29.24375    13.072267  ]
+ [27.833553   35.06703    11.996228  ]
+ [26.390038   36.75578    12.124277  ]
+ ...
+ [ 3.133164   -0.3030078  -1.8174027 ]
+ [ 3.1413085  -0.2021875  -1.8174027 ]
+ [ 3.1461718  -0.10113281 -1.8174027 ]]
+跟踪模块接收到的pose信息： {timestamp: [6507], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.01740282028913498), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.08176997304248672, velocity vector: Vector3D(x=-6.838300805611652e-07, y=-6.56276588628657e-09, z=0.08176997303962708))}
+relative_time: 300
+(1080, 1920, 3)
+W0424 18:35:18.620911 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+7轮检测到的对象:car,分数：0.9993667006492615,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=722.4527>, <tf.Tensor: shape=(), dtype=float32, numpy=566.8281>, <tf.Tensor: shape=(), dtype=float32, numpy=1014.9401>, <tf.Tensor: shape=(), dtype=float32, numpy=741.75275>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [7], runtime: 189.8820400238037, obstacles: [Obstacle(id: 10, label: car, confidence: 0.9993667006492615, bbox: BoundingBox2D(xmin: 722, xmax: 1014, ymin: 566, ymax: 741))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 10, label: car, confidence: 0.9993667006492615, bbox: BoundingBox2D(xmin: 722, xmax: 1014, ymin: 566, ymax: 741))]
+W0424 18:35:18.874381 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 753, xmax: 993, ymin: 564, ymax: 735))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 753, xmax: 993, ymin: 564, ymax: 735))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=873, y=649)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.817402820289135), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=394.5, y=233.875, z=-3.810546875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 753, xmax: 993, ymin: 564, ymax: 735)) at Transform(location: Location(x=394.5, y=233.875, z=-3.810546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.05859375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.951171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.890625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.4599609375, z=-3.853515625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-1.4599609375, z=-3.828125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [7], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 753, xmax: 993, ymin: 564, ymax: 735)) at Transform(location: Location(x=394.5, y=233.875, z=-3.810546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=15.5546875, y=-0.2099609375, z=-4.05859375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.951171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.890625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.4599609375, z=-3.853515625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-1.4599609375, z=-3.828125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [7], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 753, xmax: 993, ymin: 564, ymax: 735)) at Transform(location: Location(x=394.5, y=233.875, z=-3.810546875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=15.554687499999998, y=-1.3099548339843745, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-1.6099609374999995, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-1.9099670410156242, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-2.209973144531249, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-2.509979248046874, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-2.809985351562499, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-3.109991455078124, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-3.4099975585937488, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-3.7100036621093735, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-4.010009765624998, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 0
+/media/lzq/D/lzq/pylot_test/pylot/pylot/control/mpc/utils.py:43: RuntimeWarning: invalid value encountered in double_scalars
+  return (ddy * dx - ddx * dy) / ((dx**2 + dy**2)**(3 / 2))
+W0424 18:35:19.243341 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.0, 'throttle': 0.2137310183020667, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.021209698170423508), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07247096300156694, velocity vector: Vector3D(x=2.137859098638728e-07, y=-7.557727776941192e-09, z=0.07247096300125122))
+点云数据....： [[39.38084    30.491405   13.345334  ]
+ [31.559004   26.099375   10.9733095 ]
+ [27.85623    35.095585   12.006004  ]
+ ...
+ [ 3.1507616  -0.15199219 -1.8212097 ]
+ [ 3.1527734  -0.10128906 -1.8212097 ]
+ [ 3.1539843  -0.050625   -1.8212097 ]]
+跟踪模块接收到的pose信息： {timestamp: [6557], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.021209698170423508), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07247096300156694, velocity vector: Vector3D(x=2.137859098638728e-07, y=-7.557727776941192e-09, z=0.07247096300125122))}
+relative_time: 350
+(1080, 1920, 3)
+W0424 18:35:19.372789 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+8轮检测到的对象:car,分数：0.9999610185623169,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=592.6177>, <tf.Tensor: shape=(), dtype=float32, numpy=566.6285>, <tf.Tensor: shape=(), dtype=float32, numpy=928.70233>, <tf.Tensor: shape=(), dtype=float32, numpy=739.9584>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [8], runtime: 182.8305721282959, obstacles: [Obstacle(id: 11, label: car, confidence: 0.9999610185623169, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 11, label: car, confidence: 0.9999610185623169, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739))]
+W0424 18:35:19.622638 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 739, xmax: 973, ymin: 561, ymax: 726)), Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739))]
+追踪模块的输出..: [Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 739, xmax: 973, ymin: 561, ymax: 726)), Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=856, y=643)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8212096981704236), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=394.25, y=233.875, z=-3.716796875)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=760, y=652)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8212096981704236), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=392.0, y=230.25, z=-5.29296875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 739, xmax: 973, ymin: 561, ymax: 726)) at Transform(location: Location(x=394.25, y=233.875, z=-3.716796875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.955078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.89453125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.4599609375, z=-3.857421875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-1.4599609375, z=-3.83203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-1.7099609375, z=-3.73828125), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)) at Transform(location: Location(x=392.0, y=230.25, z=-5.29296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=19.1875, y=-3.958984375, z=-5.3125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [8], trajectories: Obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 739, xmax: 973, ymin: 561, ymax: 726)) at Transform(location: Location(x=394.25, y=233.875, z=-3.716796875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.955078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=0.04010009765625, z=-3.89453125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-0.4599609375, z=-3.857421875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-1.4599609375, z=-3.83203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.5546875, y=-1.7099609375, z=-3.73828125), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)) at Transform(location: Location(x=392.0, y=230.25, z=-5.29296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=19.1875, y=-3.958984375, z=-5.3125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [8], predictions: [Prediction for obstacle Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 739, xmax: 973, ymin: 561, ymax: 726)) at Transform(location: Location(x=394.25, y=233.875, z=-3.716796875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=15.554687499999998, y=-2.2099914550781237, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-2.7100097656249984, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-3.210028076171873, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-3.710046386718748, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-4.210064697265622, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-4.710083007812497, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-5.2101013183593725, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-5.710119628906247, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-6.210137939453121, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0)), Transform(location: Location(x=15.554687499999998, y=-6.710156249999996, z=0.0), rotation: Rotation(pitch=0, yaw=-90.0, roll=0))], Prediction for obstacle Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)) at Transform(location: Location(x=392.0, y=230.25, z=-5.29296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=19.1875, y=-3.958984375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:20.935422 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.09861244333848851, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.388046   30.496914   13.347767  ]
+ [31.562323   26.102148   10.9744625 ]
+ [26.39621    36.764297   12.127097  ]
+ ...
+ [ 3.156289   -0.15226562 -1.824388  ]
+ [ 3.1582615  -0.10148437 -1.824388  ]
+ [ 3.1595116  -0.05070312 -1.824388  ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.024388065561652184), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.058961156756722664, velocity vector: Vector3D(x=-3.4935141002279124e-07, y=-1.4922107993697864e-08, z=0.058961156755685806))
+relative_time: 400
+跟踪模块接收到的pose信息： {timestamp: [6607], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.024388065561652184), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.058961156756722664, velocity vector: Vector3D(x=-3.4935141002279124e-07, y=-1.4922107993697864e-08, z=0.058961156755685806))}
+(1080, 1920, 3)
+W0424 18:35:21.073293 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+9轮检测到的对象:car,分数：0.999955415725708,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=447.9657>, <tf.Tensor: shape=(), dtype=float32, numpy=567.21356>, <tf.Tensor: shape=(), dtype=float32, numpy=810.1942>, <tf.Tensor: shape=(), dtype=float32, numpy=731.0778>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [9], runtime: 194.33236122131348, obstacles: [Obstacle(id: 12, label: car, confidence: 0.999955415725708, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 12, label: car, confidence: 0.999955415725708, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731))]
+W0424 18:35:21.338090 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)), Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731))]
+追踪模块的输出..: [Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)), Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=760, y=652)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8243880655616522), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=392.75, y=234.0, z=-3.783203125)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=628, y=649)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8243880655616522), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=391.0, y=234.5, z=-3.5234375)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)) at Transform(location: Location(x=392.75, y=234.0, z=-3.783203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=19.1875, y=-3.958984375, z=-5.31640625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.4296875, y=-3.208984375, z=-3.806640625), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)) at Transform(location: Location(x=391.0, y=234.5, z=-3.5234375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=14.9296875, y=-4.9609375, z=-3.546875), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [9], trajectories: Obstacle Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)) at Transform(location: Location(x=392.75, y=234.0, z=-3.783203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=19.1875, y=-3.958984375, z=-5.31640625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.4296875, y=-3.208984375, z=-3.806640625), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)) at Transform(location: Location(x=391.0, y=234.5, z=-3.5234375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=14.9296875, y=-4.9609375, z=-3.546875), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [9], predictions: [Prediction for obstacle Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)) at Transform(location: Location(x=391.0, y=234.5, z=-3.5234375), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=14.9296875, y=-4.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)) at Transform(location: Location(x=392.75, y=234.0, z=-3.783203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=11.671874999999995, y=-2.458984375, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=7.914062499999995, y=-1.7089843750000002, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=4.156249999999995, y=-0.9589843750000004, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=0.39843749999999467, y=-0.20898437500000044, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=-3.3593750000000053, y=0.5410156249999996, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=-7.117187500000005, y=1.2910156249999991, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=-10.875000000000005, y=2.041015624999999, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=-14.632812500000005, y=2.791015624999999, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=-18.390625000000007, y=3.541015624999999, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0)), Transform(location: Location(x=-22.148437500000007, y=4.291015624999999, z=0.0), rotation: Rotation(pitch=0, yaw=168.71297667290492, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:22.240356 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.2620465559934956, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.107166   29.28664    13.091405  ]
+ [27.890038   35.138203   12.020581  ]
+ [27.599453   37.164845   12.403904  ]
+ ...
+ [ 3.1495116  -0.30460936 -1.826885  ]
+ [ 3.1576953  -0.20324218 -1.826885  ]
+ [ 3.1638281  -0.05078125 -1.826885  ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.026885012164711952), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0455742590141807, velocity vector: Vector3D(x=3.366172336427553e-07, y=6.134314584071987e-11, z=0.045574259012937546))
+relative_time: 450
+跟踪模块接收到的pose信息： {timestamp: [6657], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.026885012164711952), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0455742590141807, velocity vector: Vector3D(x=3.366172336427553e-07, y=6.134314584071987e-11, z=0.045574259012937546))}
+(1080, 1920, 3)
+W0424 18:35:22.355649 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+10轮检测到的对象:car,分数：0.9999642372131348,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=232.86949>, <tf.Tensor: shape=(), dtype=float32, numpy=571.4268>, <tf.Tensor: shape=(), dtype=float32, numpy=652.3266>, <tf.Tensor: shape=(), dtype=float32, numpy=735.2241>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [10], runtime: 200.78587532043457, obstacles: [Obstacle(id: 13, label: car, confidence: 0.9999642372131348, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 13, label: car, confidence: 0.9999642372131348, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735))]
+W0424 18:35:22.628939 130862788118080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)), Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735))]
+追踪模块的输出..: [Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)), Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=628, y=649)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.826885012164712), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=390.0, y=231.75, z=-4.61328125)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=442, y=653)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.826885012164712), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=389.0, y=236.25, z=-2.9296875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)) at Transform(location: Location(x=390.0, y=231.75, z=-4.61328125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=14.9296875, y=-4.9609375, z=-3.55078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=17.6875, y=-5.9609375, z=-4.640625), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)) at Transform(location: Location(x=389.0, y=236.25, z=-2.9296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=13.1796875, y=-6.9609375, z=-2.95703125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [10], trajectories: Obstacle Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)) at Transform(location: Location(x=390.0, y=231.75, z=-4.61328125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=14.9296875, y=-4.9609375, z=-3.55078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=17.6875, y=-5.9609375, z=-4.640625), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)) at Transform(location: Location(x=389.0, y=236.25, z=-2.9296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=13.1796875, y=-6.9609375, z=-2.95703125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [10], predictions: [Prediction for obstacle Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)) at Transform(location: Location(x=389.0, y=236.25, z=-2.9296875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=13.1796875, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)) at Transform(location: Location(x=390.0, y=231.75, z=-4.61328125), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=20.4453125, y=-6.960937499999999, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=23.203125, y=-7.960937499999999, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=25.9609375, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=28.718750000000004, y=-9.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=31.476562500000007, y=-10.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=34.23437500000001, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=36.992187500000014, y=-12.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=39.750000000000014, y=-13.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=42.507812500000014, y=-14.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0)), Transform(location: Location(x=45.265625000000014, y=-15.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-19.930960206820846, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:24.057907 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.03404331383791311, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[27.603125   37.169765   12.4055605 ]
+ [19.574043   28.208475    9.199913  ]
+ [17.065254   26.363125    8.414787  ]
+ ...
+ [ 3.1527734  -0.30492187 -1.828771  ]
+ [ 3.1609375  -0.20343749 -1.828771  ]
+ [ 3.1638281  -0.15257812 -1.828771  ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.02877099998295307), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0340417958800876, velocity vector: Vector3D(x=-1.8149624736452097e-07, y=9.549755652926706e-09, z=0.03404179587960243))
+relative_time: 500
+跟踪模块接收到的pose信息： {timestamp: [6707], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.02877099998295307), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0340417958800876, velocity vector: Vector3D(x=-1.8149624736452097e-07, y=9.549755652926706e-09, z=0.03404179587960243))}
+(1080, 1920, 3)
+W0424 18:35:24.183391 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+11轮检测到的对象:car,分数：0.9998534917831421,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=9.262848>, <tf.Tensor: shape=(), dtype=float32, numpy=582.4166>, <tf.Tensor: shape=(), dtype=float32, numpy=427.05545>, <tf.Tensor: shape=(), dtype=float32, numpy=753.94586>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [11], runtime: 188.53211402893066, obstacles: [Obstacle(id: 14, label: car, confidence: 0.9998534917831421, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 14, label: car, confidence: 0.9998534917831421, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+W0424 18:35:24.432312 130862788118080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)), Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+追踪模块的输出..: [Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)), Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=442, y=653)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8287709999829531), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=387.25, y=232.875, z=-4.23828125)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=218, y=667)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8287709999829531), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=387.0, y=237.375, z=-2.6171875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)) at Transform(location: Location(x=387.25, y=232.875, z=-4.23828125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=13.1796875, y=-6.9609375, z=-2.958984375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=16.5625, y=-8.7109375, z=-4.265625), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753)) at Transform(location: Location(x=387.0, y=237.375, z=-2.6171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=12.0546875, y=-8.9609375, z=-2.646484375), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [11], trajectories: Obstacle Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)) at Transform(location: Location(x=387.25, y=232.875, z=-4.23828125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=13.1796875, y=-6.9609375, z=-2.958984375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=16.5625, y=-8.7109375, z=-4.265625), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753)) at Transform(location: Location(x=387.0, y=237.375, z=-2.6171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=12.0546875, y=-8.9609375, z=-2.646484375), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [11], predictions: [Prediction for obstacle Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753)) at Transform(location: Location(x=387.0, y=237.375, z=-2.6171875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=12.0546875, y=-8.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 13, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)) at Transform(location: Location(x=387.25, y=232.875, z=-4.23828125), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=19.9453125, y=-10.460937500000002, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=23.328125, y=-12.210937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=26.710937500000004, y=-13.960937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=30.093750000000004, y=-15.710937500000005, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=33.4765625, y=-17.460937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=36.85937500000001, y=-19.210937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=40.24218750000001, y=-20.960937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=43.62500000000001, y=-22.71093750000001, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=47.00781250000001, y=-24.460937500000014, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0)), Transform(location: Location(x=50.39062500000001, y=-26.210937500000014, z=0.0), rotation: Rotation(pitch=0, yaw=-27.353475439518125, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:25.472486 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.017192651240546863, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.401054   30.507109   13.352192  ]
+ [31.56539    26.104687   10.975539  ]
+ [27.60582    37.173435   12.406777  ]
+ ...
+ [ 3.163379   -0.20359375 -1.8301568 ]
+ [ 3.168281   -0.10183594 -1.8301568 ]
+ [ 3.1695116  -0.05089844 -1.8301568 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03015684150159359), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.024810697883868586, velocity vector: Vector3D(x=-1.5763427541060082e-07, y=-3.741074561247615e-09, z=0.02481069788336754))
+relative_time: 550
+跟踪模块接收到的pose信息： {timestamp: [6757], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03015684150159359), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.024810697883868586, velocity vector: Vector3D(x=-1.5763427541060082e-07, y=-3.741074561247615e-09, z=0.02481069788336754))}
+(1080, 1920, 3)
+W0424 18:35:25.605458 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [12], runtime: 199.8438835144043, obstacles: [])
+更新的跟踪模块的障碍物信息： []
+W0424 18:35:25.872305 130862788118080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+追踪模块的输出..: [Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=218, y=667)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8301568415015936), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=384.75, y=234.625, z=-3.775390625)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753)) at Transform(location: Location(x=384.75, y=234.625, z=-3.775390625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=12.0546875, y=-8.9609375, z=-2.646484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=14.8046875, y=-11.2109375, z=-3.8046875), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [12], trajectories: Obstacle Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753)) at Transform(location: Location(x=384.75, y=234.625, z=-3.775390625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=12.0546875, y=-8.9609375, z=-2.646484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=14.8046875, y=-11.2109375, z=-3.8046875), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [12], predictions: [Prediction for obstacle Obstacle(id: 14, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753)) at Transform(location: Location(x=384.75, y=234.625, z=-3.775390625), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=17.5546875, y=-13.4609375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=20.3046875, y=-15.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=23.054687500000004, y=-17.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=25.804687500000007, y=-20.2109375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=28.55468750000001, y=-22.4609375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=31.30468750000001, y=-24.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=34.054687500000014, y=-26.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=36.804687500000014, y=-29.2109375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=39.55468750000002, y=-31.4609375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0)), Transform(location: Location(x=42.30468750000003, y=-33.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=-39.28940686250036, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:26.687187 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.017637748480067224, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.031154535710811615), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.017749078572294987, velocity vector: Vector3D(x=-1.326401815049394e-07, y=1.0242442449737155e-08, z=0.017749078571796417))
+点云数据....： [[39.12174    29.297499   13.096289  ]
+ [27.607832   37.176052   12.407652  ]
+ [26.402147   36.77258    12.129819  ]
+ ...
+ [ 3.1385546  -0.45710936 -1.8311545 ]
+ [ 3.1454883  -0.40664062 -1.8311545 ]
+ [ 3.1700194  -0.10195312 -1.8311545 ]]
+跟踪模块接收到的pose信息： {timestamp: [6807], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.031154535710811615), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.017749078572294987, velocity vector: Vector3D(x=-1.326401815049394e-07, y=1.0242442449737155e-08, z=0.017749078571796417))}
+relative_time: 600
+(1080, 1920, 3)
+W0424 18:35:26.849977 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [13], runtime: 195.5704689025879, obstacles: [])
+更新的跟踪模块的障碍物信息： []
+W0424 18:35:27.104780 130862788118080 object_tracker_operator.py:132] tracked_obstacles:[]
+追踪模块的输出..: []
+obstacle_location_history_operator的返回结果： []
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [13], trajectories: )
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [13], predictions: [])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:27.437204 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.06466768093562089, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03186143934726715), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.012514145115305209, velocity vector: Vector3D(x=2.1047929976703017e-07, y=1.3587040825768781e-08, z=0.012514145113527775))
+跟踪模块接收到的pose信息： {timestamp: [6857], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03186143934726715), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.012514145115305209, velocity vector: Vector3D(x=2.1047929976703017e-07, y=1.3587040825768781e-08, z=0.012514145113527775))}
+点云数据....： [[39.404922   30.51       13.353499  ]
+ [27.6092     37.17793    12.408275  ]
+ [15.345156   25.463945    7.9661875 ]
+ ...
+ [ 3.1663086  -0.20375    -1.8318614 ]
+ [ 3.1691406  -0.15289062 -1.8318614 ]
+ [ 3.1711915  -0.10191406 -1.8318614 ]]
+relative_time: 650
+(1080, 1920, 3)
+W0424 18:35:27.570537 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [14], runtime: 203.25779914855957, obstacles: [])
+更新的跟踪模块的障碍物信息： []
+W0424 18:35:27.850545 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[]
+追踪模块的输出..: []
+obstacle_location_history_operator的返回结果： []
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [14], trajectories: )
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [14], predictions: [])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:28.361440 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.07590638767762019, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.844334   28.851093   13.181261  ]
+ [39.406055   30.510937   13.353879  ]
+ [31.566582   26.105625   10.975941  ]
+ ...
+ [ 3.170039   -0.15296875 -1.8323559 ]
+ [ 3.1720507  -0.10195312 -1.8323559 ]
+ [ 3.1733007  -0.0509375  -1.8323559 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.032355938106775284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00871755184429855, velocity vector: Vector3D(x=-5.422310778158135e-07, y=8.816089192009713e-09, z=0.008717551827430725))
+跟踪模块接收到的pose信息： {timestamp: [6907], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.032355938106775284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00871755184429855, velocity vector: Vector3D(x=-5.422310778158135e-07, y=8.816089192009713e-09, z=0.008717551827430725))}
+relative_time: 700
+(1080, 1920, 3)
+W0424 18:35:28.480454 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [15], runtime: 203.08804512023926, obstacles: [])
+更新的跟踪模块的障碍物信息： []
+W0424 18:35:28.744900 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[]
+追踪模块的输出..: []
+obstacle_location_history_operator的返回结果： []
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [15], trajectories: )
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [15], predictions: [])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:29.293325 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.06495056539932684, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03269826993346214), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.006015595050061099, velocity vector: Vector3D(x=-1.294541078777911e-07, y=5.1313975291122915e-09, z=0.006015595048666))
+点云数据....： [[39.84457    28.85125    13.181347  ]
+ [31.566738   26.105782   10.976005  ]
+ [27.924686   35.181873   12.035516  ]
+ ...
+ [ 3.1412108  -0.45742187 -1.8326982 ]
+ [ 3.164043   -0.25476563 -1.8326982 ]
+ [ 3.1677735  -0.20390624 -1.8326982 ]]
+跟踪模块接收到的pose信息： {timestamp: [6957], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03269826993346214), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.006015595050061099, velocity vector: Vector3D(x=-1.294541078777911e-07, y=5.1313975291122915e-09, z=0.006015595048666))}
+relative_time: 750
+(1080, 1920, 3)
+W0424 18:35:29.435178 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [16], runtime: 199.46932792663574, obstacles: [])
+更新的跟踪模块的障碍物信息： []
+W0424 18:35:29.682147 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[]
+追踪模块的输出..: []
+obstacle_location_history_operator的返回结果： []
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [16], trajectories: )
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [16], predictions: [])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:30.073678 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.04858208862457861, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.844803   28.851444   13.181406  ]
+ [39.12781    29.302069   13.098325  ]
+ [39.40734    30.511953   13.354321  ]
+ ...
+ [ 3.168164   -0.20386718 -1.8329332 ]
+ [ 3.170996   -0.15296875 -1.8329332 ]
+ [ 3.1730468  -0.10199218 -1.8329332 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03293321654200554), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.004115620226086858, velocity vector: Vector3D(x=7.24318340417085e-07, y=-9.744903550767958e-09, z=0.004115620162338018))
+跟踪模块接收到的pose信息： {timestamp: [7007], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03293321654200554), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.004115620226086858, velocity vector: Vector3D(x=7.24318340417085e-07, y=-9.744903550767958e-09, z=0.004115620162338018))}
+relative_time: 800
+(1080, 1920, 3)
+W0424 18:35:30.205743 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+17轮检测到的对象:car,分数：0.9953345656394958,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=80.31233>, <tf.Tensor: shape=(), dtype=float32, numpy=568.9293>, <tf.Tensor: shape=(), dtype=float32, numpy=331.24753>, <tf.Tensor: shape=(), dtype=float32, numpy=698.6486>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [17], runtime: 192.17538833618164, obstacles: [Obstacle(id: 15, label: car, confidence: 0.9953345656394958, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 15, label: car, confidence: 0.9953345656394958, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698))]
+W0424 18:35:30.462242 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698))]
+追踪模块的输出..: [Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=205, y=633)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8329332165420056), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=383.25, y=233.125, z=-3.8203125)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)) at Transform(location: Location(x=383.25, y=233.125, z=-3.8203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=16.3125, y=-12.7109375, z=-3.853515625), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [17], trajectories: Obstacle Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)) at Transform(location: Location(x=383.25, y=233.125, z=-3.8203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=16.3125, y=-12.7109375, z=-3.853515625), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [17], predictions: [Prediction for obstacle Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)) at Transform(location: Location(x=383.25, y=233.125, z=-3.8203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=16.3125, y=-12.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:31.862703 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.01695228538910126, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[31.566952   26.105936   10.976075  ]
+ [27.927011   35.18484    12.036527  ]
+ [27.611563   37.18117    12.409355  ]
+ ...
+ [ 3.1602733  -0.305625   -1.8330932 ]
+ [ 3.1647265  -0.25476563 -1.8330932 ]
+ [ 3.1733203  -0.10199218 -1.8330932 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.002795878599785039, velocity vector: Vector3D(x=4.408583151871426e-07, y=2.2250336684237482e-08, z=0.002795878564938903))
+(1080, 1920, 3)
+W0424 18:35:32.008070 130862618248768 CustomImageStream_obstacle.py:103] send msg
+relative_time: 850
+跟踪模块接收到的pose信息： {timestamp: [7057], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.002795878599785039, velocity vector: Vector3D(x=4.408583151871426e-07, y=2.2250336684237482e-08, z=0.002795878564938903))}
+障碍物保存npy完毕.......
+18轮检测到的对象:car,分数：0.9999240636825562,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=314.52167>, <tf.Tensor: shape=(), dtype=float32, numpy=559.4025>, <tf.Tensor: shape=(), dtype=float32, numpy=496.11264>, <tf.Tensor: shape=(), dtype=float32, numpy=680.70386>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [18], runtime: 246.53244018554688, obstacles: [Obstacle(id: 16, label: car, confidence: 0.9999240636825562, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 16, label: car, confidence: 0.9999240636825562, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680))]
+W0424 18:35:32.349067 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)), Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680))]
+追踪模块的输出..: [Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)), Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=205, y=633)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8330932028591633), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=383.75, y=233.5, z=-3.640625)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=405, y=619)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8330932028591633), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=384.0, y=228.625, z=-5.15625)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)) at Transform(location: Location(x=383.75, y=233.5, z=-3.640625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=16.3125, y=-12.7109375, z=-3.853515625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.9296875, y=-12.2109375, z=-3.673828125), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)) at Transform(location: Location(x=384.0, y=228.625, z=-5.15625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=20.8125, y=-11.9609375, z=-5.1875), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [18], trajectories: Obstacle Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)) at Transform(location: Location(x=383.75, y=233.5, z=-3.640625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=16.3125, y=-12.7109375, z=-3.853515625), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=15.9296875, y=-12.2109375, z=-3.673828125), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)) at Transform(location: Location(x=384.0, y=228.625, z=-5.15625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=20.8125, y=-11.9609375, z=-5.1875), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [18], predictions: [Prediction for obstacle Obstacle(id: 15, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)) at Transform(location: Location(x=383.75, y=233.5, z=-3.640625), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=15.546875000000002, y=-11.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=15.164062500000004, y=-11.210937500000002, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=14.781250000000005, y=-10.710937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=14.398437500000007, y=-10.210937500000005, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=14.015625000000009, y=-9.710937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=13.63281250000001, y=-9.210937500000009, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=13.250000000000012, y=-8.71093750000001, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=12.867187500000014, y=-8.210937500000012, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=12.484375000000016, y=-7.710937500000014, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0)), Transform(location: Location(x=12.101562500000018, y=-7.210937500000016, z=0.0), rotation: Rotation(pitch=0, yaw=127.43857157233303, roll=0))], Prediction for obstacle Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)) at Transform(location: Location(x=384.0, y=228.625, z=-5.15625), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:34.060693 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.2154622666001066, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.407753   30.512186   13.3544445 ]
+ [27.927011   35.18484    12.036527  ]
+ [27.611563   37.18117    12.409355  ]
+ ...
+ [ 3.1602733  -0.305625   -1.8330932 ]
+ [ 3.1684375  -0.20390624 -1.8330932 ]
+ [ 3.1733203  -0.10199218 -1.8330932 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0, velocity vector: Vector3D(x=0.0, y=0.0, z=0.0))
+relative_time: 900
+跟踪模块接收到的pose信息： {timestamp: [7107], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0, velocity vector: Vector3D(x=0.0, y=0.0, z=0.0))}
+(1080, 1920, 3)
+W0424 18:35:34.197789 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+19轮检测到的对象:car,分数：0.9999563694000244,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=503.29108>, <tf.Tensor: shape=(), dtype=float32, numpy=559.4861>, <tf.Tensor: shape=(), dtype=float32, numpy=642.059>, <tf.Tensor: shape=(), dtype=float32, numpy=665.0448>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [19], runtime: 264.97912406921387, obstacles: [Obstacle(id: 17, label: car, confidence: 0.9999563694000244, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 17, label: car, confidence: 0.9999563694000244, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665))]
+W0424 18:35:34.550578 130862767146560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)), Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665))]
+追踪模块的输出..: [Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)), Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=405, y=619)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8330932028591633), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=384.0, y=228.625, z=-5.15625)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=572, y=612)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8330932028591633), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=389.0, y=231.875, z=-3.875)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)) at Transform(location: Location(x=384.0, y=228.625, z=-5.15625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=20.8125, y=-11.9609375, z=-5.1875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=-5.1875), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)) at Transform(location: Location(x=389.0, y=231.875, z=-3.875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=17.5625, y=-6.9609375, z=-3.908203125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [19], trajectories: Obstacle Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)) at Transform(location: Location(x=384.0, y=228.625, z=-5.15625), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=20.8125, y=-11.9609375, z=-5.1875), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=20.8125, y=-11.9609375, z=-5.1875), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)) at Transform(location: Location(x=389.0, y=231.875, z=-3.875), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=17.5625, y=-6.9609375, z=-3.908203125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [19], predictions: [Prediction for obstacle Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)) at Transform(location: Location(x=389.0, y=231.875, z=-3.875), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=17.5625, y=-6.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 16, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)) at Transform(location: Location(x=384.0, y=228.625, z=-5.15625), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=20.8125, y=-11.9609375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000002, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000005, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=20.8125, y=-11.960937500000009, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:35.970355 130862788118080 mpc_operator.py:92] control_msg:{'steer': -0.04412631065312783, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+点云数据....： [[39.844997   28.851484   13.181475  ]
+ [27.611835   37.181404   12.409458  ]
+ [19.577324   28.213242    9.201445  ]
+ ...
+ [ 3.134297   -0.5079687  -1.8332084 ]
+ [ 3.1649218  -0.25476563 -1.8332084 ]
+ [ 3.173535   -0.10199218 -1.8332084 ]]
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03320840746164322), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.000846645654102668, velocity vector: Vector3D(x=6.720420060446486e-07, y=-6.369877958434245e-09, z=0.0008466453873552382))
+跟踪模块接收到的pose信息： {timestamp: [7157], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03320840746164322), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.000846645654102668, velocity vector: Vector3D(x=6.720420060446486e-07, y=-6.369877958434245e-09, z=0.0008466453873552382))}
+relative_time: 950
+(1080, 1920, 3)
+W0424 18:35:36.103635 130862618248768 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+20轮检测到的对象:car,分数：0.9999395608901978,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=635.16034>, <tf.Tensor: shape=(), dtype=float32, numpy=559.7958>, <tf.Tensor: shape=(), dtype=float32, numpy=759.36224>, <tf.Tensor: shape=(), dtype=float32, numpy=656.9952>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [20], runtime: 212.8753662109375, obstacles: [Obstacle(id: 18, label: car, confidence: 0.9999395608901978, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 18, label: car, confidence: 0.9999395608901978, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656))]
+W0424 18:35:36.381172 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)), Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656))]
+追踪模块的输出..: [Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)), Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=572, y=612)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8332084074616433), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=386.25, y=225.625, z=-6.078125)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=697, y=607)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8332084074616433), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=389.25, y=224.75, z=-6.21484375)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)) at Transform(location: Location(x=386.25, y=225.625, z=-6.078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=17.5625, y=-6.9609375, z=-3.908203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=23.8125, y=-9.7109375, z=-6.11328125), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)) at Transform(location: Location(x=389.25, y=224.75, z=-6.21484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=24.6875, y=-6.7109375, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [20], trajectories: Obstacle Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)) at Transform(location: Location(x=386.25, y=225.625, z=-6.078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=17.5625, y=-6.9609375, z=-3.908203125), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=23.8125, y=-9.7109375, z=-6.11328125), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)) at Transform(location: Location(x=389.25, y=224.75, z=-6.21484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=24.6875, y=-6.7109375, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [20], predictions: [Prediction for obstacle Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)) at Transform(location: Location(x=389.25, y=224.75, z=-6.21484375), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)) at Transform(location: Location(x=386.25, y=225.625, z=-6.078125), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=30.062500000000004, y=-12.4609375, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=36.31250000000001, y=-15.210937500000002, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=42.562500000000014, y=-17.960937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=48.812500000000014, y=-20.710937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=55.062500000000014, y=-23.460937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=61.31250000000002, y=-26.210937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=67.56250000000003, y=-28.960937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=73.81250000000003, y=-31.710937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=80.06250000000003, y=-34.46093750000001, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0)), Transform(location: Location(x=86.31250000000003, y=-37.21093750000001, z=0.0), rotation: Rotation(pitch=0, yaw=-23.74949449286676, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:37.470095 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.07209433727550323, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033252160996198654), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0008676990020845529, velocity vector: Vector3D(x=1.8598227313759708e-07, y=-2.126401987823101e-08, z=0.0008676989818923175))
+点云数据....： [[39.128906   29.30289    13.098687  ]
+ [27.611895   37.181602   12.409497  ]
+ [16.10002    25.770546    8.141983  ]
+ ...
+ [ 3.171582   -0.15296875 -1.8332521 ]
+ [ 3.1736329  -0.10199218 -1.8332521 ]
+ [ 3.1748438  -0.05101562 -1.8332521 ]]
+跟踪模块接收到的pose信息： {timestamp: [7207], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033252160996198654), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0008676990020845529, velocity vector: Vector3D(x=1.8598227313759708e-07, y=-2.126401987823101e-08, z=0.0008676989818923175))}
+relative_time: 1000
+(1080, 1920, 3)
+W0424 18:35:37.610306 130862586791488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+21轮检测到的对象:car,分数：0.9999434947967529,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=728.82587>, <tf.Tensor: shape=(), dtype=float32, numpy=558.6144>, <tf.Tensor: shape=(), dtype=float32, numpy=847.3975>, <tf.Tensor: shape=(), dtype=float32, numpy=653.6446>]
+追踪模块收到的感知模块信息： ObstaclesMessage(timestamp: [21], runtime: 225.53586959838867, obstacles: [Obstacle(id: 19, label: car, confidence: 0.9999434947967529, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653))])
+更新的跟踪模块的障碍物信息： [Obstacle(id: 19, label: car, confidence: 0.9999434947967529, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653))]
+W0424 18:35:37.896636 130862777632320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)), Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653))]
+追踪模块的输出..: [Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)), Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653))]
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=697, y=607)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8332521609961987), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=389.25, y=224.75, z=-6.25)
+obstacle.bounding_box_2D.get_center_point(),: Vector2D(x=787, y=605)
+transformed_camera_setup:.. CameraSetup(name: center_camera, type: sensor.camera.rgb, width: 1920, height: 1080, transform: Transform(location: Location(x=395.9599847039648, y=248.12999267579877, z=1.8332521609961987), rotation: Rotation(pitch=-14.999999999999998, yaw=90.00029754638672, roll=-0.0)), fov: 90.0)
+obstacles中的location: Location(x=391.25, y=222.875, z=-6.828125)
+obstacle_location_history_operator的返回结果： [Obstacle Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)) at Transform(location: Location(x=389.25, y=224.75, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=24.6875, y=-6.7109375, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=-6.28515625), rotation: Rotation(pitch=0, yaw=0, roll=0))], Obstacle Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653)) at Transform(location: Location(x=391.25, y=222.875, z=-6.828125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=26.5625, y=-4.7109375, z=-6.86328125), rotation: Rotation(pitch=0, yaw=0, roll=0))]]
+在预测模块中传输进来的轨迹信息： ObstacleTrajectoriesMessage(timestamp [21], trajectories: Obstacle Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)) at Transform(location: Location(x=389.25, y=224.75, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=24.6875, y=-6.7109375, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375, z=-6.28515625), rotation: Rotation(pitch=0, yaw=0, roll=0))]
+Obstacle Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653)) at Transform(location: Location(x=391.25, y=222.875, z=-6.828125), rotation: Rotation(pitch=0, yaw=0, roll=0)), trajectory [Transform(location: Location(x=26.5625, y=-4.7109375, z=-6.86328125), rotation: Rotation(pitch=0, yaw=0, roll=0))])
+Planning运行成功...........
+传到plan里面的感知识别信息: PredictionMessage(timestamp: [21], predictions: [Prediction for obstacle Obstacle(id: 18, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)) at Transform(location: Location(x=389.25, y=224.75, z=-6.25), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=24.687499999999993, y=-6.710937500000002, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.687499999999996, y=-6.710937500000003, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.7109375000000036, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.710937500000004, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.6875, y=-6.710937500000005, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.687500000000004, y=-6.710937500000006, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.687500000000007, y=-6.710937500000007, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.687500000000007, y=-6.710937500000008, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.687500000000007, y=-6.710937500000009, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=24.68750000000001, y=-6.71093750000001, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))], Prediction for obstacle Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653)) at Transform(location: Location(x=391.25, y=222.875, z=-6.828125), rotation: Rotation(pitch=0, yaw=0, roll=0)), probability 1.0, predicted trajectory [Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0)), Transform(location: Location(x=26.5625, y=-4.7109375, z=0.0), rotation: Rotation(pitch=0, yaw=0.0, roll=0))]])
+World update run True
+initial_conditions: {'start': array([395.95999146, 249.42999268]), 'end': array([396.30908203, 189.53955078]), 'obs': array([[395.25001597, 233.87530367, 397.25001597, 235.87530367],
+       [395.5000387 , 232.37530237, 397.5000387 , 234.37530237],
+       [395.75006142, 230.87530107, 397.75006142, 232.87530107],
+       [396.00008415, 229.37529977, 398.00008415, 231.37529977],
+       [396.25010688, 227.87529848, 398.25010688, 229.87529848],
+       [396.50012961, 226.37529718, 398.50012961, 228.37529718],
+       [396.75015233, 224.87529588, 398.75015233, 226.87529588],
+       [397.00017506, 223.37529458, 399.00017506, 225.37529458],
+       [397.25019779, 221.87529328, 399.25019779, 223.87529328],
+       [397.50022052, 220.37529198, 399.50022052, 222.37529198]])}
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0424 18:35:38.990437 130862788118080 mpc_operator.py:92] control_msg:{'steer': 0.07569495492683008, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03329221531748772), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0007596466457542198, velocity vector: Vector3D(x=3.8471625884994864e-10, y=3.2605003141839006e-09, z=0.0007596466457471251))
+点云数据....： [[39.84506    28.851562   13.181497  ]
+ [39.129044   29.302969   13.098735  ]
+ [26.403965   36.775234   12.130681  ]
+ ...
+ [ 3.1605859  -0.305625   -1.8332922 ]
+ [ 3.1650975  -0.25484374 -1.8332922 ]
+ [ 3.1749218  -0.05101562 -1.8332922 ]]
+跟踪模块接收到的pose信息： {timestamp: [7257], data: Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03329221531748772), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0007596466457542198, velocity vector: Vector3D(x=3.8471625884994864e-10, y=3.2605003141839006e-09, z=0.0007596466457471251))}
+relative_time: 1050

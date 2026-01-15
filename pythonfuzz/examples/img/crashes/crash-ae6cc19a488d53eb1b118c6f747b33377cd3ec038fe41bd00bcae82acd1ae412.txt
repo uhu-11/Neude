@@ -1,0 +1,3 @@
+img=bytearray(b'/m\x00\x80ia/lzq/D/lzq/fuzz_tool/demo/input_images')
+y=0
+choice=127

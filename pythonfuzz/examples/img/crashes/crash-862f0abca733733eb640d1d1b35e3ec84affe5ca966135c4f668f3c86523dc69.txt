@@ -1,0 +1,2 @@
+img=bytearray(b'r\xab\xbc\xcb\xf1\x0f\x1bCzq/D/lzq/pythonfuzz-pylot/examples/img/bird.png')
+y=5

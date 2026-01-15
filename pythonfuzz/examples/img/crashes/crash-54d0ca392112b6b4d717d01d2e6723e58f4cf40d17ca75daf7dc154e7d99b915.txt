@@ -1,0 +1,2 @@
+data_x=bytearray(b'/home\xff\xff\xff\xff/train_x.npy')
+data_y=bytearray(b'/home/lzq/t\x00\x00\x01\x00_y.npy')

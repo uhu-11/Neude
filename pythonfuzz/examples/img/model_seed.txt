@@ -1,0 +1,3 @@
+img=/media/lzq/D/lzq/fuzz_tool/pythonfuzz/examples/img/bird.png
+y=2
+choice=0

@@ -1,0 +1,1295 @@
+2025-04-23 21:15:58.625913: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-23 21:15:58.626485: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:15:58.626580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 21:15:58.626613: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:15:58.626664: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:15:58.626704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 21:15:58.626738: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 21:15:58.906981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-23 21:15:58.907008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-23 21:15:58.907012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-23 21:15:58.907178: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:15:58.907266: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:15:58.907332: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:15:58.907395: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4961 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-04-23 21:15:58.986484: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2025-04-23 21:15:58.986937: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3494400000 Hz
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+W0423 21:16:00.277548 135062326609472 detection_operator.py:65] self._flags.path_coco_labels:dependencies/models/pylot.names
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+I0423 21:16:04.577130 135062326609472 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0423 21:16:04.581282 135062326609472 geos.py:49] Library path: 'libgeos_c.so.1'
+I0423 21:16:04.581344 135062326609472 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7ad684284020 at 0x7ad73c101f70>
+I0423 21:16:04.588675 135062326609472 geos.py:32] Trying `CDLL(libc.so.6)`
+I0423 21:16:04.588921 135062326609472 geos.py:49] Library path: 'libc.so.6'
+I0423 21:16:04.588972 135062326609472 geos.py:50] DLL: <CDLL 'libc.so.6', handle 7ad748821760 at 0x7ad73c115190>
+I0423 21:16:04.653349 135062337095232 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0423 21:16:04.657092 135062337095232 geos.py:49] Library path: 'libgeos_c.so.1'
+I0423 21:16:04.657154 135062337095232 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7ad67843e660 at 0x7ad73f60ff10>
+I0423 21:16:04.663576 135062337095232 geos.py:32] Trying `CDLL(libc.so.6)`
+I0423 21:16:04.663831 135062337095232 geos.py:49] Library path: 'libc.so.6'
+I0423 21:16:04.663884 135062337095232 geos.py:50] DLL: <CDLL 'libc.so.6', handle 7ad748821760 at 0x7ad73f60ffd0>
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+WARNING: Assuming that installed CARLA 784d9b9f API is compatible with CARLA 0.9.10 API
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0908435583114624), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 1.7771731615066528, velocity vector: Vector3D(x=0.0, y=0.0, z=-1.7771731615066528))
+relative_time: 0
+(1080, 1920, 3)
+W0423 21:16:12.512882 135062316123712 CustomImageStream_obstacle.py:103] send msg
+I0423 21:16:12.610952 135062337095232 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0423 21:16:12.612956 135062337095232 geos.py:49] Library path: 'libgeos_c.so.1'
+I0423 21:16:12.613020 135062337095232 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7ad67800aa10 at 0x7ad73f9c7880>
+I0423 21:16:12.623457 135062337095232 geos.py:32] Trying `CDLL(libc.so.6)`
+I0423 21:16:12.623689 135062337095232 geos.py:49] Library path: 'libc.so.6'
+I0423 21:16:12.623721 135062337095232 geos.py:50] DLL: <CDLL 'libc.so.6', handle 7ad748821760 at 0x7ad73f9c7850>
+2025-04-23 21:16:13.151629: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-23 21:16:13.499480: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8900
+2025-04-23 21:16:13.662632: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-23 21:16:13.662825: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-23 21:16:14.426301: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+障碍物保存npy完毕.......
+1轮检测到的对象:car,分数：0.9999774694442749,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=644.17316>, <tf.Tensor: shape=(), dtype=float32, numpy=578.54156>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.0975>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+1轮检测到的对象:car,分数：0.9999663829803467,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1503.5157>, <tf.Tensor: shape=(), dtype=float32, numpy=518.69916>, <tf.Tensor: shape=(), dtype=float32, numpy=1814.268>, <tf.Tensor: shape=(), dtype=float32, numpy=613.6817>]
+2025-04-23 21:16:14.546648: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-04-23 21:16:14.550355: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.550433: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 21:16:14.550450: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 21:16:14.551308: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-04-23 21:16:14.552122: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-23 21:16:14.552155: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-23 21:16:14.552823: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-04-23 21:16:14.553134: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-04-23 21:16:14.553886: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.553960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 21:16:14.553978: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 21:16:14.554741: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-04-23 21:16:14.555403: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-04-23 21:16:14.555682: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-23 21:16:14.555741: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.555785: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-23 21:16:14.555815: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.555819: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-23 21:16:14.555859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 21:16:14.556198: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-23 21:16:14.556545: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-04-23 21:16:14.556669: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.556723: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 21:16:14.556744: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.556790: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.556825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 21:16:14.556840: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 21:16:14.556884: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-04-23 21:16:14.558750: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-04-23 21:16:14.559385: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-04-23 21:16:14.559666: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-23 21:16:14.559725: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.566541: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.566607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 21:16:14.566931: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-23 21:16:14.567485: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.567870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 21:16:14.567891: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.567961: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.568196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 21:16:14.568213: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 21:16:14.914068: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-23 21:16:14.914098: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-23 21:16:14.914102: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-23 21:16:14.914129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-23 21:16:14.914143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-23 21:16:14.914146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-23 21:16:14.914256: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.914260: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.914365: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.914365: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.914440: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.914451: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 21:16:14.914516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 379 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-04-23 21:16:14.914534: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 379 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+W0423 21:16:14.966635 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1242, ymin: 578, ymax: 1080)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1503, xmax: 1814, ymin: 518, ymax: 613))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:15.818875 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.1340004182427641, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.037673089653253555), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.7912288308143989, velocity vector: Vector3D(x=-2.430382721740898e-07, y=-1.5872759773216671e-09, z=-0.7912288308143616))
+relative_time: 50
+(1080, 1920, 3)
+W0423 21:16:15.957465 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+2轮检测到的对象:car,分数：0.9999768733978271,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=645.25977>, <tf.Tensor: shape=(), dtype=float32, numpy=576.1447>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.9518>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+2轮检测到的对象:car,分数：0.9999370574951172,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1585.6819>, <tf.Tensor: shape=(), dtype=float32, numpy=517.222>, <tf.Tensor: shape=(), dtype=float32, numpy=1895.6635>, <tf.Tensor: shape=(), dtype=float32, numpy=612.55835>]
+//media/lzq/D/lzq/pylot_test/pylot/dependencies/sort/utils.py:121: FutureWarning: The linear_assignment function is deprecated in 0.21 and will be removed from 0.23. Use scipy.optimize.linear_sum_assignment instead.
+  warnings.warn(
+W0423 21:16:16.245023 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1242, ymin: 575, ymax: 1079)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1625, xmax: 1935, ymin: 516, ymax: 611))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:17.257384 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.18399229738306347, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.015683535486459732), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.30131602287303527, velocity vector: Vector3D(x=-2.5800082426030713e-07, y=3.787150315570642e-10, z=-0.3013160228729248))
+relative_time: 100
+(1080, 1920, 3)
+W0423 21:16:17.390748 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+3轮检测到的对象:car,分数：0.9999771118164062,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=645.166>, <tf.Tensor: shape=(), dtype=float32, numpy=578.04895>, <tf.Tensor: shape=(), dtype=float32, numpy=1241.692>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+3轮检测到的对象:car,分数：0.9998834133148193,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1677.0717>, <tf.Tensor: shape=(), dtype=float32, numpy=513.6518>, <tf.Tensor: shape=(), dtype=float32, numpy=1909.7322>, <tf.Tensor: shape=(), dtype=float32, numpy=612.4163>]
+3轮检测到的对象:car,分数：0.4035232961177826,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=585.0421>, <tf.Tensor: shape=(), dtype=float32, numpy=438.98685>, <tf.Tensor: shape=(), dtype=float32, numpy=1330.3385>, <tf.Tensor: shape=(), dtype=float32, numpy=1056.9375>]
+W0423 21:16:17.624088 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1241, ymin: 578, ymax: 1080)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1698, xmax: 1951, ymin: 517, ymax: 605)), Obstacle(id: 6, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 585, xmax: 1330, ymin: 438, ymax: 1056))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:18.450284 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.0014051662955015499, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009216060861945152), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.06338853389117736, velocity vector: Vector3D(x=-3.433655706430727e-07, y=-2.3579298513709546e-09, z=-0.06338853389024734))
+relative_time: 150
+(1080, 1920, 3)
+W0423 21:16:18.582665 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+4轮检测到的对象:car,分数：0.9999806880950928,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=644.2132>, <tf.Tensor: shape=(), dtype=float32, numpy=575.3183>, <tf.Tensor: shape=(), dtype=float32, numpy=1243.2144>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:18.842225 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1242, ymin: 575, ymax: 1079)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1768, xmax: 2002, ymin: 519, ymax: 600)), Obstacle(id: 6, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 585, xmax: 1330, ymin: 438, ymax: 1056))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 0
+/media/lzq/D/lzq/pylot_test/pylot/pylot/control/mpc/utils.py:43: RuntimeWarning: invalid value encountered in double_scalars
+  return (ddy * dx - ddx * dy) / ((dx**2 + dy**2)**(3 / 2))
+W0423 21:16:19.649639 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.0, 'throttle': 0.006793736572200004, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009872036054730415), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.040986742825860914, velocity vector: Vector3D(x=3.558640173650929e-07, y=-7.649358924055605e-10, z=0.040986742824316025))
+relative_time: 200
+(1080, 1920, 3)
+W0423 21:16:19.775517 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+5轮检测到的对象:car,分数：0.9999769926071167,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=644.4537>, <tf.Tensor: shape=(), dtype=float32, numpy=578.57263>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.5388>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+5轮检测到的对象:car,分数：0.9995703101158142,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1830.2141>, <tf.Tensor: shape=(), dtype=float32, numpy=507.13782>, <tf.Tensor: shape=(), dtype=float32, numpy=1918.3053>, <tf.Tensor: shape=(), dtype=float32, numpy=614.2011>]
+W0423 21:16:20.024757 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1242, ymin: 577, ymax: 1080)), Obstacle(id: 9, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1830, xmax: 1918, ymin: 507, ymax: 614))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:20.957945 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.1959445544705505, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.013308925554156303), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07750482112225562, velocity vector: Vector3D(x=-2.953903504021582e-07, y=2.9507145615781383e-09, z=0.07750482112169266))
+(1080, 1920, 3)
+W0423 21:16:21.083775 135062326609472 CustomImageStream_obstacle.py:103] send msg
+relative_time: 250
+障碍物保存npy完毕.......
+6轮检测到的对象:car,分数：0.9999762773513794,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=645.06274>, <tf.Tensor: shape=(), dtype=float32, numpy=576.7738>, <tf.Tensor: shape=(), dtype=float32, numpy=1243.215>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:21.355885 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1243, ymin: 576, ymax: 1079)), Obstacle(id: 9, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1830, xmax: 1918, ymin: 507, ymax: 614))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:22.381991 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09595572137731571, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.01740282028913498), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.08176997304248672, velocity vector: Vector3D(x=-6.838300805611652e-07, y=-6.56276588628657e-09, z=0.08176997303962708))
+relative_time: 300
+(1080, 1920, 3)
+W0423 21:16:22.519885 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+7轮检测到的对象:car,分数：0.9999781847000122,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=646.3387>, <tf.Tensor: shape=(), dtype=float32, numpy=578.3017>, <tf.Tensor: shape=(), dtype=float32, numpy=1241.9689>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:22.772389 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 645, xmax: 1241, ymin: 577, ymax: 1080))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:23.290884 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.19781829219086186, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.021209698170423508), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07247096300156694, velocity vector: Vector3D(x=2.137859098638728e-07, y=-7.557727776941192e-09, z=0.07247096300125122))
+relative_time: 350
+(1080, 1920, 3)
+W0423 21:16:23.417928 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+8轮检测到的对象:car,分数：0.9999774694442749,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=646.68695>, <tf.Tensor: shape=(), dtype=float32, numpy=578.137>, <tf.Tensor: shape=(), dtype=float32, numpy=1240.9703>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:23.653998 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 645, xmax: 1240, ymin: 578, ymax: 1080))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:24.081629 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.03546236028154979, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.024388065561652184), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.058961156756722664, velocity vector: Vector3D(x=-3.4935141002279124e-07, y=-1.4922107993697864e-08, z=0.058961156755685806))
+relative_time: 400
+(1080, 1920, 3)
+W0423 21:16:24.207761 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+9轮检测到的对象:car,分数：0.9999769926071167,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=643.3279>, <tf.Tensor: shape=(), dtype=float32, numpy=578.49677>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.639>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:24.446295 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 644, xmax: 1240, ymin: 578, ymax: 1080))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:24.958799 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.01574663988373836, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.026885012164711952), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0455742590141807, velocity vector: Vector3D(x=3.366172336427553e-07, y=6.134314584071987e-11, z=0.045574259012937546))
+relative_time: 450
+(1080, 1920, 3)
+W0423 21:16:25.081452 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+10轮检测到的对象:car,分数：0.9999768733978271,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=645.8071>, <tf.Tensor: shape=(), dtype=float32, numpy=576.1516>, <tf.Tensor: shape=(), dtype=float32, numpy=1243.188>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:25.344858 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 645, xmax: 1242, ymin: 576, ymax: 1079))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:25.800174 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.07824393030207388, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.02877099998295307), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0340417958800876, velocity vector: Vector3D(x=-1.8149624736452097e-07, y=9.549755652926706e-09, z=0.03404179587960243))
+relative_time: 500
+(1080, 1920, 3)
+W0423 21:16:25.931704 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+11轮检测到的对象:car,分数：0.9999778270721436,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=646.0495>, <tf.Tensor: shape=(), dtype=float32, numpy=577.8534>, <tf.Tensor: shape=(), dtype=float32, numpy=1241.2947>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 21:16:26.205383 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 645, xmax: 1241, ymin: 576, ymax: 1079))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:26.889673 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12817948547575866, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03015684150159359), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.024810697883868586, velocity vector: Vector3D(x=-1.5763427541060082e-07, y=-3.741074561247615e-09, z=0.02481069788336754))
+relative_time: 550
+(1080, 1920, 3)
+W0423 21:16:27.016103 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+12轮检测到的对象:car,分数：0.9999814033508301,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=651.453>, <tf.Tensor: shape=(), dtype=float32, numpy=572.2389>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.5367>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+12轮检测到的对象:car,分数：0.39189183712005615,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=590.1464>, <tf.Tensor: shape=(), dtype=float32, numpy=422.9786>, <tf.Tensor: shape=(), dtype=float32, numpy=1340.617>, <tf.Tensor: shape=(), dtype=float32, numpy=1051.3184>]
+W0423 21:16:27.266122 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 648, xmax: 1243, ymin: 574, ymax: 1078)), Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 590, xmax: 1340, ymin: 422, ymax: 1051))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:27.789155 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.01977252979475998, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.031154535710811615), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.017749078572294987, velocity vector: Vector3D(x=-1.326401815049394e-07, y=1.0242442449737155e-08, z=0.017749078571796417))
+relative_time: 600
+(1080, 1920, 3)
+W0423 21:16:27.920203 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+13轮检测到的对象:car,分数：0.9999717473983765,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=707.0278>, <tf.Tensor: shape=(), dtype=float32, numpy=576.94135>, <tf.Tensor: shape=(), dtype=float32, numpy=1189.8148>, <tf.Tensor: shape=(), dtype=float32, numpy=1002.83624>]
+W0423 21:16:28.172214 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 674, xmax: 1221, ymin: 559, ymax: 1029)), Obstacle(id: 17, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 590, xmax: 1340, ymin: 422, ymax: 1051))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:28.630311 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.01844617440137647, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03186143934726715), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.012514145115305209, velocity vector: Vector3D(x=2.1047929976703017e-07, y=1.3587040825768781e-08, z=0.012514145113527775))
+relative_time: 650
+(1080, 1920, 3)
+W0423 21:16:28.774197 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+14轮检测到的对象:car,分数：0.9999551773071289,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=768.9735>, <tf.Tensor: shape=(), dtype=float32, numpy=576.614>, <tf.Tensor: shape=(), dtype=float32, numpy=1127.3435>, <tf.Tensor: shape=(), dtype=float32, numpy=902.33984>]
+14轮检测到的对象:car,分数：0.652893602848053,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=941.6669>, <tf.Tensor: shape=(), dtype=float32, numpy=536.9967>, <tf.Tensor: shape=(), dtype=float32, numpy=1003.549>, <tf.Tensor: shape=(), dtype=float32, numpy=555.462>]
+W0423 21:16:29.023619 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 677, xmax: 1219, ymin: 555, ymax: 1022)), Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 768, xmax: 1127, ymin: 576, ymax: 902)), Obstacle(id: 20, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 941, xmax: 1003, ymin: 536, ymax: 555))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:29.489601 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.011946779427867158, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.032355938106775284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00871755184429855, velocity vector: Vector3D(x=-5.422310778158135e-07, y=8.816089192009713e-09, z=0.008717551827430725))
+relative_time: 700
+(1080, 1920, 3)
+W0423 21:16:29.617484 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+15轮检测到的对象:car,分数：0.999953031539917,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=812.4905>, <tf.Tensor: shape=(), dtype=float32, numpy=578.8332>, <tf.Tensor: shape=(), dtype=float32, numpy=1093.5325>, <tf.Tensor: shape=(), dtype=float32, numpy=809.8984>]
+15轮检测到的对象:car,分数：0.9849907755851746,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=866.6289>, <tf.Tensor: shape=(), dtype=float32, numpy=537.22455>, <tf.Tensor: shape=(), dtype=float32, numpy=915.7157>, <tf.Tensor: shape=(), dtype=float32, numpy=555.70105>]
+W0423 21:16:29.911234 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 848, xmax: 1061, ymin: 579, ymax: 762)), Obstacle(id: 20, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 941, xmax: 1003, ymin: 536, ymax: 555)), Obstacle(id: 22, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:30.423646 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12960705613036777, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03269826993346214), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.006015595050061099, velocity vector: Vector3D(x=-1.294541078777911e-07, y=5.1313975291122915e-09, z=0.006015595048666))
+relative_time: 750
+(1080, 1920, 3)
+W0423 21:16:30.562589 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+16轮检测到的对象:car,分数：0.9999113082885742,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=830.79504>, <tf.Tensor: shape=(), dtype=float32, numpy=576.03296>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.9806>, <tf.Tensor: shape=(), dtype=float32, numpy=788.91187>]
+16轮检测到的对象:car,分数：0.9985905289649963,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=778.62537>, <tf.Tensor: shape=(), dtype=float32, numpy=536.29126>, <tf.Tensor: shape=(), dtype=float32, numpy=835.40326>, <tf.Tensor: shape=(), dtype=float32, numpy=557.21484>]
+W0423 21:16:30.820407 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 19, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 898, xmax: 1021, ymin: 572, ymax: 677)), Obstacle(id: 22, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 866, xmax: 915, ymin: 537, ymax: 555)), Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 830, xmax: 1080, ymin: 576, ymax: 788)), Obstacle(id: 24, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:31.325928 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.022684374049398343, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03293321654200554), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.004115620226086858, velocity vector: Vector3D(x=7.24318340417085e-07, y=-9.744903550767958e-09, z=0.004115620162338018))
+relative_time: 800
+(1080, 1920, 3)
+W0423 21:16:31.447376 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+17轮检测到的对象:car,分数：0.999953031539917,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=840.9503>, <tf.Tensor: shape=(), dtype=float32, numpy=573.44446>, <tf.Tensor: shape=(), dtype=float32, numpy=1067.5698>, <tf.Tensor: shape=(), dtype=float32, numpy=766.6221>]
+17轮检测到的对象:car,分数：0.9996582269668579,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=683.3229>, <tf.Tensor: shape=(), dtype=float32, numpy=534.9222>, <tf.Tensor: shape=(), dtype=float32, numpy=735.5427>, <tf.Tensor: shape=(), dtype=float32, numpy=554.8638>]
+W0423 21:16:31.714605 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 845, xmax: 1060, ymin: 572, ymax: 754)), Obstacle(id: 24, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 778, xmax: 835, ymin: 536, ymax: 557)), Obstacle(id: 26, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:32.509563 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.08702486681493563, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.002795878599785039, velocity vector: Vector3D(x=4.408583151871426e-07, y=2.2250336684237482e-08, z=0.002795878564938903))
+relative_time: 850
+(1080, 1920, 3)
+W0423 21:16:32.640024 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+18轮检测到的对象:car,分数：0.9999536275863647,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=848.3941>, <tf.Tensor: shape=(), dtype=float32, numpy=573.72876>, <tf.Tensor: shape=(), dtype=float32, numpy=1064.5513>, <tf.Tensor: shape=(), dtype=float32, numpy=753.7264>]
+18轮检测到的对象:car,分数：0.9630759358406067,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=587.9763>, <tf.Tensor: shape=(), dtype=float32, numpy=534.74286>, <tf.Tensor: shape=(), dtype=float32, numpy=640.78265>, <tf.Tensor: shape=(), dtype=float32, numpy=553.9202>]
+W0423 21:16:32.934127 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 855, xmax: 1057, ymin: 573, ymax: 744)), Obstacle(id: 26, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 683, xmax: 735, ymin: 534, ymax: 554)), Obstacle(id: 28, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:33.721772 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.0445651360854952, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0, velocity vector: Vector3D(x=0.0, y=0.0, z=0.0))
+relative_time: 900
+(1080, 1920, 3)
+W0423 21:16:33.861321 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+19轮检测到的对象:car,分数：0.9999454021453857,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=850.51117>, <tf.Tensor: shape=(), dtype=float32, numpy=568.9927>, <tf.Tensor: shape=(), dtype=float32, numpy=1065.123>, <tf.Tensor: shape=(), dtype=float32, numpy=749.9087>]
+W0423 21:16:34.156625 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 857, xmax: 1059, ymin: 569, ymax: 739)), Obstacle(id: 28, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 587, xmax: 640, ymin: 534, ymax: 553))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:35.002066 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.009100210775675686, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03320840746164322), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.000846645654102668, velocity vector: Vector3D(x=6.720420060446486e-07, y=-6.369877958434245e-09, z=0.0008466453873552382))
+relative_time: 950
+(1080, 1920, 3)
+W0423 21:16:35.126071 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+20轮检测到的对象:car,分数：0.9999418258666992,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=816.6772>, <tf.Tensor: shape=(), dtype=float32, numpy=568.9723>, <tf.Tensor: shape=(), dtype=float32, numpy=1057.1543>, <tf.Tensor: shape=(), dtype=float32, numpy=743.07605>]
+W0423 21:16:35.418290 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 829, xmax: 1045, ymin: 566, ymax: 738))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:35.838031 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.03227724124221974, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033252160996198654), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0008676990020845529, velocity vector: Vector3D(x=1.8598227313759708e-07, y=-2.126401987823101e-08, z=0.0008676989818923175))
+relative_time: 1000
+(1080, 1920, 3)
+W0423 21:16:35.967136 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+21轮检测到的对象:car,分数：0.9993667006492615,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=722.4527>, <tf.Tensor: shape=(), dtype=float32, numpy=566.8281>, <tf.Tensor: shape=(), dtype=float32, numpy=1014.9401>, <tf.Tensor: shape=(), dtype=float32, numpy=741.75275>]
+W0423 21:16:36.259685 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 745, xmax: 995, ymin: 561, ymax: 739))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:36.680551 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.013337787863114837, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03329221531748772), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0007596466457542198, velocity vector: Vector3D(x=3.8471625884994864e-10, y=3.2605003141839006e-09, z=0.0007596466457471251))
+relative_time: 1050
+(1080, 1920, 3)
+W0423 21:16:36.791882 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+22轮检测到的对象:car,分数：0.9999610185623169,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=592.6177>, <tf.Tensor: shape=(), dtype=float32, numpy=566.6285>, <tf.Tensor: shape=(), dtype=float32, numpy=928.70233>, <tf.Tensor: shape=(), dtype=float32, numpy=739.9584>]
+W0423 21:16:37.075212 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 23, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 725, xmax: 975, ymin: 557, ymax: 734)), Obstacle(id: 32, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:38.154288 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.054862681186883096, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03332536667585373), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0006126526884475913, velocity vector: Vector3D(x=5.504370648168333e-08, y=4.4279744315645075e-09, z=0.0006126526859588921))
+relative_time: 1100
+(1080, 1920, 3)
+W0423 21:16:38.294672 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+23轮检测到的对象:car,分数：0.999955415725708,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=447.9657>, <tf.Tensor: shape=(), dtype=float32, numpy=567.21356>, <tf.Tensor: shape=(), dtype=float32, numpy=810.1942>, <tf.Tensor: shape=(), dtype=float32, numpy=731.0778>]
+W0423 21:16:38.537095 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 32, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 592, xmax: 928, ymin: 566, ymax: 739)), Obstacle(id: 33, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:39.578869 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.05163932818101544, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03335123136639595), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00047076962097749203, velocity vector: Vector3D(x=1.4119176938720557e-08, y=5.525548463225505e-09, z=0.0004707696207333356))
+relative_time: 1150
+(1080, 1920, 3)
+W0423 21:16:39.722689 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+24轮检测到的对象:car,分数：0.9999642372131348,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=232.86949>, <tf.Tensor: shape=(), dtype=float32, numpy=571.4268>, <tf.Tensor: shape=(), dtype=float32, numpy=652.3266>, <tf.Tensor: shape=(), dtype=float32, numpy=735.2241>]
+W0423 21:16:39.988122 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 33, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 447, xmax: 810, ymin: 567, ymax: 731)), Obstacle(id: 34, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:41.078879 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.023493086285840993, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0333707220852375), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00035173276801459295, velocity vector: Vector3D(x=1.3444260105188732e-07, y=5.716617845763494e-09, z=0.00035173274227418005))
+relative_time: 1200
+(1080, 1920, 3)
+W0423 21:16:41.226748 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+25轮检测到的对象:car,分数：0.9998534917831421,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=9.262848>, <tf.Tensor: shape=(), dtype=float32, numpy=582.4166>, <tf.Tensor: shape=(), dtype=float32, numpy=427.05545>, <tf.Tensor: shape=(), dtype=float32, numpy=753.94586>]
+W0423 21:16:41.473831 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 34, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 232, xmax: 652, ymin: 571, ymax: 735)), Obstacle(id: 35, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:42.750314 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.017583874444033736, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.0333850271999836), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00025577095871578184, velocity vector: Vector3D(x=-5.7393698682517424e-08, y=5.914648770755093e-09, z=0.00025577095220796764))
+relative_time: 1250
+(1080, 1920, 3)
+W0423 21:16:42.876634 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:16:43.126669 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 35, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 9, xmax: 427, ymin: 582, ymax: 753))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:43.873853 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.08527165773044287, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033395253121852875), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0001814349082401189, velocity vector: Vector3D(x=-7.081000319431041e-08, y=5.7925255703139555e-09, z=0.00018143489432986826))
+relative_time: 1300
+(1080, 1920, 3)
+W0423 21:16:44.000787 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:16:44.283970 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:16:44.559650 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03339742496609688), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 7.014058797111768e-05, velocity vector: Vector3D(x=-2.593124825978066e-09, y=-2.731697368307806e-10, z=7.014058792265132e-05))
+relative_time: 1350
+(1080, 1920, 3)
+W0423 21:16:44.712107 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:16:44.960572 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:16:45.264519 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033401429653167725), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 8.165906203897881e-05, velocity vector: Vector3D(x=-5.753076681713765e-09, y=5.861461316314376e-10, z=8.165906183421612e-05))
+relative_time: 1400
+(1080, 1920, 3)
+W0423 21:16:45.389743 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:16:45.665150 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:16:45.960694 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03340532258152962), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 7.49653774004938e-05, velocity vector: Vector3D(x=-4.220469751459177e-09, y=4.999222147361593e-10, z=7.496537728002295e-05))
+relative_time: 1450
+(1080, 1920, 3)
+W0423 21:16:46.101413 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:16:46.363825 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:16:46.659981 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03340867906808853), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 6.308464577699497e-05, velocity vector: Vector3D(x=-9.078278395691086e-08, y=2.567480805737432e-08, z=6.308457523118705e-05))
+relative_time: 1500
+(1080, 1920, 3)
+W0423 21:16:46.793799 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+31轮检测到的对象:car,分数：0.9953345656394958,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=80.31233>, <tf.Tensor: shape=(), dtype=float32, numpy=568.9293>, <tf.Tensor: shape=(), dtype=float32, numpy=331.24753>, <tf.Tensor: shape=(), dtype=float32, numpy=698.6486>]
+W0423 21:16:47.076725 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 36, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:47.789521 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.007259948694816192, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033411312848329544), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 4.883923952976006e-05, velocity vector: Vector3D(x=1.3321016467671143e-07, y=9.163142467016883e-10, z=4.883905785391107e-05))
+relative_time: 1550
+(1080, 1920, 3)
+W0423 21:16:47.919439 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+32轮检测到的对象:car,分数：0.9999240636825562,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=314.52167>, <tf.Tensor: shape=(), dtype=float32, numpy=559.4025>, <tf.Tensor: shape=(), dtype=float32, numpy=496.11264>, <tf.Tensor: shape=(), dtype=float32, numpy=680.70386>]
+W0423 21:16:48.220678 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 36, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 80, xmax: 331, ymin: 568, ymax: 698)), Obstacle(id: 37, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:49.265773 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.020435297800487615, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033413372933864594), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 3.672941674042126e-05, velocity vector: Vector3D(x=-1.7880834590755512e-08, y=3.635931000722792e-10, z=3.672941238619387e-05))
+relative_time: 1600
+(1080, 1920, 3)
+W0423 21:16:49.412855 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+33轮检测到的对象:car,分数：0.9999563694000244,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=503.29108>, <tf.Tensor: shape=(), dtype=float32, numpy=559.4861>, <tf.Tensor: shape=(), dtype=float32, numpy=642.059>, <tf.Tensor: shape=(), dtype=float32, numpy=665.0448>]
+W0423 21:16:49.679493 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 37, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 314, xmax: 496, ymin: 559, ymax: 680)), Obstacle(id: 38, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:50.666366 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.2589748908735193, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341485932469368), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 2.7404032921139563e-05, velocity vector: Vector3D(x=-1.189785336919158e-08, y=-4.951068999226038e-10, z=2.740403033385519e-05))
+relative_time: 1650
+(1080, 1920, 3)
+W0423 21:16:50.795877 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+34轮检测到的对象:car,分数：0.9999395608901978,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=635.16034>, <tf.Tensor: shape=(), dtype=float32, numpy=559.7958>, <tf.Tensor: shape=(), dtype=float32, numpy=759.36224>, <tf.Tensor: shape=(), dtype=float32, numpy=656.9952>]
+W0423 21:16:51.112622 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 38, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 503, xmax: 642, ymin: 559, ymax: 665)), Obstacle(id: 39, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:52.286502 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.01666613047981513, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341592848300934), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 1.8955911888269638e-05, velocity vector: Vector3D(x=2.00519565396462e-08, y=-2.4826317002180076e-08, z=1.8955885025206953e-05))
+relative_time: 1700
+(1080, 1920, 3)
+W0423 21:16:52.424049 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+35轮检测到的对象:car,分数：0.9999434947967529,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=728.82587>, <tf.Tensor: shape=(), dtype=float32, numpy=558.6144>, <tf.Tensor: shape=(), dtype=float32, numpy=847.3975>, <tf.Tensor: shape=(), dtype=float32, numpy=653.6446>]
+W0423 21:16:52.697790 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 39, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 656)), Obstacle(id: 40, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:53.865180 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.045705037635553974, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341592848300934), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 6.007389040978171e-06, velocity vector: Vector3D(x=4.7577504602713816e-08, y=2.537974985727942e-08, z=6.007147021591663e-06))
+relative_time: 1750
+(1080, 1920, 3)
+W0423 21:16:54.004711 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+36轮检测到的对象:car,分数：0.9999573230743408,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=792.7733>, <tf.Tensor: shape=(), dtype=float32, numpy=556.4407>, <tf.Tensor: shape=(), dtype=float32, numpy=910.18604>, <tf.Tensor: shape=(), dtype=float32, numpy=653.15674>]
+W0423 21:16:54.290190 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 40, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 847, ymin: 558, ymax: 653)), Obstacle(id: 41, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 792, xmax: 910, ymin: 556, ymax: 653))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:55.362328 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.06252807721551332, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341592848300934), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 7.419006649489471e-06, velocity vector: Vector3D(x=-9.654778665435515e-08, y=-2.0720685611763656e-08, z=7.418349468935048e-06))
+relative_time: 1800
+(1080, 1920, 3)
+W0423 21:16:55.502732 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+37轮检测到的对象:car,分数：0.999945878982544,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=835.7918>, <tf.Tensor: shape=(), dtype=float32, numpy=556.38257>, <tf.Tensor: shape=(), dtype=float32, numpy=951.78815>, <tf.Tensor: shape=(), dtype=float32, numpy=652.1569>]
+37轮检测到的对象:person,分数：0.9757919311523438,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=673.0311>, <tf.Tensor: shape=(), dtype=float32, numpy=532.56757>, <tf.Tensor: shape=(), dtype=float32, numpy=690.2485>, <tf.Tensor: shape=(), dtype=float32, numpy=567.3282>]
+W0423 21:16:55.789432 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 41, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 792, xmax: 910, ymin: 556, ymax: 653)), Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 835, xmax: 951, ymin: 556, ymax: 652)), Obstacle(id: 43, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 673, xmax: 690, ymin: 532, ymax: 567))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:57.249615 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.07010607604545577, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033417072147130966), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 7.856967049451177e-06, velocity vector: Vector3D(x=1.2872749532988337e-09, y=2.7102839972314996e-09, z=7.856966476538219e-06))
+relative_time: 1850
+(1080, 1920, 3)
+W0423 21:16:57.379006 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+38轮检测到的对象:car,分数：0.9999227523803711,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=861.9903>, <tf.Tensor: shape=(), dtype=float32, numpy=554.73456>, <tf.Tensor: shape=(), dtype=float32, numpy=979.9619>, <tf.Tensor: shape=(), dtype=float32, numpy=652.58453>]
+W0423 21:16:57.683627 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 873, xmax: 993, ymin: 553, ymax: 651)), Obstacle(id: 43, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 673, xmax: 690, ymin: 532, ymax: 567))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:58.111955 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.03643989042574428, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033417072147130966), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 5.550273364711985e-06, velocity vector: Vector3D(x=9.293009384236939e-08, y=-2.0004579326382554e-08, z=5.549459274334367e-06))
+relative_time: 1900
+(1080, 1920, 3)
+W0423 21:16:58.249256 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+39轮检测到的对象:car,分数：0.9999266862869263,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=879.92773>, <tf.Tensor: shape=(), dtype=float32, numpy=555.4614>, <tf.Tensor: shape=(), dtype=float32, numpy=996.2644>, <tf.Tensor: shape=(), dtype=float32, numpy=652.86127>]
+39轮检测到的对象:speed limit 30,分数：0.5756171345710754,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1002.9402>, <tf.Tensor: shape=(), dtype=float32, numpy=501.68878>, <tf.Tensor: shape=(), dtype=float32, numpy=1025.388>, <tf.Tensor: shape=(), dtype=float32, numpy=525.94635>]
+39轮检测到的对象:person,分数：0.4007127285003662,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=705.55615>, <tf.Tensor: shape=(), dtype=float32, numpy=533.25574>, <tf.Tensor: shape=(), dtype=float32, numpy=723.91144>, <tf.Tensor: shape=(), dtype=float32, numpy=568.43933>]
+W0423 21:16:58.540479 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 889, xmax: 1006, ymin: 554, ymax: 652)), Obstacle(id: 47, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 705, xmax: 723, ymin: 533, ymax: 568))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:16:59.010983 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.02577918680982509, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033417072147130966), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 5.873659339215695e-06, velocity vector: Vector3D(x=-6.8428174238022166e-09, y=3.0285296492849056e-09, z=5.873654572496889e-06))
+relative_time: 1950
+(1080, 1920, 3)
+W0423 21:16:59.142666 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+40轮检测到的对象:car,分数：0.9999470710754395,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=891.9411>, <tf.Tensor: shape=(), dtype=float32, numpy=556.63696>, <tf.Tensor: shape=(), dtype=float32, numpy=1006.17737>, <tf.Tensor: shape=(), dtype=float32, numpy=650.156>]
+40轮检测到的对象:bicycle,分数：0.831107497215271,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=639.2922>, <tf.Tensor: shape=(), dtype=float32, numpy=562.8783>, <tf.Tensor: shape=(), dtype=float32, numpy=680.65674>, <tf.Tensor: shape=(), dtype=float32, numpy=593.64276>]
+W0423 21:16:59.435232 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 899, xmax: 1015, ymin: 555, ymax: 650)), Obstacle(id: 47, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 705, xmax: 723, ymin: 533, ymax: 568)), Obstacle(id: 49, label: bicycle, confidence: 0, bbox: BoundingBox2D(xmin: 639, xmax: 680, ymin: 562, ymax: 593))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:00.615147 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.03670797184503891, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033417072147130966), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 3.013120480052132e-06, velocity vector: Vector3D(x=-8.028008480209792e-09, y=2.8622206826867114e-09, z=3.0131084258755436e-06))
+relative_time: 2000
+(1080, 1920, 3)
+W0423 21:17:00.742791 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+41轮检测到的对象:car,分数：0.9999291896820068,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=898.1294>, <tf.Tensor: shape=(), dtype=float32, numpy=556.6937>, <tf.Tensor: shape=(), dtype=float32, numpy=1015.03656>, <tf.Tensor: shape=(), dtype=float32, numpy=650.98663>]
+41轮检测到的对象:person,分数：0.4708297550678253,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=828.342>, <tf.Tensor: shape=(), dtype=float32, numpy=531.3165>, <tf.Tensor: shape=(), dtype=float32, numpy=842.07135>, <tf.Tensor: shape=(), dtype=float32, numpy=558.00977>]
+W0423 21:17:00.989763 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 906, xmax: 1022, ymin: 555, ymax: 650)), Obstacle(id: 49, label: bicycle, confidence: 0, bbox: BoundingBox2D(xmin: 639, xmax: 680, ymin: 562, ymax: 593)), Obstacle(id: 51, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 828, xmax: 842, ymin: 531, ymax: 558))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:01.782878 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.010546442288701689, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033417072147130966), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 2.212786173079747e-06, velocity vector: Vector3D(x=-5.278945280906555e-08, y=1.9346158008914927e-09, z=2.212155550296302e-06))
+relative_time: 2050
+(1080, 1920, 3)
+W0423 21:17:01.907736 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+42轮检测到的对象:car,分数：0.9999537467956543,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=897.3966>, <tf.Tensor: shape=(), dtype=float32, numpy=558.4512>, <tf.Tensor: shape=(), dtype=float32, numpy=1027.7445>, <tf.Tensor: shape=(), dtype=float32, numpy=663.60583>]
+W0423 21:17:02.177985 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 906, xmax: 1031, ymin: 559, ymax: 660)), Obstacle(id: 51, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 828, xmax: 842, ymin: 531, ymax: 558))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:02.656379 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.10258148829813708, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341817855834961), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 1.9861279081484666e-06, velocity vector: Vector3D(x=-1.026053979558128e-07, y=2.5496884603626313e-08, z=1.9833119040413294e-06))
+relative_time: 2100
+(1080, 1920, 3)
+W0423 21:17:02.797211 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+43轮检测到的对象:car,分数：0.9999669790267944,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=895.0202>, <tf.Tensor: shape=(), dtype=float32, numpy=560.79333>, <tf.Tensor: shape=(), dtype=float32, numpy=1038.8411>, <tf.Tensor: shape=(), dtype=float32, numpy=676.8473>]
+43轮检测到的对象:person,分数：0.7036771774291992,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=824.8815>, <tf.Tensor: shape=(), dtype=float32, numpy=530.0457>, <tf.Tensor: shape=(), dtype=float32, numpy=839.2672>, <tf.Tensor: shape=(), dtype=float32, numpy=560.62524>]
+W0423 21:17:03.087474 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 904, xmax: 1041, ymin: 562, ymax: 673)), Obstacle(id: 51, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 822, xmax: 838, ymin: 529, ymax: 560))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:03.494888 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.010480948901926022, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341817855834961), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0, velocity vector: Vector3D(x=0.0, y=0.0, z=0.0))
+relative_time: 2150
+(1080, 1920, 3)
+W0423 21:17:03.616702 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+44轮检测到的对象:car,分数：0.9999608993530273,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=899.02454>, <tf.Tensor: shape=(), dtype=float32, numpy=560.50464>, <tf.Tensor: shape=(), dtype=float32, numpy=1046.2871>, <tf.Tensor: shape=(), dtype=float32, numpy=681.9334>]
+44轮检测到的对象:person,分数：0.9881454706192017,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=821.6019>, <tf.Tensor: shape=(), dtype=float32, numpy=528.0194>, <tf.Tensor: shape=(), dtype=float32, numpy=838.69183>, <tf.Tensor: shape=(), dtype=float32, numpy=563.78107>]
+W0423 21:17:03.889908 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 905, xmax: 1050, ymin: 562, ymax: 681)), Obstacle(id: 51, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 819, xmax: 837, ymin: 528, ymax: 563))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 0
+W0423 21:17:04.293802 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.0, 'throttle': 0.8080088211537014, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341817855834961), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 7.628128894823275e-07, velocity vector: Vector3D(x=5.834619454248013e-10, y=7.980142102681498e-10, z=7.628122489222733e-07))
+relative_time: 2200
+(1080, 1920, 3)
+W0423 21:17:04.424888 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+45轮检测到的对象:car,分数：0.9999369382858276,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=903.7502>, <tf.Tensor: shape=(), dtype=float32, numpy=561.3327>, <tf.Tensor: shape=(), dtype=float32, numpy=1054.5188>, <tf.Tensor: shape=(), dtype=float32, numpy=684.751>]
+W0423 21:17:04.731122 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 907, xmax: 1058, ymin: 562, ymax: 685)), Obstacle(id: 51, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 817, xmax: 835, ymin: 527, ymax: 564))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 0
+W0423 21:17:05.130460 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.0, 'throttle': 0.718100350108089, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341817855834961), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 2.9115888237059665e-07, velocity vector: Vector3D(x=4.953313492706002e-08, y=-2.2197314208938224e-08, z=2.8605461466213455e-07))
+relative_time: 2250
+(1080, 1920, 3)
+W0423 21:17:05.258633 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+46轮检测到的对象:car,分数：0.999940037727356,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=906.8214>, <tf.Tensor: shape=(), dtype=float32, numpy=559.8922>, <tf.Tensor: shape=(), dtype=float32, numpy=1058.0753>, <tf.Tensor: shape=(), dtype=float32, numpy=685.2752>]
+46轮检测到的对象:person,分数：0.9952763319015503,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=804.1043>, <tf.Tensor: shape=(), dtype=float32, numpy=527.27466>, <tf.Tensor: shape=(), dtype=float32, numpy=821.83246>, <tf.Tensor: shape=(), dtype=float32, numpy=566.9088>]
+46轮检测到的对象:car,分数：0.49888327717781067,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=903.0177>, <tf.Tensor: shape=(), dtype=float32, numpy=541.5068>, <tf.Tensor: shape=(), dtype=float32, numpy=932.1428>, <tf.Tensor: shape=(), dtype=float32, numpy=555.64185>]
+W0423 21:17:05.591627 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 909, xmax: 1064, ymin: 560, ymax: 687)), Obstacle(id: 60, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 903, xmax: 932, ymin: 541, ymax: 555)), Obstacle(id: 59, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 804, xmax: 821, ymin: 527, ymax: 566))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:06.025068 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.16129327264166968, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03341817855834961), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 6.674660657563462e-07, velocity vector: Vector3D(x=1.7736091484366057e-09, y=1.981674824236279e-09, z=6.674607675449806e-07))
+relative_time: 2300
+(1080, 1920, 3)
+W0423 21:17:06.138819 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+47轮检测到的对象:car,分数：0.9999451637268066,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=910.1017>, <tf.Tensor: shape=(), dtype=float32, numpy=562.2011>, <tf.Tensor: shape=(), dtype=float32, numpy=1055.428>, <tf.Tensor: shape=(), dtype=float32, numpy=684.0596>]
+47轮检测到的对象:person,分数：0.8803773522377014,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=788.886>, <tf.Tensor: shape=(), dtype=float32, numpy=533.7482>, <tf.Tensor: shape=(), dtype=float32, numpy=807.9839>, <tf.Tensor: shape=(), dtype=float32, numpy=566.4548>]
+47轮检测到的对象:car,分数：0.35578587651252747,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=899.79785>, <tf.Tensor: shape=(), dtype=float32, numpy=540.84436>, <tf.Tensor: shape=(), dtype=float32, numpy=928.5543>, <tf.Tensor: shape=(), dtype=float32, numpy=552.6379>]
+W0423 21:17:06.440820 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 910, xmax: 1064, ymin: 561, ymax: 688)), Obstacle(id: 60, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 898, xmax: 924, ymin: 539, ymax: 550)), Obstacle(id: 59, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 804, xmax: 821, ymin: 527, ymax: 566)), Obstacle(id: 62, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 788, xmax: 807, ymin: 533, ymax: 566))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:07.283996 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.06678396167501309, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.4299774169922, z=0.03342160955071449), rotation: Rotation(pitch=-0.0003961509501095861, yaw=-90.00040435791016, roll=0.00021892774384468794)), forward speed: 0.0011237995476140491, velocity vector: Vector3D(x=-3.942251169064548e-06, y=-0.0011237907456234097, z=2.059593271042104e-06))
+relative_time: 2350
+(1080, 1920, 3)
+W0423 21:17:07.418702 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+48轮检测到的对象:car,分数：0.9999423027038574,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=903.4589>, <tf.Tensor: shape=(), dtype=float32, numpy=562.35956>, <tf.Tensor: shape=(), dtype=float32, numpy=1055.4915>, <tf.Tensor: shape=(), dtype=float32, numpy=683.7515>]
+48轮检测到的对象:person,分数：0.9840003848075867,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=774.65216>, <tf.Tensor: shape=(), dtype=float32, numpy=532.491>, <tf.Tensor: shape=(), dtype=float32, numpy=794.4888>, <tf.Tensor: shape=(), dtype=float32, numpy=564.89056>]
+W0423 21:17:07.716993 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 906, xmax: 1061, ymin: 560, ymax: 687)), Obstacle(id: 60, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 895, xmax: 919, ymin: 537, ymax: 548)), Obstacle(id: 62, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 788, xmax: 807, ymin: 533, ymax: 566)), Obstacle(id: 65, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 774, xmax: 794, ymin: 532, ymax: 564))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:08.230569 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.07316735420789529, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9598388671875, y=249.40863037109375, z=0.03307928144931793), rotation: Rotation(pitch=0.03904135897755623, yaw=-90.00750732421875, roll=0.001996903447434306)), forward speed: 0.6280184014588341, velocity vector: Vector3D(x=-0.009018193930387497, y=-0.6279536485671997, z=-5.339686026673007e-07))
+relative_time: 2400
+(1080, 1920, 3)
+W0423 21:17:08.354848 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+49轮检测到的对象:car,分数：0.9999452829360962,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=866.69037>, <tf.Tensor: shape=(), dtype=float32, numpy=559.95447>, <tf.Tensor: shape=(), dtype=float32, numpy=1047.3541>, <tf.Tensor: shape=(), dtype=float32, numpy=683.7575>]
+49轮检测到的对象:person,分数：0.9686861634254456,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1026.13>, <tf.Tensor: shape=(), dtype=float32, numpy=529.79504>, <tf.Tensor: shape=(), dtype=float32, numpy=1042.6874>, <tf.Tensor: shape=(), dtype=float32, numpy=572.654>]
+49轮检测到的对象:car,分数：0.30472439527511597,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=795.8182>, <tf.Tensor: shape=(), dtype=float32, numpy=535.58264>, <tf.Tensor: shape=(), dtype=float32, numpy=839.5518>, <tf.Tensor: shape=(), dtype=float32, numpy=548.07227>]
+W0423 21:17:08.653238 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 879, xmax: 1047, ymin: 558, ymax: 686)), Obstacle(id: 65, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 774, xmax: 794, ymin: 532, ymax: 564)), Obstacle(id: 67, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 1026, xmax: 1042, ymin: 529, ymax: 572)), Obstacle(id: 68, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 795, xmax: 839, ymin: 535, ymax: 548))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:09.252014 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.1890704657795253, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.96002197265625, y=249.3570098876953, z=0.032597750425338745), rotation: Rotation(pitch=0.09450932592153549, yaw=-90.0002212524414, roll=-0.0013122584205120802)), forward speed: 1.2190318071340924, velocity vector: Vector3D(x=0.005953904706984758, y=-1.2190172672271729, z=-5.034561127104098e-06))
+relative_time: 2450
+(1080, 1920, 3)
+W0423 21:17:09.392307 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+50轮检测到的对象:car,分数：0.9999227523803711,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=796.07324>, <tf.Tensor: shape=(), dtype=float32, numpy=561.55084>, <tf.Tensor: shape=(), dtype=float32, numpy=1016.7428>, <tf.Tensor: shape=(), dtype=float32, numpy=684.33405>]
+50轮检测到的对象:person,分数：0.9851570129394531,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1026.878>, <tf.Tensor: shape=(), dtype=float32, numpy=525.844>, <tf.Tensor: shape=(), dtype=float32, numpy=1043.3545>, <tf.Tensor: shape=(), dtype=float32, numpy=566.42926>]
+W0423 21:17:09.682976 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 819, xmax: 1010, ymin: 558, ymax: 687)), Obstacle(id: 67, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 1026, xmax: 1043, ymin: 521, ymax: 564)), Obstacle(id: 68, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 795, xmax: 839, ymin: 535, ymax: 548))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:10.281964 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09149591488951939, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9635009765625, y=249.27757263183594, z=0.032167986035346985), rotation: Rotation(pitch=0.14401453733444214, yaw=-89.85582733154297, roll=-0.0333557166159153)), forward speed: 1.762473637014631, velocity vector: Vector3D(x=0.14299988746643066, y=-1.7566628456115723, z=-1.4283660675573628e-05))
+relative_time: 2500
+(1080, 1920, 3)
+W0423 21:17:10.415666 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+51轮检测到的对象:car,分数：0.9999473094940186,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=684.55255>, <tf.Tensor: shape=(), dtype=float32, numpy=563.8925>, <tf.Tensor: shape=(), dtype=float32, numpy=953.1423>, <tf.Tensor: shape=(), dtype=float32, numpy=686.9853>]
+51轮检测到的对象:person,分数：0.7068319320678711,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1027.7137>, <tf.Tensor: shape=(), dtype=float32, numpy=524.6551>, <tf.Tensor: shape=(), dtype=float32, numpy=1043.608>, <tf.Tensor: shape=(), dtype=float32, numpy=562.76495>]
+51轮检测到的对象:person,分数：0.6317593455314636,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=713.2439>, <tf.Tensor: shape=(), dtype=float32, numpy=540.52625>, <tf.Tensor: shape=(), dtype=float32, numpy=732.9298>, <tf.Tensor: shape=(), dtype=float32, numpy=575.6592>]
+51轮检测到的对象:car,分数：0.32817986607551575,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=780.44543>, <tf.Tensor: shape=(), dtype=float32, numpy=536.48083>, <tf.Tensor: shape=(), dtype=float32, numpy=840.4935>, <tf.Tensor: shape=(), dtype=float32, numpy=547.5957>]
+W0423 21:17:10.722424 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 42, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 809, xmax: 1005, ymin: 558, ymax: 690)), Obstacle(id: 67, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 1027, xmax: 1043, ymin: 522, ymax: 560)), Obstacle(id: 68, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 780, xmax: 836, ymin: 535, ymax: 547)), Obstacle(id: 73, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 713, xmax: 732, ymin: 540, ymax: 575)), Obstacle(id: 71, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 684, xmax: 953, ymin: 563, ymax: 686))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:11.908360 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.15311667118152048, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9682312011719, y=249.17202758789062, z=0.03183748200535774), rotation: Rotation(pitch=0.18206551671028137, yaw=-89.67098236083984, roll=-0.0374145470559597)), forward speed: 2.2782662649063004, velocity vector: Vector3D(x=0.1315389722585678, y=-2.274465799331665, z=-1.6057198081398383e-05))
+relative_time: 2550
+(1080, 1920, 3)
+W0423 21:17:12.035246 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+52轮检测到的对象:car,分数：0.9999598264694214,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=537.48676>, <tf.Tensor: shape=(), dtype=float32, numpy=567.0777>, <tf.Tensor: shape=(), dtype=float32, numpy=850.85254>, <tf.Tensor: shape=(), dtype=float32, numpy=691.3402>]
+52轮检测到的对象:car,分数：0.9947366118431091,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=864.5431>, <tf.Tensor: shape=(), dtype=float32, numpy=540.7029>, <tf.Tensor: shape=(), dtype=float32, numpy=906.57117>, <tf.Tensor: shape=(), dtype=float32, numpy=553.46295>]
+W0423 21:17:12.338420 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 67, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 1028, xmax: 1043, ymin: 519, ymax: 556)), Obstacle(id: 68, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 775, xmax: 833, ymin: 535, ymax: 547)), Obstacle(id: 73, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 713, xmax: 732, ymin: 540, ymax: 575)), Obstacle(id: 71, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 684, xmax: 953, ymin: 563, ymax: 686)), Obstacle(id: 75, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 537, xmax: 850, ymin: 567, ymax: 691)), Obstacle(id: 76, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 864, xmax: 906, ymin: 540, ymax: 553))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:13.604528 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.002685482287695782, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9681701660156, y=249.0424041748047, z=0.031617794185876846), rotation: Rotation(pitch=0.20731672644615173, yaw=-89.7100601196289, roll=0.013361050747334957)), forward speed: 2.7433671614511175, velocity vector: Vector3D(x=-0.049137018620967865, y=-2.742927074432373, z=-1.6591166058788076e-05))
+relative_time: 2600
+(1080, 1920, 3)
+W0423 21:17:13.730352 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+53轮检测到的对象:car,分数：0.9999169111251831,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=337.72012>, <tf.Tensor: shape=(), dtype=float32, numpy=566.2862>, <tf.Tensor: shape=(), dtype=float32, numpy=694.4417>, <tf.Tensor: shape=(), dtype=float32, numpy=704.03613>]
+53轮检测到的对象:person,分数：0.9845214486122131,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=654.7031>, <tf.Tensor: shape=(), dtype=float32, numpy=551.8655>, <tf.Tensor: shape=(), dtype=float32, numpy=682.8225>, <tf.Tensor: shape=(), dtype=float32, numpy=594.41956>]
+53轮检测到的对象:speed limit 60,分数：0.9052636027336121,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1032.1772>, <tf.Tensor: shape=(), dtype=float32, numpy=531.8759>, <tf.Tensor: shape=(), dtype=float32, numpy=1052.779>, <tf.Tensor: shape=(), dtype=float32, numpy=551.6333>]
+W0423 21:17:14.002829 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 75, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 537, xmax: 850, ymin: 567, ymax: 691)), Obstacle(id: 76, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 864, xmax: 906, ymin: 540, ymax: 553)), Obstacle(id: 77, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 337, xmax: 694, ymin: 566, ymax: 704)), Obstacle(id: 78, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 654, xmax: 682, ymin: 551, ymax: 594))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:15.450046 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.026359506717291918, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9644470214844, y=248.890380859375, z=0.031489238142967224), rotation: Rotation(pitch=0.22207675874233246, yaw=-89.90193939208984, roll=0.046017661690711975)), forward speed: 3.18567773898984, velocity vector: Vector3D(x=-0.12190699577331543, y=-3.1833443641662598, z=-1.4417152669921052e-05))
+relative_time: 2650
+(1080, 1920, 3)
+W0423 21:17:15.578339 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+54轮检测到的对象:car,分数：0.9999641180038452,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=63.38598>, <tf.Tensor: shape=(), dtype=float32, numpy=574.09424>, <tf.Tensor: shape=(), dtype=float32, numpy=495.72162>, <tf.Tensor: shape=(), dtype=float32, numpy=722.562>]
+54轮检测到的对象:person,分数：0.9997419714927673,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=625.7933>, <tf.Tensor: shape=(), dtype=float32, numpy=554.1362>, <tf.Tensor: shape=(), dtype=float32, numpy=656.7397>, <tf.Tensor: shape=(), dtype=float32, numpy=600.09485>]
+54轮检测到的对象:speed limit 30,分数：0.5433716773986816,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1038.0774>, <tf.Tensor: shape=(), dtype=float32, numpy=530.8819>, <tf.Tensor: shape=(), dtype=float32, numpy=1061.9661>, <tf.Tensor: shape=(), dtype=float32, numpy=552.982>]
+54轮检测到的对象:speed limit 60,分数：0.3776584565639496,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1037.8163>, <tf.Tensor: shape=(), dtype=float32, numpy=532.3172>, <tf.Tensor: shape=(), dtype=float32, numpy=1061.517>, <tf.Tensor: shape=(), dtype=float32, numpy=553.0346>]
+W0423 21:17:15.866042 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 77, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 337, xmax: 694, ymin: 566, ymax: 704)), Obstacle(id: 78, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 654, xmax: 682, ymin: 551, ymax: 594)), Obstacle(id: 80, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 63, xmax: 495, ymin: 574, ymax: 722)), Obstacle(id: 81, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 625, xmax: 656, ymin: 554, ymax: 600))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:17.670000 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.04981066066121677, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.96533203125, y=248.7177276611328, z=0.031435754150152206), rotation: Rotation(pitch=0.22819660604000092, yaw=-89.878173828125, roll=0.0005487006274051964)), forward speed: 3.585150195385591, velocity vector: Vector3D(x=0.06333740800619125, y=-3.5845906734466553, z=-7.723474482190795e-06))
+relative_time: 2700
+(1080, 1920, 3)
+W0423 21:17:17.805074 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+55轮检测到的对象:speed limit 60,分数：0.8989214301109314,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1045.9093>, <tf.Tensor: shape=(), dtype=float32, numpy=529.7319>, <tf.Tensor: shape=(), dtype=float32, numpy=1069.543>, <tf.Tensor: shape=(), dtype=float32, numpy=552.14996>]
+55轮检测到的对象:person,分数：0.40806442499160767,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=583.5192>, <tf.Tensor: shape=(), dtype=float32, numpy=548.2317>, <tf.Tensor: shape=(), dtype=float32, numpy=616.4005>, <tf.Tensor: shape=(), dtype=float32, numpy=604.38043>]
+W0423 21:17:18.065081 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 80, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 63, xmax: 495, ymin: 574, ymax: 722)), Obstacle(id: 81, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 625, xmax: 656, ymin: 554, ymax: 600)), Obstacle(id: 85, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 583, xmax: 616, ymin: 548, ymax: 604))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:19.560883 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.07692748863692879, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.96630859375, y=248.525634765625, z=0.03143174946308136), rotation: Rotation(pitch=0.2286405712366104, yaw=-89.85079956054688, roll=-0.0012512285029515624)), forward speed: 3.9677720618168757, velocity vector: Vector3D(x=0.01404280960559845, y=-3.967747211456299, z=-3.6996395920141367e-06))
+relative_time: 2750
+(1080, 1920, 3)
+W0423 21:17:19.692919 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+56轮检测到的对象:person,分数：0.9991342425346375,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=530.4395>, <tf.Tensor: shape=(), dtype=float32, numpy=547.7222>, <tf.Tensor: shape=(), dtype=float32, numpy=570.5357>, <tf.Tensor: shape=(), dtype=float32, numpy=614.4758>]
+56轮检测到的对象:speed limit 90,分数：0.6313589811325073,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1052.0388>, <tf.Tensor: shape=(), dtype=float32, numpy=524.57324>, <tf.Tensor: shape=(), dtype=float32, numpy=1081.3116>, <tf.Tensor: shape=(), dtype=float32, numpy=553.50037>]
+56轮检测到的对象:speed limit 60,分数：0.4460548460483551,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1053.2507>, <tf.Tensor: shape=(), dtype=float32, numpy=525.3915>, <tf.Tensor: shape=(), dtype=float32, numpy=1079.1327>, <tf.Tensor: shape=(), dtype=float32, numpy=553.1633>]
+56轮检测到的对象:person,分数：0.4268442690372467,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=711.4918>, <tf.Tensor: shape=(), dtype=float32, numpy=534.6609>, <tf.Tensor: shape=(), dtype=float32, numpy=726.8198>, <tf.Tensor: shape=(), dtype=float32, numpy=553.5804>]
+56轮检测到的对象:person,分数：0.41131654381752014,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=731.135>, <tf.Tensor: shape=(), dtype=float32, numpy=533.20056>, <tf.Tensor: shape=(), dtype=float32, numpy=742.3382>, <tf.Tensor: shape=(), dtype=float32, numpy=553.01575>]
+W0423 21:17:19.978186 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 85, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 583, xmax: 616, ymin: 548, ymax: 604)), Obstacle(id: 86, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 530, xmax: 570, ymin: 547, ymax: 614)), Obstacle(id: 89, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 711, xmax: 726, ymin: 534, ymax: 553)), Obstacle(id: 90, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 731, xmax: 742, ymin: 533, ymax: 553))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:21.422509 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.03971242723262819, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9644470214844, y=248.31546020507812, z=0.03146535903215408), rotation: Rotation(pitch=0.224754199385643, yaw=-89.95036315917969, roll=0.021747488528490067)), forward speed: 4.320972281710924, velocity vector: Vector3D(x=-0.07267118990421295, y=-4.320361137390137, z=1.0107263506142772e-06))
+relative_time: 2800
+(1080, 1920, 3)
+W0423 21:17:21.569574 135062192391744 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+57轮检测到的对象:person,分数：0.99972003698349,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=461.67844>, <tf.Tensor: shape=(), dtype=float32, numpy=555.9552>, <tf.Tensor: shape=(), dtype=float32, numpy=507.148>, <tf.Tensor: shape=(), dtype=float32, numpy=623.1553>]
+57轮检测到的对象:speed limit 30,分数：0.9934110045433044,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1065.2859>, <tf.Tensor: shape=(), dtype=float32, numpy=525.0816>, <tf.Tensor: shape=(), dtype=float32, numpy=1095.9751>, <tf.Tensor: shape=(), dtype=float32, numpy=555.66113>]
+W0423 21:17:21.854617 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 86, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 530, xmax: 570, ymin: 547, ymax: 614)), Obstacle(id: 89, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 711, xmax: 726, ymin: 534, ymax: 553)), Obstacle(id: 90, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 731, xmax: 742, ymin: 533, ymax: 553)), Obstacle(id: 91, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 461, xmax: 507, ymin: 555, ymax: 623))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:23.044118 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12904073883281308, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+(1080, 1920, 3)
+W0423 21:17:23.159460 135062305637952 CustomImageStream_obstacle.py:103] send msg
+pose Pose(transform: Transform(location: Location(x=395.95855712890625, y=248.08865356445312, z=0.03152669966220856), rotation: Rotation(pitch=0.21769177913665771, yaw=-90.20556640625, roll=0.053914617747068405)), forward speed: 4.648195691517994, velocity vector: Vector3D(x=-0.187557190656662, y=-4.644410133361816, z=2.3456477720174007e-06))
+relative_time: 2850
+障碍物保存npy完毕.......
+58轮检测到的对象:speed limit 30,分数：0.9981757402420044,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1076.0706>, <tf.Tensor: shape=(), dtype=float32, numpy=519.56805>, <tf.Tensor: shape=(), dtype=float32, numpy=1113.9875>, <tf.Tensor: shape=(), dtype=float32, numpy=558.8125>]
+58轮检测到的对象:person,分数：0.3794788718223572,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=371.06107>, <tf.Tensor: shape=(), dtype=float32, numpy=575.15735>, <tf.Tensor: shape=(), dtype=float32, numpy=425.17612>, <tf.Tensor: shape=(), dtype=float32, numpy=642.4907>]
+W0423 21:17:23.442400 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 91, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 461, xmax: 507, ymin: 555, ymax: 623)), Obstacle(id: 94, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 371, xmax: 425, ymin: 575, ymax: 642))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:24.501873 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.08901462212094524, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.94952392578125, y=247.8461456298828, z=0.03160150349140167), rotation: Rotation(pitch=0.209065243601799, yaw=-90.55377197265625, roll=0.07243503630161285)), forward speed: 4.958701349672822, velocity vector: Vector3D(x=-0.26095902919769287, y=-4.95182991027832, z=5.14898317760526e-07))
+relative_time: 2900
+(1080, 1920, 3)
+W0423 21:17:24.654795 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+59轮检测到的对象:speed limit 30,分数：0.9958645105361938,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1095.5416>, <tf.Tensor: shape=(), dtype=float32, numpy=515.76337>, <tf.Tensor: shape=(), dtype=float32, numpy=1139.6975>, <tf.Tensor: shape=(), dtype=float32, numpy=560.5854>]
+59轮检测到的对象:person,分数：0.307338684797287,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=225.8761>, <tf.Tensor: shape=(), dtype=float32, numpy=575.70544>, <tf.Tensor: shape=(), dtype=float32, numpy=300.3188>, <tf.Tensor: shape=(), dtype=float32, numpy=669.5229>]
+W0423 21:17:24.941236 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 94, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 371, xmax: 425, ymin: 575, ymax: 642)), Obstacle(id: 96, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 225, xmax: 300, ymin: 575, ymax: 669))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:26.156265 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.11161132837372617, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9444580078125, y=247.5887908935547, z=0.03230348601937294), rotation: Rotation(pitch=0.19850577414035797, yaw=-90.67455291748047, roll=0.011631481349468231)), forward speed: 5.247604687229801, velocity vector: Vector3D(x=-0.0901399701833725, y=-5.246809005737305, z=0.01499988418072462))
+relative_time: 2950
+(1080, 1920, 3)
+W0423 21:17:26.301745 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+60轮检测到的对象:speed limit 30,分数：0.9995496869087219,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1117.3181>, <tf.Tensor: shape=(), dtype=float32, numpy=514.1336>, <tf.Tensor: shape=(), dtype=float32, numpy=1171.4362>, <tf.Tensor: shape=(), dtype=float32, numpy=563.8308>]
+60轮检测到的对象:person,分数：0.8626620769500732,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=0.0>, <tf.Tensor: shape=(), dtype=float32, numpy=596.9338>, <tf.Tensor: shape=(), dtype=float32, numpy=100.08961>, <tf.Tensor: shape=(), dtype=float32, numpy=707.8327>]
+W0423 21:17:26.588926 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 96, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 225, xmax: 300, ymin: 575, ymax: 669)), Obstacle(id: 98, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 0, xmax: 100, ymin: 596, ymax: 707))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 0
+W0423 21:17:27.540812 135062326609472 mpc_operator.py:92] control_msg:{'steer': -0.0010782307198951176, 'throttle': 0.0, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.94757080078125, y=247.31802368164062, z=0.03274640813469887), rotation: Rotation(pitch=0.1867646872997284, yaw=-90.40773010253906, roll=-0.0846557468175888)), forward speed: 5.502742867459998, velocity vector: Vector3D(x=0.18864639103412628, y=-5.499506950378418, z=0.003860993543639779))
+relative_time: 3000
+(1080, 1920, 3)
+W0423 21:17:27.680666 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+61轮检测到的对象:speed limit 30,分数：0.9994702935218811,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1155.3221>, <tf.Tensor: shape=(), dtype=float32, numpy=509.5598>, <tf.Tensor: shape=(), dtype=float32, numpy=1214.7552>, <tf.Tensor: shape=(), dtype=float32, numpy=565.66925>]
+W0423 21:17:27.975764 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 98, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 0, xmax: 100, ymin: 596, ymax: 707))]
+Planning运行成功...........
+World update run True
+rrt_star_wrapper运行..................!!!!!!!!!!!!!!!!!!!!!!!!11
+种子是.............. 42
+rrt_star结果: 1
+W0423 21:17:28.761477 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09503163824690923, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9549865722656, y=247.03419494628906, z=0.03286760300397873), rotation: Rotation(pitch=0.17719559371471405, yaw=-89.9881591796875, roll=-0.100494384765625)), forward speed: 5.7706981093006195, velocity vector: Vector3D(x=0.23713289201259613, y=-5.765823841094971, z=-0.000306059344438836))
+relative_time: 3050
+(1080, 1920, 3)
+W0423 21:17:28.900388 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+62轮检测到的对象:speed limit 30,分数：0.9995701909065247,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1205.9669>, <tf.Tensor: shape=(), dtype=float32, numpy=498.62177>, <tf.Tensor: shape=(), dtype=float32, numpy=1283.3658>, <tf.Tensor: shape=(), dtype=float32, numpy=573.3905>]
+W0423 21:17:29.164300 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:29.490941 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10089675122454742, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9572448730469, y=246.7377471923828, z=0.03287896886467934), rotation: Rotation(pitch=0.16840513050556183, yaw=-89.86919403076172, roll=-0.018310554325580597)), forward speed: 6.013201449898825, velocity vector: Vector3D(x=0.02803092449903488, y=-6.01313591003418, z=-0.0015721941599622369))
+relative_time: 3100
+(1080, 1920, 3)
+W0423 21:17:29.624188 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+63轮检测到的对象:speed limit 30,分数：0.9997060894966125,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1293.963>, <tf.Tensor: shape=(), dtype=float32, numpy=484.69577>, <tf.Tensor: shape=(), dtype=float32, numpy=1399.55>, <tf.Tensor: shape=(), dtype=float32, numpy=584.69867>]
+W0423 21:17:29.908377 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:30.220700 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.1101740734553517, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9626159667969, y=246.42930603027344, z=0.03286340460181236), rotation: Rotation(pitch=0.16027721762657166, yaw=-89.68097686767578, roll=-0.0465393140912056)), forward speed: 6.250940152466539, velocity vector: Vector3D(x=0.1708105057477951, y=-6.248605728149414, z=-0.001736370613798499))
+relative_time: 3150
+(1080, 1920, 3)
+W0423 21:17:30.346418 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+64轮检测到的对象:speed limit 30,分数：0.9998171925544739,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1485.1042>, <tf.Tensor: shape=(), dtype=float32, numpy=453.3058>, <tf.Tensor: shape=(), dtype=float32, numpy=1658.3179>, <tf.Tensor: shape=(), dtype=float32, numpy=613.9693>]
+W0423 21:17:30.608500 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:30.919790 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.11451408377480718, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9597473144531, y=246.11036682128906, z=0.032868172973394394), rotation: Rotation(pitch=0.15045540034770966, yaw=-89.85723876953125, roll=0.0689205676317215)), forward speed: 6.440610135541208, velocity vector: Vector3D(x=-0.21240325272083282, y=-6.437106609344482, z=-0.0015087091596797109))
+relative_time: 3200
+(1080, 1920, 3)
+W0423 21:17:31.054757 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+65轮检测到的对象:person,分数：0.5637948513031006,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=724.2321>, <tf.Tensor: shape=(), dtype=float32, numpy=539.47046>, <tf.Tensor: shape=(), dtype=float32, numpy=737.7845>, <tf.Tensor: shape=(), dtype=float32, numpy=560.6816>]
+W0423 21:17:31.332739 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 103, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 724, xmax: 737, ymin: 539, ymax: 560))]
+Planning运行成功...........
+World update run True
+W0423 21:17:31.652786 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.13051565913250318, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9574890136719, y=245.7813262939453, z=0.032875653356313705), rotation: Rotation(pitch=0.1420542597770691, yaw=-90.0189208984375, roll=0.012553106062114239)), forward speed: 6.647150650821129, velocity vector: Vector3D(x=0.0351637564599514, y=-6.64705753326416, z=-0.0011976725654676557))
+relative_time: 3250
+(1080, 1920, 3)
+W0423 21:17:31.797486 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:32.093209 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 103, label: person, confidence: 0, bbox: BoundingBox2D(xmin: 724, xmax: 737, ymin: 539, ymax: 560))]
+Planning运行成功...........
+World update run True
+W0423 21:17:32.396288 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.11170690055635263, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9571533203125, y=245.44158935546875, z=0.032875001430511475), rotation: Rotation(pitch=0.13636471331119537, yaw=-90.0289306640625, roll=0.006413285620510578)), forward speed: 6.868608909122258, velocity vector: Vector3D(x=-0.02011760137975216, y=-6.868579387664795, z=-0.0009077084832824767))
+relative_time: 3300
+(1080, 1920, 3)
+W0423 21:17:32.518030 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:32.766507 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:33.065372 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12236950305142559, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9668273925781, y=245.09298706054688, z=0.03290826827287674), rotation: Rotation(pitch=0.12835291028022766, yaw=-89.62249755859375, roll=-0.11547849327325821)), forward speed: 7.0297233253624585, velocity vector: Vector3D(x=0.39330753684043884, y=-7.018712043762207, z=-0.0006777587113901973))
+relative_time: 3350
+(1080, 1920, 3)
+W0423 21:17:33.184075 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:33.437143 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:33.734297 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12380688398586574, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9765625, y=244.73529052734375, z=0.032930925488471985), rotation: Rotation(pitch=0.12239698320627213, yaw=-89.258544921875, roll=-0.0487060546875)), forward speed: 7.215736836629394, velocity vector: Vector3D(x=0.13687904179096222, y=-7.214438438415527, z=-0.0004916515899822116))
+relative_time: 3400
+(1080, 1920, 3)
+W0423 21:17:33.869799 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:34.157722 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:34.448538 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.0936729485306218, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.97491455078125, y=244.36854553222656, z=0.03295598924160004), rotation: Rotation(pitch=0.11724702268838882, yaw=-89.49444580078125, roll=0.0682024136185646)), forward speed: 7.399131145285726, velocity vector: Vector3D(x=-0.1322457492351532, y=-7.39794921875, z=-0.00035177089739590883))
+relative_time: 3450
+(1080, 1920, 3)
+W0423 21:17:34.578679 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+70轮检测到的对象:car,分数：0.6453713178634644,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=843.0538>, <tf.Tensor: shape=(), dtype=float32, numpy=539.1652>, <tf.Tensor: shape=(), dtype=float32, numpy=880.4095>, <tf.Tensor: shape=(), dtype=float32, numpy=554.9349>]
+W0423 21:17:34.848063 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 104, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 843, xmax: 880, ymin: 539, ymax: 554))]
+Planning运行成功...........
+World update run True
+W0423 21:17:35.140348 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10931890831974254, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9768981933594, y=243.99227905273438, z=0.03296605870127678), rotation: Rotation(pitch=0.11444664001464844, yaw=-89.58476257324219, roll=0.009128095582127571)), forward speed: 7.59034582198627, velocity vector: Vector3D(x=0.07382406294345856, y=-7.589986801147461, z=-0.0002519568952266127))
+relative_time: 3500
+(1080, 1920, 3)
+W0423 21:17:35.268115 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+71轮检测到的对象:car,分数：0.960148811340332,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=835.2028>, <tf.Tensor: shape=(), dtype=float32, numpy=538.8683>, <tf.Tensor: shape=(), dtype=float32, numpy=883.4732>, <tf.Tensor: shape=(), dtype=float32, numpy=554.7231>]
+W0423 21:17:35.576916 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 104, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 833, xmax: 882, ymin: 536, ymax: 554))]
+Planning运行成功...........
+World update run True
+W0423 21:17:35.880597 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09329639081753197, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9790954589844, y=243.60618591308594, z=0.03296811878681183), rotation: Rotation(pitch=0.11301913112401962, yaw=-89.61446380615234, roll=0.009955496527254581)), forward speed: 7.787315018796526, velocity vector: Vector3D(x=0.028485745191574097, y=-7.787262916564941, z=-0.0001805195352062583))
+relative_time: 3550
+(1080, 1920, 3)
+W0423 21:17:36.032182 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:36.310201 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 104, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 827, xmax: 882, ymin: 535, ymax: 555))]
+Planning运行成功...........
+World update run True
+W0423 21:17:36.596978 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.103433532726368, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9783630371094, y=243.2105255126953, z=0.0329725444316864), rotation: Rotation(pitch=0.11167358607053757, yaw=-89.76138305664062, roll=0.03747544065117836)), forward speed: 7.97714343282741, velocity vector: Vector3D(x=-0.06187780201435089, y=-7.976903438568115, z=-0.00013145162665750831))
+relative_time: 3600
+(1080, 1920, 3)
+W0423 21:17:36.745459 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:37.002815 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:37.306392 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.11896786708504657, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9708557128906, y=242.80604553222656, z=0.032988909631967545), rotation: Rotation(pitch=0.10918739438056946, yaw=-90.16167449951172, roll=0.09828459471464157)), forward speed: 8.152155855503413, velocity vector: Vector3D(x=-0.2703821361064911, y=-8.14767074584961, z=-0.0001005958765745163))
+relative_time: 3650
+(1080, 1920, 3)
+W0423 21:17:37.431531 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:37.709435 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:38.106809 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.11054099021579261, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9611511230469, y=242.39244079589844, z=0.032998066395521164), rotation: Rotation(pitch=0.10766426473855972, yaw=-90.57534790039062, roll=0.08965682238340378)), forward speed: 8.338343259694406, velocity vector: Vector3D(x=-0.27297738194465637, y=-8.333873748779297, z=-6.960661994526163e-05))
+relative_time: 3700
+(1080, 1920, 3)
+W0423 21:17:38.236888 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:38.564258 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:38.857710 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.133685370263805, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.943115234375, y=241.97085571289062, z=0.033025722950696945), rotation: Rotation(pitch=0.10420819371938705, yaw=-91.2125244140625, roll=0.1575845330953598)), forward speed: 8.494924888703359, velocity vector: Vector3D(x=-0.5654242038726807, y=-8.476086616516113, z=-6.08533518970944e-05))
+relative_time: 3750
+(1080, 1920, 3)
+W0423 21:17:38.986059 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:39.290488 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:39.620927 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.12783166922026573, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9270324707031, y=241.5410614013672, z=0.03304674103856087), rotation: Rotation(pitch=0.10141464322805405, yaw=-91.61468505859375, roll=0.06525932252407074)), forward speed: 8.655904508772373, velocity vector: Vector3D(x=-0.30449792742729187, y=-8.65054702758789, z=-2.5859337256406434e-05))
+relative_time: 3800
+(1080, 1920, 3)
+W0423 21:17:39.751871 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:40.036638 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:40.366668 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.15797922664358333, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9237365722656, y=241.1041717529297, z=0.03309190645813942), rotation: Rotation(pitch=0.09622369706630707, yaw=-91.3079833984375, roll=-0.091827392578125)), forward speed: 8.780952823250807, velocity vector: Vector3D(x=0.10659008473157883, y=-8.780305862426758, z=-1.5084612641658168e-05))
+relative_time: 3850
+(1080, 1920, 3)
+W0423 21:17:40.509218 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:40.802978 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:41.119336 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.17040460497012458, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.92706298828125, y=240.66310119628906, z=0.033183954656124115), rotation: Rotation(pitch=0.08555494248867035, yaw=-90.70881652832031, roll=-0.12960809469223022)), forward speed: 8.82827267129346, velocity vector: Vector3D(x=0.19767361879348755, y=-8.826059341430664, z=-2.616446181491483e-05))
+relative_time: 3900
+(1080, 1920, 3)
+W0423 21:17:41.256064 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:41.524079 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:41.851509 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.131456547358423, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9396667480469, y=240.22377014160156, z=0.03335927799344063), rotation: Rotation(pitch=0.06536490470170975, yaw=-89.8703384399414, roll=-0.1936035305261612)), forward speed: 8.789303175812917, velocity vector: Vector3D(x=0.47849082946777344, y=-8.77626895904541, z=-3.108460077783093e-05))
+relative_time: 3950
+(1080, 1920, 3)
+W0423 21:17:41.996490 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:42.277899 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:42.599151 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.13154212867843268, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9554748535156, y=239.7848358154297, z=0.033500537276268005), rotation: Rotation(pitch=0.04890415072441101, yaw=-89.11148071289062, roll=-0.1616515964269638)), forward speed: 8.791530497850584, velocity vector: Vector3D(x=0.4551756978034973, y=-8.779739379882812, z=-1.0050051969301421e-05))
+relative_time: 4000
+(1080, 1920, 3)
+W0423 21:17:42.718359 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:43.017230 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:43.341148 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09431339906698163, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9642028808594, y=239.34661865234375, z=0.03362318128347397), rotation: Rotation(pitch=0.034594904631376266, yaw=-88.89286804199219, roll=-0.029174795374274254)), forward speed: 8.758782848823683, velocity vector: Vector3D(x=0.13328765332698822, y=-8.757768630981445, z=2.271273660880979e-05))
+relative_time: 4050
+(1080, 1920, 3)
+W0423 21:17:43.462673 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:43.729883 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:44.040583 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10053778241541944, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9684143066406, y=238.90904235839844, z=0.03371328115463257), rotation: Rotation(pitch=0.024288151413202286, yaw=-89.0231704711914, roll=0.026388557627797127)), forward speed: 8.75115389273167, velocity vector: Vector3D(x=0.042643073946237564, y=-8.751049995422363, z=1.1632886526058428e-05))
+relative_time: 4100
+(1080, 1920, 3)
+W0423 21:17:44.181107 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:44.453949 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:44.757791 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.08624451798440068, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9641418457031, y=238.4727020263672, z=0.03379194065928459), rotation: Rotation(pitch=0.015320113860070705, yaw=-89.515869140625, roll=0.11953229457139969)), forward speed: 8.719064118065182, velocity vector: Vector3D(x=-0.264896035194397, y=-8.715039253234863, z=-6.750889042450581e-06))
+relative_time: 4150
+(1080, 1920, 3)
+W0423 21:17:44.898383 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:45.167690 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:45.507516 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10898161317494408, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.96392822265625, y=238.03794860839844, z=0.03385438770055771), rotation: Rotation(pitch=0.008032302372157574, yaw=-89.75831604003906, roll=0.011694133281707764)), forward speed: 8.677632427074853, velocity vector: Vector3D(x=0.09679555892944336, y=-8.677092552185059, z=2.6698430701799225e-06))
+relative_time: 4200
+(1080, 1920, 3)
+W0423 21:17:45.639370 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:45.893142 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:46.190189 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09856401334824287, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9656982421875, y=237.60458374023438, z=0.03389829397201538), rotation: Rotation(pitch=0.002991622779518366, yaw=-89.78382873535156, roll=0.017112987115979195)), forward speed: 8.662649809090363, velocity vector: Vector3D(x=-0.039761610329151154, y=-8.662558555603027, z=5.110842266731197e-06))
+relative_time: 4250
+(1080, 1920, 3)
+W0423 21:17:46.321787 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:46.617561 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:46.961626 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10982795000250144, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.95892333984375, y=237.17218017578125, z=0.033924996852874756), rotation: Rotation(pitch=-3.415094397496432e-05, yaw=-90.14886474609375, roll=0.08869432657957077)), forward speed: 8.645785496759352, velocity vector: Vector3D(x=-0.250438928604126, y=-8.642157554626465, z=-5.168053121451521e-06))
+relative_time: 4300
+(1080, 1920, 3)
+W0423 21:17:47.098700 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:47.365415 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:47.690271 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.133316731727533, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9537353515625, y=236.7403106689453, z=0.03393430635333061), rotation: Rotation(pitch=-0.0011611321242526174, yaw=-90.37870788574219, roll=0.04184040054678917)), forward speed: 8.636252733887536, velocity vector: Vector3D(x=-0.1177213191986084, y=-8.63545036315918, z=2.6698430133365036e-07))
+relative_time: 4350
+(1080, 1920, 3)
+W0423 21:17:47.814388 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:48.084656 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:48.389591 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.120204249832844, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.946044921875, y=236.3041229248047, z=0.03383810073137283), rotation: Rotation(pitch=0.009931094944477081, yaw=-90.61450958251953, roll=0.057227522134780884)), forward speed: 8.8134769461207, velocity vector: Vector3D(x=-0.2225736528635025, y=-8.81066608428955, z=1.3730621049035108e-06))
+relative_time: 4400
+(1080, 1920, 3)
+W0423 21:17:48.512536 135062213363264 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:48.783587 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:49.075319 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.14140761696917337, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9445495605469, y=235.85562133789062, z=0.033628445118665695), rotation: Rotation(pitch=0.03408947214484215, yaw=-90.52848815917969, roll=-0.0330810509622097)), forward speed: 9.045592755708235, velocity vector: Vector3D(x=0.04816635325551033, y=-9.045464515686035, z=4.0047643778962083e-07))
+relative_time: 4450
+(1080, 1920, 3)
+W0423 21:17:49.222362 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:49.479157 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:49.816396 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.11760962058582569, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9416198730469, y=235.39524841308594, z=0.03342790529131889), rotation: Rotation(pitch=0.0571618489921093, yaw=-90.4614028930664, roll=-0.0054931617341935635)), forward speed: 9.283123329474726, velocity vector: Vector3D(x=-0.07400626689195633, y=-9.282828330993652, z=-5.14898317760526e-07))
+relative_time: 4500
+(1080, 1920, 3)
+W0423 21:17:49.951888 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:50.218997 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:50.531149 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.13606167897770435, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9457092285156, y=234.92434692382812, z=0.033288441598415375), rotation: Rotation(pitch=0.07327426224946976, yaw=-90.1307373046875, roll=-0.0848998874425888)), forward speed: 9.486855203195633, velocity vector: Vector3D(x=0.2096642255783081, y=-9.484538078308105, z=-6.026216851751087e-06))
+relative_time: 4550
+(1080, 1920, 3)
+W0423 21:17:50.685567 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:50.956708 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:51.257301 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10786539732792792, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.96099853515625, y=234.44415283203125, z=0.03320417180657387), rotation: Rotation(pitch=0.08308924734592438, yaw=-89.38288116455078, roll=-0.176544189453125)), forward speed: 9.676052415899026, velocity vector: Vector3D(x=0.5180003046989441, y=-9.662177085876465, z=-2.6850993890548125e-05))
+relative_time: 4600
+(1080, 1920, 3)
+W0423 21:17:51.396625 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:51.668156 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:52.007599 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10783024940050988, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9769592285156, y=233.95379638671875, z=0.033132340759038925), rotation: Rotation(pitch=0.09113521128892899, yaw=-88.77906036376953, roll=-0.1226806789636612)), forward speed: 9.882298941467093, velocity vector: Vector3D(x=0.4060630202293396, y=-9.873952865600586, z=-4.672225259128027e-06))
+relative_time: 4650
+(1080, 1920, 3)
+W0423 21:17:52.147298 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:52.434273 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:52.726221 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.07839563998300204, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9984436035156, y=233.45384216308594, z=0.03309023007750511), rotation: Rotation(pitch=0.09605294466018677, yaw=-88.17949676513672, roll=-0.1436157077550888)), forward speed: 10.073743261901011, velocity vector: Vector3D(x=0.5887467861175537, y=-10.056524276733398, z=-2.0214527012285544e-06))
+relative_time: 4700
+(1080, 1920, 3)
+W0423 21:17:52.860057 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:53.175634 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:53.462820 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.07303780554957968, 'throttle': 0.0, 'brake': 0.3312603579246466, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=396.016357421875, y=232.94483947753906, z=0.03307317569851875), rotation: Rotation(pitch=0.09787660837173462, yaw=-87.93389129638672, roll=-0.045410145074129105)), forward speed: 10.242112288821328, velocity vector: Vector3D(x=0.33752182126045227, y=-10.236549377441406, z=1.420737953594653e-05))
+relative_time: 4750
+(1080, 1920, 3)
+W0423 21:17:53.603809 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:53.894537 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:54.176411 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.05195636162092538, 'throttle': 0.0, 'brake': 0.01618227665492622, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=396.0244445800781, y=232.42906188964844, z=0.03310922533273697), rotation: Rotation(pitch=0.0937580019235611, yaw=-88.27446746826172, roll=0.0775701031088829)), forward speed: 10.350553824644036, velocity vector: Vector3D(x=0.02236095815896988, y=-10.350529670715332, z=6.712748472637031e-06))
+relative_time: 4800
+(1080, 1920, 3)
+W0423 21:17:54.306603 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:54.605699 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:54.874307 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.06848910479346346, 'throttle': 0.0, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=396.02294921875, y=231.91102600097656, z=0.03322591632604599), rotation: Rotation(pitch=0.08039132505655289, yaw=-89.01937866210938, roll=0.15710753202438354)), forward speed: 10.361411466497616, velocity vector: Vector3D(x=-0.22484451532363892, y=-10.35897159576416, z=-1.2185925697849598e-05))
+relative_time: 4850
+(1080, 1920, 3)
+W0423 21:17:55.017738 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:55.274411 135062326609472 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:55.601637 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.072925074407774, 'throttle': 0.0, 'brake': 0.5401335987629067, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=396.0164794921875, y=231.39613342285156, z=0.033428553491830826), rotation: Rotation(pitch=0.05697060376405716, yaw=-89.80870819091797, roll=0.159817636013031)), forward speed: 10.266442009202187, velocity vector: Vector3D(x=-0.2936224639415741, y=-10.262242317199707, z=-7.4755603236553725e-06))
+relative_time: 4900
+(1080, 1920, 3)
+W0423 21:17:55.729932 135062305637952 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:55.993627 135062316123712 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:56.319843 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.10230101995021852, 'throttle': 0.0, 'brake': 1.0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=396.01458740234375, y=230.88961791992188, z=0.033706989139318466), rotation: Rotation(pitch=0.024827735498547554, yaw=-90.15838623046875, roll=0.0530121736228466)), forward speed: 10.062096982405883, velocity vector: Vector3D(x=-0.039282675832509995, y=-10.062020301818848, z=2.2502961655845866e-05))
+relative_time: 4950
+(1080, 1920, 3)
+W0423 21:17:56.454873 135062326609472 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 21:17:56.706952 135062305637952 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 21:17:57.041952 135062326609472 mpc_operator.py:92] control_msg:{'steer': 0.09751235443183737, 'throttle': 0.47080923471190744, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=396.021484375, y=230.39561462402344, z=0.03401945158839226), rotation: Rotation(pitch=-0.010989774018526077, yaw=-89.9442138671875, roll=-0.059722889214754105)), forward speed: 9.795202175931012, velocity vector: Vector3D(x=0.24048259854316711, y=-9.79224967956543, z=1.456971494917525e-05))

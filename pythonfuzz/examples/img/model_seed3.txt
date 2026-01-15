@@ -1,0 +1,3 @@
+img=/media/lzq/D/lzq/fuzz_tool/demo/input_images_datax
+y=/home/lzq/train_y.npy
+choice=0

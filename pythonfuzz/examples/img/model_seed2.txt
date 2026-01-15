@@ -1,0 +1,3 @@
+img=/home/lzq/train_x.npy
+y=/home/lzq/train_y.npy
+choice=0

@@ -1,0 +1,5 @@
+param1=1
+param2=mystring
+param3=True
+param4=1.1
+param5=D:/test.png

@@ -1,0 +1,3 @@
+graph html_table {
+	sss [label=<if a6&lt;=1:>]
+}

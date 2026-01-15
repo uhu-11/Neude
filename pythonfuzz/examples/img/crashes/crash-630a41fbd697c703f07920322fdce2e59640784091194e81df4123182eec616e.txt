@@ -1,0 +1,2 @@
+img=generated_images/1737040262.png
+y=2

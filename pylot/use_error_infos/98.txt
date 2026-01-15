@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pythonfuzz/pythonfuzz/fuzzer.py", line 211, in worker
+    raise TimeoutError('子进程运行超时')
+TimeoutError: 子进程运行超时

@@ -1,0 +1,1089 @@
+2026-01-08 21:40:36.162945: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2026-01-08 21:40:38.647005: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2026-01-08 21:40:38.676690: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.677360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2026-01-08 21:40:38.677403: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2026-01-08 21:40:38.678990: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2026-01-08 21:40:38.679036: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2026-01-08 21:40:38.679668: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2026-01-08 21:40:38.679895: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2026-01-08 21:40:38.681458: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2026-01-08 21:40:38.682015: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2026-01-08 21:40:38.682315: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2026-01-08 21:40:38.682371: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.682455: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.682971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2026-01-08 21:40:38.683137: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-01-08 21:40:38.683692: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.683768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2026-01-08 21:40:38.683798: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.683854: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.683899: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2026-01-08 21:40:38.683921: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2026-01-08 21:40:38.980357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2026-01-08 21:40:38.980459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2026-01-08 21:40:38.980475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2026-01-08 21:40:38.980621: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.980711: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.980773: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:38.980841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4757 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2026-01-08 21:40:38.996238: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2026-01-08 21:40:38.996508: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3494400000 Hz
+2026-01-08 21:40:40.961879: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2026-01-08 21:40:41.285430: I tensorflow/stream_executor/cuda/cuda_dnn.cc:359] Loaded cuDNN version 8900
+2026-01-08 21:40:41.391526: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2026-01-08 21:40:41.391769: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2026-01-08 21:40:42.087771: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+================================================================================
+分析模型: Obstacle Detection (Faster R-CNN)
+模型路径: /media/lzq/D/lzq/pylot_test/pylot/dependencies/models/obstacle_detection/faster-rcnn/
+================================================================================
+
+正在加载模型...
+
+可用的signatures:
+  - serving_default
+
+输入信息:
+  input: shape=(None, None, None, 3), dtype=<dtype: 'uint8'>
+
+输出信息:
+  classes: shape=<unknown>, dtype=<dtype: 'float32'>
+  detections: shape=<unknown>, dtype=<dtype: 'float32'>
+  scores: shape=<unknown>, dtype=<dtype: 'float32'>
+  boxes: shape=<unknown>, dtype=<dtype: 'float32'>
+
+尝试获取模型内部结构...
+无法转换为Keras模型: list index (0) out of range
+模型可能是纯TensorFlow SavedModel格式
+
+尝试分析计算图...
+计算图节点数: 3588
+操作节点数: 3588
+
+主要操作类型统计（前20个）:
+  Const: 32
+  Placeholder: 15
+  Enter: 9
+  StridedSlice: 6
+  Mul: 4
+  Identity: 3
+  AddV2: 2
+  NextIteration: 2
+  Merge: 2
+  Switch: 2
+  Less: 2
+  TensorArrayV3: 2
+  Shape: 2
+  Range: 2
+  TensorArrayScatterV3: 2
+  TensorArrayReadV3: 2
+  Cast: 2
+  RealDiv: 2
+  LogicalAnd: 1
+  LoopCond: 1
+
+--------------------------------------------------------------------------------
+分析神经元向量长度
+--------------------------------------------------------------------------------
+
+运行模型推理...
+
+输出张量的形状和大小:
+  classes:
+    形状: (1, 300)
+    总元素数: 300
+    数据类型: <dtype: 'float32'>
+    各维度长度: [1, 300]
+  detections:
+    形状: (1,)
+    总元素数: 1
+    数据类型: <dtype: 'float32'>
+  scores:
+    形状: (1, 300)
+    总元素数: 300
+    数据类型: <dtype: 'float32'>
+    各维度长度: [1, 300]
+  boxes:
+    形状: (1, 300, 4)
+    总元素数: 1,200
+    数据类型: <dtype: 'float32'>
+    各维度长度: [1, 300, 4]
+
+================================================================================
+统计模型参数数量: Obstacle Detection
+================================================================================
+
+方法2: 分析计算图...
+计算图节点总数: 3548
+找到 0 个变量相关操作
+
+方法3: 尝试从Const节点提取权重信息...
+找到 1386 个Const节点
+
+变量详情（显示前30个，共498个）:
+  [1] FirstStageFeatureExtractor/resnet_v1_101/conv1/weights
+      形状: (7, 7, 3, 64)
+      参数数量: 9,408
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [2] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [3] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [4] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [5] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [6] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [7] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv1/weights
+      形状: (1, 1, 64, 64)
+      参数数量: 4,096
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [8] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv2/weights
+      形状: (3, 3, 64, 64)
+      参数数量: 36,864
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [9] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [10] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [11] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [12] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [13] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [14] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv1/weights
+      形状: (1, 1, 256, 64)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [15] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv2/weights
+      形状: (3, 3, 64, 64)
+      参数数量: 36,864
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [16] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [17] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [18] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [19] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [20] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [21] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv1/weights
+      形状: (1, 1, 256, 64)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [22] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv2/weights
+      形状: (3, 3, 64, 64)
+      参数数量: 36,864
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [23] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [24] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [25] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [26] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [27] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [28] FirstStageFeatureExtractor/resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/weights
+      形状: (1, 1, 256, 512)
+      参数数量: 131,072
+      数据类型: <dtype: 'float32'>
+      可训练: False
+2026-01-08 21:40:44.291245: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.291376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2026-01-08 21:40:44.291411: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.291468: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.291515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2026-01-08 21:40:44.291547: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2026-01-08 21:40:44.291560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2026-01-08 21:40:44.291573: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2026-01-08 21:40:44.291615: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.291684: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.291742: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4757 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2026-01-08 21:40:44.668109: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.668245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2026-01-08 21:40:44.668284: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.668341: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.668389: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2026-01-08 21:40:44.668418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2026-01-08 21:40:44.668430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2026-01-08 21:40:44.668443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2026-01-08 21:40:44.668486: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.668544: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:44.668596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4757 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+  [29] FirstStageFeatureExtractor/resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma
+      形状: (512,)
+      参数数量: 512
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [30] FirstStageFeatureExtractor/resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/beta
+      形状: (512,)
+      参数数量: 512
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  ... 还有 468 个变量未显示
+
+按变量名称前缀分组统计:
+前缀                                       变量数             参数数量                
+---------------------------------------------------------------------------
+FirstStageFeatureExtractor               442                       27,616,448
+SecondStageFeatureExtractor              50                        14,987,264
+Conv                                     2                          4,719,104
+SecondStageBoxPredictor                  2                             73,728
+FirstStageBoxPredictor                   2                             36,864
+
+--------------------------------------------------------------------------------
+参数统计总结:
+--------------------------------------------------------------------------------
+总参数数量（神经元数量）: 47,433,408
+可训练参数数量: 0
+不可训练参数数量: 47,433,408
+变量总数: 498
+
+================================================================================
+分析NAC向量结构: Obstacle Detection
+================================================================================
+
+从frozen_graph.pb读取: /media/lzq/D/lzq/pylot_test/pylot/dependencies/models/obstacle_detection/frozen_graph.pb
+
+NAC覆盖使用的中间层信息:
+序号    层名称                                                                              输出形状                           通道数        累计长度      
+--------------------------------------------------------------------------------------------------------------------------------------------
+1     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 256)        256        256       
+2     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 64)         64         320       
+3     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 64)         64         384       
+4     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 256)        256        640       
+5     FirstStageBoxPredictor/ClassPredictor/Conv2D:0                                   (None, None, None, 24)         24         664       
+6     FirstStageBoxPredictor/BoxEncodingPredictor/Conv2D:0                             (None, None, None, 48)         48         712       
+7     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512        1224      
+8     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512        1736      
+9     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512        2248      
+10    SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048       4296      
+
+--------------------------------------------------------------------------------
+NAC向量结构总结:
+--------------------------------------------------------------------------------
+中间层总数: 10
+总NAC向量长度: 4296
+各层通道数: [256, 64, 64, 256, 24, 48, 512, 512, 512, 2048]
+
+各层对NAC向量长度的贡献:
+层序号      通道数        占比         累计占比      
+----------------------------------------
+1        256          5.96%     5.96%
+2        64           1.49%     7.45%
+3        64           1.49%     8.94%
+4        256          5.96%    14.90%
+5        24           0.56%    15.46%
+6        48           1.12%    16.57%
+7        512         11.92%    28.49%
+8        512         11.92%    40.41%
+9        512         11.92%    52.33%
+10       2048        47.67%   100.00%
+
+================================================================================
+分析所有可用的中间层: Obstacle Detection
+================================================================================
+
+================================================================================
+查找所有可用的中间层: Obstacle Detection
+================================================================================
+
+调试信息:
+  总操作数: 7058
+  找到的Conv2D层: 107
+  找到的MatMul层（第一遍）: 5
+  找到的MatMul层（第二遍）: 0
+  唯一规范化层数: 112
+  最终总层数: 112
+
+找到 112 个中间层（Conv2D和MatMul）
+
+序号     层类型        层名称                                                                              输出形状                           通道数/特征数         累计长度        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/shortcut/C (None, 7, 7, 2048)             2048            2048        
+2      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048            4096        
+3      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048            6144        
+4      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048            8192        
+5      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 1024)       1024            9216        
+6      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 1024)       1024            10240       
+7      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_2/bottleneck_ (None, None, None, 1024)       1024            11264       
+8      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_3/bottleneck_ (None, None, None, 1024)       1024            12288       
+9      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_4/bottleneck_ (None, None, None, 1024)       1024            13312       
+10     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_5/bottleneck_ (None, None, None, 1024)       1024            14336       
+11     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_6/bottleneck_ (None, None, None, 1024)       1024            15360       
+12     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_7/bottleneck_ (None, None, None, 1024)       1024            16384       
+13     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_8/bottleneck_ (None, None, None, 1024)       1024            17408       
+14     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_9/bottleneck_ (None, None, None, 1024)       1024            18432       
+15     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_10/bottleneck (None, None, None, 1024)       1024            19456       
+16     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_11/bottleneck (None, None, None, 1024)       1024            20480       
+17     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_12/bottleneck (None, None, None, 1024)       1024            21504       
+18     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_13/bottleneck (None, None, None, 1024)       1024            22528       
+19     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_14/bottleneck (None, None, None, 1024)       1024            23552       
+20     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_15/bottleneck (None, None, None, 1024)       1024            24576       
+21     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_16/bottleneck (None, None, None, 1024)       1024            25600       
+22     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_17/bottleneck (None, None, None, 1024)       1024            26624       
+23     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_18/bottleneck (None, None, None, 1024)       1024            27648       
+24     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_19/bottleneck (None, None, None, 1024)       1024            28672       
+25     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 1024)       1024            29696       
+26     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_21/bottleneck (None, None, None, 1024)       1024            30720       
+27     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_22/bottleneck (None, None, None, 1024)       1024            31744       
+28     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_23/bottleneck (None, None, None, 1024)       1024            32768       
+29     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 512)        512             33280       
+30     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 512)        512             33792       
+31     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_2/bottleneck_ (None, None, None, 512)        512             34304       
+32     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_3/bottleneck_ (None, None, None, 512)        512             34816       
+33     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_4/bottleneck_ (None, None, None, 512)        512             35328       
+34     Conv2D     Conv/Conv2D:0                                                                    (None, None, None, 512)        512             35840       
+35     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512             36352       
+36     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512             36864       
+37     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512             37376       
+38     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512             37888       
+39     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512             38400       
+40     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512             38912       
+41     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 256)        256             39168       
+42     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 256)        256             39424       
+43     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 256)        256             39680       
+44     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_3/bottleneck_ (None, None, None, 256)        256             39936       
+45     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 256)        256             40192       
+46     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 256)        256             40448       
+47     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_2/bottleneck_ (None, None, None, 256)        256             40704       
+48     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_2/bottleneck_ (None, None, None, 256)        256             40960       
+49     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_3/bottleneck_ (None, None, None, 256)        256             41216       
+50     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_3/bottleneck_ (None, None, None, 256)        256             41472       
+51     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_4/bottleneck_ (None, None, None, 256)        256             41728       
+52     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_4/bottleneck_ (None, None, None, 256)        256             41984       
+53     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_5/bottleneck_ (None, None, None, 256)        256             42240       
+54     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_5/bottleneck_ (None, None, None, 256)        256             42496       
+55     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_6/bottleneck_ (None, None, None, 256)        256             42752       
+56     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_6/bottleneck_ (None, None, None, 256)        256             43008       
+57     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_7/bottleneck_ (None, None, None, 256)        256             43264       
+58     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_7/bottleneck_ (None, None, None, 256)        256             43520       
+59     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_8/bottleneck_ (None, None, None, 256)        256             43776       
+60     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_8/bottleneck_ (None, None, None, 256)        256             44032       
+61     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_9/bottleneck_ (None, None, None, 256)        256             44288       
+62     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_9/bottleneck_ (None, None, None, 256)        256             44544       
+63     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_10/bottleneck (None, None, None, 256)        256             44800       
+64     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_10/bottleneck (None, None, None, 256)        256             45056       
+65     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_11/bottleneck (None, None, None, 256)        256             45312       
+66     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_11/bottleneck (None, None, None, 256)        256             45568       
+67     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_12/bottleneck (None, None, None, 256)        256             45824       
+68     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_12/bottleneck (None, None, None, 256)        256             46080       
+69     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_13/bottleneck (None, None, None, 256)        256             46336       
+70     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_13/bottleneck (None, None, None, 256)        256             46592       
+71     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_14/bottleneck (None, None, None, 256)        256             46848       
+72     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_14/bottleneck (None, None, None, 256)        256             47104       
+73     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_15/bottleneck (None, None, None, 256)        256             47360       
+74     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_15/bottleneck (None, None, None, 256)        256             47616       
+75     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_16/bottleneck (None, None, None, 256)        256             47872       
+76     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_16/bottleneck (None, None, None, 256)        256             48128       
+77     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_17/bottleneck (None, None, None, 256)        256             48384       
+78     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_17/bottleneck (None, None, None, 256)        256             48640       
+79     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_18/bottleneck (None, None, None, 256)        256             48896       
+80     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_18/bottleneck (None, None, None, 256)        256             49152       
+81     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_19/bottleneck (None, None, None, 256)        256             49408       
+82     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_19/bottleneck (None, None, None, 256)        256             49664       
+83     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 256)        256             49920       
+84     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 256)        256             50176       
+85     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_21/bottleneck (None, None, None, 256)        256             50432       
+86     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_21/bottleneck (None, None, None, 256)        256             50688       
+87     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_22/bottleneck (None, None, None, 256)        256             50944       
+88     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_22/bottleneck (None, None, None, 256)        256             51200       
+89     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_23/bottleneck (None, None, None, 256)        256             51456       
+90     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_23/bottleneck (None, None, None, 256)        256             51712       
+91     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 128)        128             51840       
+92     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 128)        128             51968       
+93     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_2/bottleneck_ (None, None, None, 128)        128             52096       
+94     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_2/bottleneck_ (None, None, None, 128)        128             52224       
+95     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_3/bottleneck_ (None, None, None, 128)        128             52352       
+96     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_3/bottleneck_ (None, None, None, 128)        128             52480       
+97     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_4/bottleneck_ (None, None, None, 128)        128             52608       
+98     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_4/bottleneck_ (None, None, None, 128)        128             52736       
+99     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/conv1/Conv2D:0            (None, None, None, 64)         64              52800       
+100    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 64)         64              52864       
+101    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 64)         64              52928       
+102    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 64)         64              52992       
+103    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 64)         64              53056       
+104    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_3/bottleneck_ (None, None, None, 64)         64              53120       
+105    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_3/bottleneck_ (None, None, None, 64)         64              53184       
+106    Conv2D     FirstStageBoxPredictor/BoxEncodingPredictor/Conv2D:0                             (None, None, None, 48)         48              53232       
+107    MatMul     SecondStageBoxPredictor/BoxEncodingPredictor/MatMul:0                            (None, 28)                     28              53260       
+108    MatMul     SecondStageBoxPredictor/BoxEncodingPredictor/BiasAdd:0                           (None, 28)                     28              53288       
+109    Conv2D     FirstStageBoxPredictor/ClassPredictor/Conv2D:0                                   (None, None, None, 24)         24              53312       
+110    MatMul     SecondStageBoxPredictor/ClassPredictor/MatMul:0                                  (None, 8)                      8               53320       
+111    MatMul     SecondStageBoxPredictor/ClassPredictor/BiasAdd:0                                 (None, 8)                      8               53328       
+112    MatMul     all_class_predictions_with_background:0                                          (None, 8)                      8               53336       
+
+--------------------------------------------------------------------------------
+统计信息:
+--------------------------------------------------------------------------------
+总层数: 112
+  - Conv2D层: 107
+  - MatMul层（全连接）: 5
+总通道数/特征数: 53,336
+平均每层通道数: 476.21
+
+按类型分组统计:
+类型              层数         总通道数            平均通道数          
+-------------------------------------------------------
+Conv2D          107        53256           497.72         
+MatMul          5          80              16.00          
+
+通道数最多的前10层:
+序号     层类型        层名称（简化）                                                      通道数         
+------------------------------------------------------------------------------------------
+1      Conv2D     bottleneck_v1/shortcut/Conv2D:0                              2048        
+2      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 2048        
+3      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 2048        
+4      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 2048        
+5      Conv2D     bottleneck_v1/shortcut/Conv2D:0                              1024        
+6      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+7      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+8      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+9      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+10     Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+
+================================================================================
+尝试提取中间层神经元向量: Obstacle Detection
+================================================================================
+无法提取中间层（非Keras模型）: list index (0) out of range
+
+
+
+================================================================================
+分析模型: Traffic Light Detection (Faster R-CNN)
+模型路径: /media/lzq/D/lzq/pylot_test/pylot/dependencies/models/traffic_light_detection/faster-rcnn/
+================================================================================
+
+正在加载模型...
+
+可用的signatures:
+  - serving_default
+
+输入信息:
+  input: shape=(None, None, None, 3), dtype=<dtype: 'uint8'>
+
+输出信息:
+  scores: shape=<unknown>, dtype=<dtype: 'float32'>
+  detections: shape=<unknown>, dtype=<dtype: 'float32'>
+  classes: shape=<unknown>, dtype=<dtype: 'float32'>
+  boxes: shape=<unknown>, dtype=<dtype: 'float32'>
+
+尝试获取模型内部结构...
+无法转换为Keras模型: list index (0) out of range
+模型可能是纯TensorFlow SavedModel格式
+
+尝试分析计算图...
+计算图节点数: 3326
+操作节点数: 3326
+
+主要操作类型统计（前20个）:
+  Const: 24
+  Placeholder: 19
+  Enter: 11
+  NextIteration: 4
+  Identity: 4
+  StridedSlice: 4
+  Mul: 4
+  Merge: 3
+  Switch: 3
+  AddV2: 2
+  Less: 2
+  TensorArrayV3: 2
+  Shape: 2
+  Range: 2
+  TensorArrayScatterV3: 2
+  TensorArrayReadV3: 2
+  Cast: 2
+  RealDiv: 2
+  TensorArrayWriteV3: 2
+  LogicalAnd: 1
+
+--------------------------------------------------------------------------------
+分析神经元向量长度
+--------------------------------------------------------------------------------
+
+运行模型推理...
+
+输出张量的形状和大小:
+  scores:
+    形状: <unknown>
+    总元素数: 0
+    数据类型: <dtype: 'float32'>
+  detections:
+    形状: <unknown>
+    总元素数: 0
+    数据类型: <dtype: 'float32'>
+  classes:
+    形状: <unknown>
+    总元素数: 0
+    数据类型: <dtype: 'float32'>
+  boxes:
+    形状: <unknown>
+    总元素数: 0
+    数据类型: <dtype: 'float32'>
+
+================================================================================
+统计模型参数数量: Traffic Light Detection
+================================================================================
+
+方法2: 分析计算图...
+计算图节点总数: 3311
+找到 0 个变量相关操作
+
+方法3: 尝试从Const节点提取权重信息...
+找到 1282 个Const节点
+
+变量详情（显示前30个，共498个）:
+  [1] FirstStageFeatureExtractor/resnet_v1_101/conv1/weights
+      形状: (7, 7, 3, 64)
+      参数数量: 9,408
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [2] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [3] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [4] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [5] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [6] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [7] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv1/weights
+      形状: (1, 1, 64, 64)
+      参数数量: 4,096
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [8] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv2/weights
+      形状: (3, 3, 64, 64)
+      参数数量: 36,864
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [9] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [10] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [11] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [12] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [13] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_1/bottleneck_v1/conv3/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [14] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv1/weights
+      形状: (1, 1, 256, 64)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [15] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv2/weights
+      形状: (3, 3, 64, 64)
+      参数数量: 36,864
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [16] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [17] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [18] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [19] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [20] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_2/bottleneck_v1/conv3/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [21] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv1/weights
+      形状: (1, 1, 256, 64)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [22] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv2/weights
+      形状: (3, 3, 64, 64)
+      参数数量: 36,864
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [23] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/weights
+      形状: (1, 1, 64, 256)
+      参数数量: 16,384
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [24] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/gamma
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [25] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/beta
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+2026-01-08 21:40:51.182526: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.182653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2026-01-08 21:40:51.182694: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.182750: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.182795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2026-01-08 21:40:51.182825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2026-01-08 21:40:51.182837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2026-01-08 21:40:51.182850: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2026-01-08 21:40:51.182886: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.182942: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.182994: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4757 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2026-01-08 21:40:51.791671: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.791820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2026-01-08 21:40:51.791892: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.791947: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.791993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2026-01-08 21:40:51.792029: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2026-01-08 21:40:51.792041: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2026-01-08 21:40:51.792053: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2026-01-08 21:40:51.792093: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.792152: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2026-01-08 21:40:51.792205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4757 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+      可训练: False
+  [26] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_mean
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [27] FirstStageFeatureExtractor/resnet_v1_101/block1/unit_3/bottleneck_v1/conv3/BatchNorm/moving_variance
+      形状: (256,)
+      参数数量: 256
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [28] FirstStageFeatureExtractor/resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/weights
+      形状: (1, 1, 256, 512)
+      参数数量: 131,072
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [29] FirstStageFeatureExtractor/resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/gamma
+      形状: (512,)
+      参数数量: 512
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  [30] FirstStageFeatureExtractor/resnet_v1_101/block2/unit_1/bottleneck_v1/shortcut/BatchNorm/beta
+      形状: (512,)
+      参数数量: 512
+      数据类型: <dtype: 'float32'>
+      可训练: False
+  ... 还有 468 个变量未显示
+
+按变量名称前缀分组统计:
+前缀                                       变量数             参数数量                
+---------------------------------------------------------------------------
+FirstStageFeatureExtractor               442                       27,616,448
+SecondStageFeatureExtractor              50                        14,987,264
+Conv                                     2                          4,719,104
+FirstStageBoxPredictor                   2                             36,864
+SecondStageBoxPredictor                  2                             32,768
+
+--------------------------------------------------------------------------------
+参数统计总结:
+--------------------------------------------------------------------------------
+总参数数量（神经元数量）: 47,392,448
+可训练参数数量: 0
+不可训练参数数量: 47,392,448
+变量总数: 498
+
+================================================================================
+分析NAC向量结构: Traffic Light Detection
+================================================================================
+
+从frozen_graph.pb读取: /media/lzq/D/lzq/pylot_test/pylot/dependencies/models/traffic_light_detection/frozen_graph.pb
+
+NAC覆盖使用的中间层信息:
+序号    层名称                                                                              输出形状                           通道数        累计长度      
+--------------------------------------------------------------------------------------------------------------------------------------------
+1     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 256)        256        256       
+2     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 64)         64         320       
+3     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 64)         64         384       
+4     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 256)        256        640       
+5     FirstStageBoxPredictor/ClassPredictor/Conv2D:0                                   (None, None, None, 24)         24         664       
+6     FirstStageBoxPredictor/BoxEncodingPredictor/Conv2D:0                             (None, None, None, 48)         48         712       
+7     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512        1224      
+8     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512        1736      
+9     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512        2248      
+10    SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048       4296      
+
+--------------------------------------------------------------------------------
+NAC向量结构总结:
+--------------------------------------------------------------------------------
+中间层总数: 10
+总NAC向量长度: 4296
+各层通道数: [256, 64, 64, 256, 24, 48, 512, 512, 512, 2048]
+
+各层对NAC向量长度的贡献:
+层序号      通道数        占比         累计占比      
+----------------------------------------
+1        256          5.96%     5.96%
+2        64           1.49%     7.45%
+3        64           1.49%     8.94%
+4        256          5.96%    14.90%
+5        24           0.56%    15.46%
+6        48           1.12%    16.57%
+7        512         11.92%    28.49%
+8        512         11.92%    40.41%
+9        512         11.92%    52.33%
+10       2048        47.67%   100.00%
+
+================================================================================
+分析所有可用的中间层: Traffic Light Detection
+================================================================================
+
+================================================================================
+查找所有可用的中间层: Traffic Light Detection
+================================================================================
+
+调试信息:
+  总操作数: 13738
+  找到的Conv2D层: 107
+  找到的MatMul层（第一遍）: 5
+  找到的MatMul层（第二遍）: 0
+  唯一规范化层数: 112
+  最终总层数: 112
+
+找到 112 个中间层（Conv2D和MatMul）
+
+序号     层类型        层名称                                                                              输出形状                  通道数/特征数         累计长度        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+1      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/shortcut/C (None, 7, 7, 2048)             2048            2048        
+2      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048            4096        
+3      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048            6144        
+4      Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv3/Conv (None, 7, 7, 2048)             2048            8192        
+5      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 1024)       1024            9216        
+6      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 1024)       1024            10240       
+7      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_2/bottleneck_ (None, None, None, 1024)       1024            11264       
+8      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_3/bottleneck_ (None, None, None, 1024)       1024            12288       
+9      Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_4/bottleneck_ (None, None, None, 1024)       1024            13312       
+10     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_5/bottleneck_ (None, None, None, 1024)       1024            14336       
+11     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_6/bottleneck_ (None, None, None, 1024)       1024            15360       
+12     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_7/bottleneck_ (None, None, None, 1024)       1024            16384       
+13     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_8/bottleneck_ (None, None, None, 1024)       1024            17408       
+14     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_9/bottleneck_ (None, None, None, 1024)       1024            18432       
+15     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_10/bottleneck (None, None, None, 1024)       1024            19456       
+16     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_11/bottleneck (None, None, None, 1024)       1024            20480       
+17     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_12/bottleneck (None, None, None, 1024)       1024            21504       
+18     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_13/bottleneck (None, None, None, 1024)       1024            22528       
+19     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_14/bottleneck (None, None, None, 1024)       1024            23552       
+20     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_15/bottleneck (None, None, None, 1024)       1024            24576       
+21     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_16/bottleneck (None, None, None, 1024)       1024            25600       
+22     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_17/bottleneck (None, None, None, 1024)       1024            26624       
+23     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_18/bottleneck (None, None, None, 1024)       1024            27648       
+24     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_19/bottleneck (None, None, None, 1024)       1024            28672       
+25     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 1024)       1024            29696       
+26     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_21/bottleneck (None, None, None, 1024)       1024            30720       
+27     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_22/bottleneck (None, None, None, 1024)       1024            31744       
+28     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_23/bottleneck (None, None, None, 1024)       1024            32768       
+29     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 512)        512             33280       
+30     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 512)        512             33792       
+31     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_2/bottleneck_ (None, None, None, 512)        512             34304       
+32     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_3/bottleneck_ (None, None, None, 512)        512             34816       
+33     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_4/bottleneck_ (None, None, None, 512)        512             35328       
+34     Conv2D     Conv/Conv2D:0                                                                    (None, None, None, 512)        512             35840       
+35     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512             36352       
+36     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512             36864       
+37     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512             37376       
+38     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512             37888       
+39     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv1/Conv (None, 7, 7, 512)              512             38400       
+40     Conv2D     SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv2/Conv (None, 7, 7, 512)              512             38912       
+41     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 256)        256             39168       
+42     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 256)        256             39424       
+43     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 256)        256             39680       
+44     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_3/bottleneck_ (None, None, None, 256)        256             39936       
+45     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 256)        256             40192       
+46     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_1/bottleneck_ (None, None, None, 256)        256             40448       
+47     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_2/bottleneck_ (None, None, None, 256)        256             40704       
+48     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_2/bottleneck_ (None, None, None, 256)        256             40960       
+49     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_3/bottleneck_ (None, None, None, 256)        256             41216       
+50     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_3/bottleneck_ (None, None, None, 256)        256             41472       
+51     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_4/bottleneck_ (None, None, None, 256)        256             41728       
+52     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_4/bottleneck_ (None, None, None, 256)        256             41984       
+53     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_5/bottleneck_ (None, None, None, 256)        256             42240       
+54     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_5/bottleneck_ (None, None, None, 256)        256             42496       
+55     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_6/bottleneck_ (None, None, None, 256)        256             42752       
+56     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_6/bottleneck_ (None, None, None, 256)        256             43008       
+57     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_7/bottleneck_ (None, None, None, 256)        256             43264       
+58     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_7/bottleneck_ (None, None, None, 256)        256             43520       
+59     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_8/bottleneck_ (None, None, None, 256)        256             43776       
+60     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_8/bottleneck_ (None, None, None, 256)        256             44032       
+61     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_9/bottleneck_ (None, None, None, 256)        256             44288       
+62     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_9/bottleneck_ (None, None, None, 256)        256             44544       
+63     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_10/bottleneck (None, None, None, 256)        256             44800       
+64     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_10/bottleneck (None, None, None, 256)        256             45056       
+65     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_11/bottleneck (None, None, None, 256)        256             45312       
+66     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_11/bottleneck (None, None, None, 256)        256             45568       
+67     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_12/bottleneck (None, None, None, 256)        256             45824       
+68     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_12/bottleneck (None, None, None, 256)        256             46080       
+69     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_13/bottleneck (None, None, None, 256)        256             46336       
+70     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_13/bottleneck (None, None, None, 256)        256             46592       
+71     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_14/bottleneck (None, None, None, 256)        256             46848       
+72     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_14/bottleneck (None, None, None, 256)        256             47104       
+73     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_15/bottleneck (None, None, None, 256)        256             47360       
+74     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_15/bottleneck (None, None, None, 256)        256             47616       
+75     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_16/bottleneck (None, None, None, 256)        256             47872       
+76     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_16/bottleneck (None, None, None, 256)        256             48128       
+77     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_17/bottleneck (None, None, None, 256)        256             48384       
+78     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_17/bottleneck (None, None, None, 256)        256             48640       
+79     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_18/bottleneck (None, None, None, 256)        256             48896       
+80     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_18/bottleneck (None, None, None, 256)        256             49152       
+81     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_19/bottleneck (None, None, None, 256)        256             49408       
+82     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_19/bottleneck (None, None, None, 256)        256             49664       
+83     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 256)        256             49920       
+84     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck (None, None, None, 256)        256             50176       
+85     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_21/bottleneck (None, None, None, 256)        256             50432       
+86     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_21/bottleneck (None, None, None, 256)        256             50688       
+87     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_22/bottleneck (None, None, None, 256)        256             50944       
+88     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_22/bottleneck (None, None, None, 256)        256             51200       
+89     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_23/bottleneck (None, None, None, 256)        256             51456       
+90     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_23/bottleneck (None, None, None, 256)        256             51712       
+91     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 128)        128             51840       
+92     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_1/bottleneck_ (None, None, None, 128)        128             51968       
+93     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_2/bottleneck_ (None, None, None, 128)        128             52096       
+94     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_2/bottleneck_ (None, None, None, 128)        128             52224       
+95     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_3/bottleneck_ (None, None, None, 128)        128             52352       
+96     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_3/bottleneck_ (None, None, None, 128)        128             52480       
+97     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_4/bottleneck_ (None, None, None, 128)        128             52608       
+98     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block2/unit_4/bottleneck_ (None, None, None, 128)        128             52736       
+99     Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/conv1/Conv2D:0            (None, None, None, 64)         64              52800       
+100    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 64)         64              52864       
+101    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_ (None, None, None, 64)         64              52928       
+102    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 64)         64              52992       
+103    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_ (None, None, None, 64)         64              53056       
+104    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_3/bottleneck_ (None, None, None, 64)         64              53120       
+105    Conv2D     FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_3/bottleneck_ (None, None, None, 64)         64              53184       
+106    Conv2D     FirstStageBoxPredictor/BoxEncodingPredictor/Conv2D:0                             (None, None, None, 48)         48              53232       
+107    MatMul     SecondStageBoxPredictor/BoxEncodingPredictor/MatMul:0                            (None, 28)                     28              53260       
+108    MatMul     SecondStageBoxPredictor/BoxEncodingPredictor/BiasAdd:0                           (None, 28)                     28              53288       
+109    Conv2D     FirstStageBoxPredictor/ClassPredictor/Conv2D:0                                   (None, None, None, 24)         24              53312       
+110    MatMul     SecondStageBoxPredictor/ClassPredictor/MatMul:0                                  (None, 8)                      8               53320       
+111    MatMul     SecondStageBoxPredictor/ClassPredictor/BiasAdd:0                                 (None, 8)                      8               53328       
+112    MatMul     all_class_predictions_with_background:0                                          (None, 8)                      8               53336       
+
+总层数: 112
+  - Conv2D层: 107
+  - MatMul层（全连接）: 5
+总通道数/特征数: 53,336
+平均每层通道数: 476.21
+
+按类型分组统计:
+类型              层数         总通道数            平均通道数          
+-------------------------------------------------------
+Conv2D          107        53256           497.72         
+MatMul          5          80              16.00          
+
+通道数最多的前10层:
+序号     层类型        层名称（简化）                                                      通道数         
+------------------------------------------------------------------------------------------
+1      Conv2D     bottleneck_v1/shortcut/Conv2D:0                              2048        
+2      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 2048        
+3      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 2048        
+4      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 2048        
+5      Conv2D     bottleneck_v1/shortcut/Conv2D:0                              1024        
+6      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+7      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+8      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+9      Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+10     Conv2D     bottleneck_v1/conv3/Conv2D:0                                 1024        
+
+================================================================================
+尝试提取中间层神经元向量: Traffic Light Detection
+================================================================================
+无法提取中间层（非Keras模型）: list index (0) out of range
+
+================================================================================
+模型对比总结
+================================================================================
+
+输出张量对比:
+输出名称                           障碍物检测形状                        红绿灯检测形状                       
+------------------------------------------------------------------------------------------
+boxes                          (1, 300, 4)                    <unknown>                     
+classes                        (1, 300)                       <unknown>                     
+detections                     (1,)                           <unknown>                     
+scores                         (1, 300)                       <unknown>                     
+
+================================================================================
+模型参数数量对比
+================================================================================
+
+指标                             障碍物检测模型                        红绿灯检测模型                        差异                            
+------------------------------------------------------------------------------------------------------------------------
+总参数数量                                              47,433,408                     47,392,448                         40,960
+可训练参数数量                                                     0                              0                              0
+不可训练参数数量                                           47,433,408                     47,392,448                         40,960
+
+参数数量差异百分比: 0.09%
+
+主要区别:
+  障碍物检测模型比红绿灯检测模型多 40,960 个参数
+  这可能是因为障碍物检测需要识别更多类别的对象
+
+================================================================================
+NAC向量结构对比
+================================================================================
+
+指标                             障碍物检测模型                        红绿灯检测模型                        差异                            
+------------------------------------------------------------------------------------------------------------------------
+NAC向量总长度                                                 4296                           4296                              0
+中间层数量                                                      10                             10                              0
+
+✓ 两个模型的NAC向量长度相同，说明它们使用相同的网络结构
+
+各层通道数对比:
+NAC覆盖使用的中间层信息:
+层序号      层名称（简化）                                                                                  障碍物检测       红绿灯检测           差异             
+----------------------------------------------------------------------------------------------------
+1        FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_v1/shortcut       256            256             0              
+2        FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_1/bottleneck_v1/conv1          64             64              0              
+3        FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block1/unit_2/bottleneck_v1/conv1          64             64              0              
+4        FirstStageFeatureExtractor/resnet_v1_101/resnet_v1_101/block3/unit_20/bottleneck_v1/conv2         256            256             0              
+5        FirstStageBoxPredictor/ClassPredictor                                                             24             24              0              
+6        FirstStageBoxPredictor/BoxEncodingPredictor                                                       48             48              0              
+7        SecondStageFeatureExtractor/resnet_v1_101/block4/unit_1/bottleneck_v1/conv1                       512            512             0              
+8        SecondStageFeatureExtractor/resnet_v1_101/block4/unit_2/bottleneck_v1/conv1                       512            512             0              
+9        SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv2                       512            512             0              
+10       SecondStageFeatureExtractor/resnet_v1_101/block4/unit_3/bottleneck_v1/conv3                       2048           2048            0              
+
+================================================================================
+所有可用中间层对比
+================================================================================
+
+指标                             障碍物检测模型                        红绿灯检测模型                        差异                            
+------------------------------------------------------------------------------------------------------------------------
+总中间层数                                                     112                            112                              0
+Conv2D层数                                                  107                            107                              0
+MatMul层数                                                    5                              5                              0
+总通道数/特征数                                               53,336                         53,336                              0
+
+如果使用所有中间层，NAC向量长度将是:
+  障碍物检测模型: 53,336
+  红绿灯检测模型: 53,336
+  当前使用的10层: 4,296
+  扩展潜力: 49,040 个额外通道

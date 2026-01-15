@@ -1,0 +1,2 @@
+img=bytearray(b'/media/lzq/D/lzq/pythonfuzz-pylot/examples/img/bir\x00\x01\x00\x00g')
+y=8

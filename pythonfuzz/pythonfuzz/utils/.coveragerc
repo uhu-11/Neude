@@ -1,0 +1,2 @@
+[run]
+omit = /root/pythonfuzz-imageio/pythonfuzz-master/pythonfuzz/Seed.py

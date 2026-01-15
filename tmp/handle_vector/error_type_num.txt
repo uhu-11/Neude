@@ -1,0 +1,30 @@
+================================================================================
+1. 统计发生每种错误类型的迭代数量（不包括 cur_code_errors）
+================================================================================
+发生 cur_model_errors 的迭代数量为: 41
+发生 cur_planning_errors 的迭代数量为: 4
+发生 cur_control_errors 的迭代数量为: 3
+
+================================================================================
+2. 统计综合错误类型的迭代数量（不包括 cur_code_errors）
+================================================================================
+错误类型代号     描述                                                                     迭代数量      
+------------------------------------------------------------------------------------------
+000        没有发生 cur_model_errors、没有发生 cur_planning_errors、没有发生 cur_control_errors 59        
+001        没有发生 cur_model_errors、没有发生 cur_planning_errors、发生 cur_control_errors   0         
+010        没有发生 cur_model_errors、发生 cur_planning_errors、没有发生 cur_control_errors   0         
+011        没有发生 cur_model_errors、发生 cur_planning_errors、发生 cur_control_errors     0         
+100        发生 cur_model_errors、没有发生 cur_planning_errors、没有发生 cur_control_errors   36        
+101        发生 cur_model_errors、没有发生 cur_planning_errors、发生 cur_control_errors     1         
+110        发生 cur_model_errors、发生 cur_planning_errors、没有发生 cur_control_errors     2         
+111        发生 cur_model_errors、发生 cur_planning_errors、发生 cur_control_errors       2         
+
+================================================================================
+统计汇总
+================================================================================
+总迭代次数: 100
+发生 cur_model_errors 的迭代数量: 41
+发生 cur_planning_errors 的迭代数量: 4
+发生 cur_control_errors 的迭代数量: 3
+
+统计结果已保存到: /home/lzq/result/datas/100_error_type_statistics.json

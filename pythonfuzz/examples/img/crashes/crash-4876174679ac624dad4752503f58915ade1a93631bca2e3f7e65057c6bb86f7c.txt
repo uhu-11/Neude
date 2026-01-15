@@ -1,0 +1,2 @@
+data_x=None
+data_y=bytearray(b'/home/lzq/train_y.n4\xa3')

@@ -1,0 +1,2 @@
+img=bytearray(b'/media/lzq/D/lzq/\xa4E\x93k\x97\xba\xbbWzz-pylot/examples/img/bird.png')
+y=9

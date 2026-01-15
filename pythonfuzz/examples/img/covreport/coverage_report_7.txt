@@ -1,0 +1,14 @@
+Name                                                                       Stmts   Miss  Cover
+----------------------------------------------------------------------------------------------
+/media/lzq/D/lzq/fuzz_tool/Pillow/src/PIL/Image.py                          1418   1347     5%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/PTtool/pt/BoundaryTriangle.py           61     10    84%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/PTtool/pt/TriangleCoverage.py          128     62    52%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/PTtool/pt/TriangularProjection.py       25     15    40%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/PTtool/pt/util.py                        6      2    67%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/pythonfuzz/Coverages/PTCoverage.py      31     26    16%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/pythonfuzz/Seed.py                      71     70     1%
+/media/lzq/D/lzq/fuzz_tool/pythonfuzz/pythonfuzz/utils/use_predict.py         30     15    50%
+/tmp/tmpe05gdql2.py                                                           17      8    53%
+model_fuzz_2.py                                                               81     60    26%
+----------------------------------------------------------------------------------------------
+TOTAL                                                                       1868   1615    14%

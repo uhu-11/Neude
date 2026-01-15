@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pythonfuzz/pythonfuzz/fuzzer.py", line 226, in worker
+    raise ValueError(error_content)
+ValueError: error:Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/coverage_decorator.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/control/mpc/mpc_operator.py", line 132, in setup_mpc
+    self._mpc = ModelPredictiveController(config=self._mpc_config)
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/control/mpc/mpc.py", line 58, in __init__
+    self.delta_s = self.reference.s_list[1] - self.reference.s_list[0]
+IndexError: list index out of range
+

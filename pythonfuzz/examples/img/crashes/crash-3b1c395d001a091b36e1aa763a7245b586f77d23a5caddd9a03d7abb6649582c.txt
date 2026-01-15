@@ -1,0 +1,3 @@
+img=bytearray(b'/media/lzq/D/lzq/fuzz_tool/demo/inpu\x00\x01\x00\x00ages')
+y=1
+choice=0

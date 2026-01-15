@@ -1,0 +1,2 @@
+img=/media/lzq/D/lzq/pythonfuzz-pylot/examples/img/bird.
+y=2

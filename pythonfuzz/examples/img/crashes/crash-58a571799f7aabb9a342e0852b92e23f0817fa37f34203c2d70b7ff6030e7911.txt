@@ -1,0 +1,3 @@
+img=bytearray(b'/media/lzq/D/lzq/fuzz_tool/demo/inpdia/lzq/D/lzq/fuut_images')
+y=9
+choice=0

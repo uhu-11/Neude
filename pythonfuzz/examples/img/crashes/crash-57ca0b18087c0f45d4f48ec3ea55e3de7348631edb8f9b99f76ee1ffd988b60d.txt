@@ -1,0 +1,3 @@
+img=bytearray(b'/media/lzq/D/lzq/fuzz_tool\xf7\x0f\x9d\xedJZ\xfb\xa6put_images')
+y=6
+choice=0

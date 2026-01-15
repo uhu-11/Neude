@@ -1,0 +1,249 @@
+3轮检测到的对象:car,分数：0.9999780654907227,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=645.1489>, <tf.Tensor: shape=(), dtype=float32, numpy=572.76636>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.3486>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+3轮检测到的对象:car,分数：0.9999034404754639,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=1677.9595>, <tf.Tensor: shape=(), dtype=float32, numpy=515.7173>, <tf.Tensor: shape=(), dtype=float32, numpy=1910.4503>, <tf.Tensor: shape=(), dtype=float32, numpy=610.5295>]
+2025-04-23 15:16:35.569992: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-04-23 15:16:35.572725: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.572798: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 15:16:35.572818: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 15:16:35.574150: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-23 15:16:35.574199: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-23 15:16:35.574721: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-04-23 15:16:35.574949: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-04-23 15:16:35.575121: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-04-23 15:16:35.577873: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.577956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 15:16:35.577976: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 15:16:35.578244: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-04-23 15:16:35.579073: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-04-23 15:16:35.579368: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-23 15:16:35.579482: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.579623: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.579706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 15:16:35.579747: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-04-23 15:16:35.579791: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-04-23 15:16:35.580182: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-23 15:16:35.580437: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-04-23 15:16:35.580666: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-04-23 15:16:35.580967: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.581056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 15:16:35.581108: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.581208: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.581276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 15:16:35.581309: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 15:16:35.582313: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-04-23 15:16:35.582786: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-04-23 15:16:35.582968: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-04-23 15:16:35.583023: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.590465: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.590515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 15:16:35.590786: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-04-23 15:16:35.591234: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.591503: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-04-23 15:16:35.591527: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.591594: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.591807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-04-23 15:16:35.591825: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-04-23 15:16:35.909405: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-23 15:16:35.909414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-04-23 15:16:35.909446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-23 15:16:35.909446: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-04-23 15:16:35.909451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-23 15:16:35.909451: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-04-23 15:16:35.909637: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.909637: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.909765: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.909765: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.909843: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.909843: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-04-23 15:16:35.909935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 374 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-04-23 15:16:35.909935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 374 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+W0423 15:16:35.954199 126096748054080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 645, xmax: 1242, ymin: 572, ymax: 1080)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1677, xmax: 1910, ymin: 515, ymax: 610))]
+Planning运行成功...........
+World update run True
+W0423 15:16:36.981799 126096737568320 mpc_operator.py:92] control_msg:{'steer': 0.13400079989769859, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009216060861945152), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.06338853389117736, velocity vector: Vector3D(x=-3.433655706430727e-07, y=-2.3579298513709546e-09, z=-0.06338853389024734))
+relative_time: 150
+(1080, 1920, 3)
+W0423 15:16:37.088650 126096546727488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+4轮检测到的对象:car,分数：0.9965039491653442,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=630.057>, <tf.Tensor: shape=(), dtype=float32, numpy=580.73956>, <tf.Tensor: shape=(), dtype=float32, numpy=1242.7318>, <tf.Tensor: shape=(), dtype=float32, numpy=1074.6685>]
+//media/lzq/D/lzq/pylot_test/pylot/dependencies/sort/utils.py:121: FutureWarning: The linear_assignment function is deprecated in 0.21 and will be removed from 0.23. Use scipy.optimize.linear_sum_assignment instead.
+  warnings.warn(
+W0423 15:16:37.378350 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 630, xmax: 1234, ymin: 577, ymax: 1077)), Obstacle(id: 1, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 1677, xmax: 1910, ymin: 515, ymax: 610))]
+Planning运行成功...........
+World update run True
+W0423 15:16:38.193658 126096737568320 mpc_operator.py:92] control_msg:{'steer': 0.18400904399192267, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.009872036054730415), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.040986742825860914, velocity vector: Vector3D(x=3.558640173650929e-07, y=-7.649358924055605e-10, z=0.040986742824316025))
+relative_time: 200
+(1080, 1920, 3)
+W0423 15:16:38.310285 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+5轮检测到的对象:car,分数：0.9999645948410034,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=652.9151>, <tf.Tensor: shape=(), dtype=float32, numpy=574.2761>, <tf.Tensor: shape=(), dtype=float32, numpy=1227.0038>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+5轮检测到的对象:car,分数：0.3192012906074524,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=559.21936>, <tf.Tensor: shape=(), dtype=float32, numpy=402.24384>, <tf.Tensor: shape=(), dtype=float32, numpy=1352.0718>, <tf.Tensor: shape=(), dtype=float32, numpy=1042.7579>]
+W0423 15:16:38.543359 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 647, xmax: 1231, ymin: 579, ymax: 1074)), Obstacle(id: 4, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 559, xmax: 1352, ymin: 402, ymax: 1042))]
+Planning运行成功...........
+World update run True
+W0423 15:16:39.021377 126096737568320 mpc_operator.py:92] control_msg:{'steer': 0.19188418830274495, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.013308925554156303), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07750482112225562, velocity vector: Vector3D(x=-2.953903504021582e-07, y=2.9507145615781383e-09, z=0.07750482112169266))
+relative_time: 250
+(1080, 1920, 3)
+W0423 15:16:39.129189 126096546727488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+6轮检测到的对象:car,分数：0.9998636245727539,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=650.03955>, <tf.Tensor: shape=(), dtype=float32, numpy=575.5042>, <tf.Tensor: shape=(), dtype=float32, numpy=1228.0784>, <tf.Tensor: shape=(), dtype=float32, numpy=1080.0>]
+W0423 15:16:39.382395 126096737568320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 649, xmax: 1229, ymin: 579, ymax: 1076)), Obstacle(id: 4, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 559, xmax: 1352, ymin: 402, ymax: 1042))]
+Planning运行成功...........
+World update run True
+W0423 15:16:40.011382 126096737568320 mpc_operator.py:92] control_msg:{'steer': 0.1231949810609521, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.01740282028913498), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.08176997304248672, velocity vector: Vector3D(x=-6.838300805611652e-07, y=-6.56276588628657e-09, z=0.08176997303962708))
+relative_time: 300
+(1080, 1920, 3)
+W0423 15:16:40.138218 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+7轮检测到的对象:car,分数：0.9998816251754761,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=643.98254>, <tf.Tensor: shape=(), dtype=float32, numpy=729.192>, <tf.Tensor: shape=(), dtype=float32, numpy=1235.7671>, <tf.Tensor: shape=(), dtype=float32, numpy=1063.9894>]
+W0423 15:16:40.386017 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 664, xmax: 1214, ymin: 696, ymax: 1092))]
+Planning运行成功...........
+World update run True
+W0423 15:16:40.908646 126096737568320 mpc_operator.py:92] control_msg:{'steer': 0.3822556463342519, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.021209698170423508), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.07247096300156694, velocity vector: Vector3D(x=2.137859098638728e-07, y=-7.557727776941192e-09, z=0.07247096300125122))
+relative_time: 350
+(1080, 1920, 3)
+W0423 15:16:41.026159 126096546727488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+8轮检测到的对象:car,分数：0.9999830722808838,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=597.6398>, <tf.Tensor: shape=(), dtype=float32, numpy=566.91614>, <tf.Tensor: shape=(), dtype=float32, numpy=927.1298>, <tf.Tensor: shape=(), dtype=float32, numpy=736.36346>]
+W0423 15:16:41.275004 126096748054080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 0, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 678, xmax: 1200, ymin: 727, ymax: 1102)), Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 597, xmax: 927, ymin: 566, ymax: 736))]
+Planning运行成功...........
+World update run True
+W0423 15:16:42.038186 126096737568320 mpc_operator.py:92] control_msg:{'steer': -0.4581489286485115, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.024388065561652184), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.058961156756722664, velocity vector: Vector3D(x=-3.4935141002279124e-07, y=-1.4922107993697864e-08, z=0.058961156755685806))
+relative_time: 400
+(1080, 1920, 3)
+W0423 15:16:42.155270 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:42.407839 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 7, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 597, xmax: 927, ymin: 566, ymax: 736))]
+Planning运行成功...........
+World update run True
+W0423 15:16:43.144960 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.01752969334244751, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.026885012164711952), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0455742590141807, velocity vector: Vector3D(x=3.366172336427553e-07, y=6.134314584071987e-11, z=0.045574259012937546))
+relative_time: 450
+(1080, 1920, 3)
+W0423 15:16:43.253313 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+10轮检测到的对象:car,分数：0.9999626874923706,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=251.6976>, <tf.Tensor: shape=(), dtype=float32, numpy=579.38715>, <tf.Tensor: shape=(), dtype=float32, numpy=644.0845>, <tf.Tensor: shape=(), dtype=float32, numpy=725.2883>]
+W0423 15:16:43.511301 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 8, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 251, xmax: 644, ymin: 579, ymax: 725))]
+Planning运行成功...........
+World update run True
+W0423 15:16:44.212456 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.025388236540028888, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.02877099998295307), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0340417958800876, velocity vector: Vector3D(x=-1.8149624736452097e-07, y=9.549755652926706e-09, z=0.03404179587960243))
+relative_time: 500
+(1080, 1920, 3)
+W0423 15:16:44.344391 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+11轮检测到的对象:car,分数：0.9996334314346313,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=7.3288536>, <tf.Tensor: shape=(), dtype=float32, numpy=580.8387>, <tf.Tensor: shape=(), dtype=float32, numpy=426.4471>, <tf.Tensor: shape=(), dtype=float32, numpy=754.5078>]
+W0423 15:16:44.598436 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 8, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 251, xmax: 644, ymin: 579, ymax: 725)), Obstacle(id: 9, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 7, xmax: 426, ymin: 580, ymax: 754))]
+Planning运行成功...........
+World update run True
+W0423 15:16:45.655640 126096829843008 mpc_operator.py:92] control_msg:{'steer': -0.015721135522726398, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03015684150159359), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.024810697883868586, velocity vector: Vector3D(x=-1.5763427541060082e-07, y=-3.741074561247615e-09, z=0.02481069788336754))
+relative_time: 550
+(1080, 1920, 3)
+W0423 15:16:45.761987 126096546727488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:46.023555 126096748054080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 9, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 7, xmax: 426, ymin: 580, ymax: 754))]
+Planning运行成功...........
+World update run True
+W0423 15:16:46.739812 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.0788793977879475, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.031154535710811615), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.017749078572294987, velocity vector: Vector3D(x=-1.326401815049394e-07, y=1.0242442449737155e-08, z=0.017749078571796417))
+relative_time: 600
+(1080, 1920, 3)
+W0423 15:16:46.844903 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:47.096142 126096737568320 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 15:16:47.372475 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03186143934726715), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.012514145115305209, velocity vector: Vector3D(x=2.1047929976703017e-07, y=1.3587040825768781e-08, z=0.012514145113527775))
+relative_time: 650
+(1080, 1920, 3)
+W0423 15:16:47.490905 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:47.774910 126096737568320 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 15:16:48.055271 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.032355938106775284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.00871755184429855, velocity vector: Vector3D(x=-5.422310778158135e-07, y=8.816089192009713e-09, z=0.008717551827430725))
+relative_time: 700
+(1080, 1920, 3)
+W0423 15:16:48.168741 126096546727488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:48.454851 126096748054080 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 15:16:48.727604 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03269826993346214), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.006015595050061099, velocity vector: Vector3D(x=-1.294541078777911e-07, y=5.1313975291122915e-09, z=0.006015595048666))
+relative_time: 750
+(1080, 1920, 3)
+W0423 15:16:48.844289 126096546727488 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:49.127086 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 15:16:49.400594 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03293321654200554), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.004115620226086858, velocity vector: Vector3D(x=7.24318340417085e-07, y=-9.744903550767958e-09, z=0.004115620162338018))
+relative_time: 800
+(1080, 1920, 3)
+W0423 15:16:49.532780 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:49.774738 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[]
+Planning运行成功...........
+World update run True
+W0423 15:16:50.082579 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.12183535219443695, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.002795878599785039, velocity vector: Vector3D(x=4.408583151871426e-07, y=2.2250336684237482e-08, z=0.002795878564938903))
+relative_time: 850
+(1080, 1920, 3)
+W0423 15:16:50.193252 126096727082560 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+18轮检测到的对象:car,分数：0.9992045760154724,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=313.33173>, <tf.Tensor: shape=(), dtype=float32, numpy=561.9718>, <tf.Tensor: shape=(), dtype=float32, numpy=498.15204>, <tf.Tensor: shape=(), dtype=float32, numpy=674.4318>]
+W0423 15:16:50.447804 126096748054080 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 10, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 313, xmax: 498, ymin: 561, ymax: 674))]
+Planning运行成功...........
+World update run True
+W0423 15:16:51.483406 126096829843008 mpc_operator.py:92] control_msg:{'steer': -0.09173546636121489, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033093202859163284), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0, velocity vector: Vector3D(x=0.0, y=0.0, z=0.0))
+relative_time: 900
+(1080, 1920, 3)
+W0423 15:16:51.616944 126096716596800 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+W0423 15:16:51.875756 126096737568320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 10, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 313, xmax: 498, ymin: 561, ymax: 674))]
+Planning运行成功...........
+World update run True
+W0423 15:16:52.609625 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.1305288648711329, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03320840746164322), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.000846645654102668, velocity vector: Vector3D(x=6.720420060446486e-07, y=-6.369877958434245e-09, z=0.0008466453873552382))
+relative_time: 950
+(1080, 1920, 3)
+W0423 15:16:52.734078 126096716596800 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+20轮检测到的对象:car,分数：0.9999408721923828,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=635.23737>, <tf.Tensor: shape=(), dtype=float32, numpy=559.0789>, <tf.Tensor: shape=(), dtype=float32, numpy=759.1393>, <tf.Tensor: shape=(), dtype=float32, numpy=657.1477>]
+W0423 15:16:52.986602 126096727082560 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 657))]
+Planning运行成功...........
+World update run True
+W0423 15:16:53.675038 126096829843008 mpc_operator.py:92] control_msg:{'steer': 0.05365337957067943, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.033252160996198654), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0008676990020845529, velocity vector: Vector3D(x=1.8598227313759708e-07, y=-2.126401987823101e-08, z=0.0008676989818923175))
+relative_time: 1000
+(1080, 1920, 3)
+W0423 15:16:53.798606 126096716596800 CustomImageStream_obstacle.py:103] send msg
+障碍物保存npy完毕.......
+21轮检测到的对象:car,分数：0.999931812286377,识别框：[<tf.Tensor: shape=(), dtype=float32, numpy=728.67267>, <tf.Tensor: shape=(), dtype=float32, numpy=558.6145>, <tf.Tensor: shape=(), dtype=float32, numpy=846.5118>, <tf.Tensor: shape=(), dtype=float32, numpy=655.42444>]
+W0423 15:16:54.070437 126096737568320 object_tracker_operator.py:132] tracked_obstacles:[Obstacle(id: 11, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 635, xmax: 759, ymin: 559, ymax: 657)), Obstacle(id: 12, label: car, confidence: 0, bbox: BoundingBox2D(xmin: 728, xmax: 846, ymin: 558, ymax: 655))]
+Planning运行成功...........
+World update run True
+W0423 15:16:55.105133 126096829843008 mpc_operator.py:92] control_msg:{'steer': -0.04178848467779552, 'throttle': 1.0, 'brake': 0, 'hand_brake': False, 'reverse': False}
+pose Pose(transform: Transform(location: Location(x=395.9599914550781, y=249.42999267578125, z=0.03329221531748772), rotation: Rotation(pitch=0.0, yaw=-90.00029754638672, roll=0.0)), forward speed: 0.0007596466457542198, velocity vector: Vector3D(x=3.8471625884994864e-10, y=3.2605003141839006e-09, z=0.0007596466457471251))
+relative_time: 1050

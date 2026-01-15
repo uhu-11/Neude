@@ -1,0 +1,3 @@
+img=None
+y=2
+choice=128

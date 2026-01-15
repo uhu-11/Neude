@@ -1,0 +1,67 @@
+I0328 17:20:34.745260 128939900011584 component_creator.py:91] Using obstacle detector...
+2025-03-28 17:20:34.850366: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+I0328 17:20:35.531989 128939900011584 tpu_cluster_resolver.py:35] Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+I0328 17:20:35.818491 128939900011584 __init__.py:47] Creating converter from 7 to 5
+I0328 17:20:35.818613 128939900011584 __init__.py:47] Creating converter from 5 to 7
+I0328 17:20:35.818661 128939900011584 __init__.py:47] Creating converter from 7 to 5
+I0328 17:20:35.818708 128939900011584 __init__.py:47] Creating converter from 5 to 7
+I0328 17:20:37.613163 128939900011584 component_creator.py:248] Using ground traffic lights from the simulator...
+I0328 17:20:37.613955 128939900011584 component_creator.py:410] Using perfect obstacle tracker...
+I0328 17:20:37.638495 128939900011584 component_creator.py:513] Using R2P2 prediction...
+I0328 17:20:37.940125 128939900011584 component_creator.py:570] Using behavior planning...
+I0328 17:20:37.959338 128939900011584 component_creator.py:574] Using planning...
+I0328 17:20:37.976881 128939900011584 component_creator.py:605] Using MPC controller...
+Connect Obstacle Detection Stream: <erdos.streams.WriteStream object at 0x754521812910>
+W0328 17:20:38.563474 128937078294080 CustomImageStream_obstacle.py:39] Initializing ObstacleDetectionStream
+2025-03-28 17:20:38.592269: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2025-03-28 17:20:38.598980: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:38.599096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-03-28 17:20:38.599141: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-03-28 17:20:38.602630: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublas.so.11
+2025-03-28 17:20:38.602710: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcublasLt.so.11
+2025-03-28 17:20:38.603843: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcufft.so.10
+2025-03-28 17:20:38.604707: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcurand.so.10
+2025-03-28 17:20:38.607718: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusolver.so.11
+2025-03-28 17:20:38.608530: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcusparse.so.11
+2025-03-28 17:20:38.609104: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudnn.so.8
+2025-03-28 17:20:38.609195: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:38.609300: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:38.609356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-03-28 17:20:40.072088: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-03-28 17:20:40.073182: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:40.073321: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties: 
+pciBusID: 0000:01:00.0 name: NVIDIA GeForce RTX 3070 computeCapability: 8.6
+coreClock: 1.725GHz coreCount: 46 deviceMemorySize: 7.77GiB deviceMemoryBandwidth: 417.29GiB/s
+2025-03-28 17:20:40.073377: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:40.073444: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:40.073494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1871] Adding visible gpu devices: 0
+2025-03-28 17:20:40.073570: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+2025-03-28 17:20:40.436773: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2025-03-28 17:20:40.436916: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]      0 
+2025-03-28 17:20:40.436960: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1277] 0:   N 
+2025-03-28 17:20:40.437198: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:40.438150: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:40.438891: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2025-03-28 17:20:40.439011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1418] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4284 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce RTX 3070, pci bus id: 0000:01:00.0, compute capability: 8.6)
+2025-03-28 17:20:40.471717: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2025-03-28 17:20:40.472042: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3494400000 Hz
+W0328 17:20:41.759309 128937078294080 detection_operator.py:64] self._flags.path_coco_labels:dependencies/models/pylot.names
+I0328 17:20:44.535063 128937078294080 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0328 17:20:44.538212 128937078294080 geos.py:49] Library path: 'libgeos_c.so.1'
+I0328 17:20:44.538293 128937078294080 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 7544682858e0 at 0x7545029a38e0>
+I0328 17:20:44.546318 128937078294080 geos.py:32] Trying `CDLL(libc.so.6)`
+I0328 17:20:44.546529 128937078294080 geos.py:49] Library path: 'libc.so.6'
+I0328 17:20:44.546577 128937078294080 geos.py:50] DLL: <CDLL 'libc.so.6', handle 75452900c760 at 0x7545029a3a90>
+I0328 17:20:44.571355 128937099265600 geos.py:32] Trying `CDLL(libgeos_c.so.1)`
+I0328 17:20:44.574126 128937099265600 geos.py:49] Library path: 'libgeos_c.so.1'
+I0328 17:20:44.574218 128937099265600 geos.py:50] DLL: <CDLL 'libgeos_c.so.1', handle 75445c43f0b0 at 0x75450fbdea00>
+I0328 17:20:44.581478 128937099265600 geos.py:32] Trying `CDLL(libc.so.6)`
+I0328 17:20:44.581758 128937099265600 geos.py:49] Library path: 'libc.so.6'
+I0328 17:20:44.581811 128937099265600 geos.py:50] DLL: <CDLL 'libc.so.6', handle 75452900c760 at 0x75450fbde9d0>
+W0328 17:20:52.519683 128937099265600 CustomImageStream_obstacle.py:103] send msg
+W0328 17:20:52.570805 128937078294080 r2p2_predictor_operator.py:95] tracking_msg:ObstacleTrajectoriesMessage(timestamp [5720], trajectories: Obstacle Obstacle(id: 774, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=-0.008867185562849045, y=0.002226569689810276, z=0.6599142551422119), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=1.1778701543807983, y=0.38183942437171936, z=0.6382853388786316))) at Transform(location: Location(x=392.4700012207031, y=87.41051483154297, z=0.08783154934644699), rotation: Rotation(pitch=0.0, yaw=90.00004577636719, roll=0.0)), trajectory [Transform(location: Location(x=18.54160888864999, y=0.0022117488179560496, z=0.6569022461771965), rotation: Rotation(pitch=0.0, yaw=0.0, roll=-0.0))]
+Obstacle Obstacle(id: 782, label: person, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=0.0, y=0.0, z=0.0), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=0.3400000035762787, y=0.3400000035762787, z=0.6499999761581421))) at Transform(location: Location(x=400.3736267089844, y=101.99098205566406, z=0.7758656740188599), rotation: Rotation(pitch=0.0, yaw=-24.337440490722656, roll=0.0)), trajectory [Transform(location: Location(x=33.13093698374092, y=-7.903651958190494, z=0.6850221157073975), rotation: Rotation(pitch=0.0, yaw=114.33748626708984, roll=-0.0))])
+W0328 17:20:52.631734 128937078294080 r2p2_predictor_operator.py:99] nearby_trajectories:[Obstacle Obstacle(id: 774, label: vehicle, confidence: 1.0, bbox: BoundingBox3D(transform: Transform(location: Location(x=-0.008867185562849045, y=0.002226569689810276, z=0.6599142551422119), rotation: Rotation(pitch=0, yaw=0, roll=0)), extent: Vector3D(x=1.1778701543807983, y=0.38183942437171936, z=0.6382853388786316))) at Transform(location: Location(x=392.4700012207031, y=87.41051483154297, z=0.08783154934644699), rotation: Rotation(pitch=0.0, yaw=90.00004577636719, roll=0.0)), trajectory [Transform(location: Location(x=18.54160888864999, y=0.0022117488179560496, z=0.6569022461771965), rotation: Rotation(pitch=0.0, yaw=0.0, roll=-0.0))]]

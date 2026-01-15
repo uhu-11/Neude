@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pythonfuzz/pythonfuzz/fuzzer.py", line 226, in worker
+    raise ValueError(error_content)
+ValueError: error:Traceback (most recent call last):
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/coverage_decorator.py", line 29, in wrapper
+    result = func(*args, **kwargs)
+  File "/media/lzq/D/lzq/pylot_test/pylot/pylot/planning/planning_operator.py", line 273, in update_world
+    pose_msg = self._pose_msgs.popleft()
+IndexError: pop from an empty deque
+

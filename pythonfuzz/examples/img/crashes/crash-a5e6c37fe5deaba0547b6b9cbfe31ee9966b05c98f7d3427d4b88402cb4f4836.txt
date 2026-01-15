@@ -1,0 +1,3 @@
+img=bytearray(b'/media/lzq/D/lzq/fuzz_tool/demo/input_\xb8mages')
+y=4
+choice=-47

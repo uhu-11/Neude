@@ -1,0 +1,3 @@
+img=bytearray(b'/media/lzq/D/lzq|quzz_tool/demo/input_images')
+y=8
+choice=0

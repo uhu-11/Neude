@@ -1,0 +1,3 @@
+img=<PIL.Image.Image image mode=RGB size=32x32 at 0x702E72D0FA30>
+y=1
+choice=0

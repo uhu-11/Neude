@@ -1,0 +1,2 @@
+data_x=/home/lzq/tra
+data_y=bytearray(b'/homp/lzq/train_y.ney')
