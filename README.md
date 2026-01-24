@@ -68,47 +68,47 @@ The dataset used for testing is collected using the Pylot data collection script
 ### Quick Start
 
 1. Set the `PYLOT_HOME` environment variable.
-
-```
-cd pylot
-export PYLOT_HOME=`pwd`/
-```
+   
+   ```
+   cd pylot
+   export PYLOT_HOME=`pwd`/
+   ```
 
 2. Execute the specified script.
-
-```
-cd $PYLOT_HOME/scripts/
-source ./set_pythonpath.sh
-```
+   
+   ```
+   cd $PYLOT_HOME/scripts/
+   source ./set_pythonpath.sh
+   ```
 
 3. Run the test.
-
-```
-cd  $PYLOT_HOME/
-python fuzz_list.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
-```
+   
+   ```
+   cd  $PYLOT_HOME/
+   python fuzz_list.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
+   ```
 
 Results and key data are saved in JSON format in the newly created `result/datas` directory.
 
 ### Running Individual Modules
 
 1. Obstacle Detection Module
-
-```bash
-python3 pylot3.py --flagfile=configs/detection2.conf > detection2.txt 2>&1
-```
+   
+   ```bash
+   python3 pylot3.py --flagfile=configs/detection2.conf > detection2.txt 2>&1
+   ```
 
 2. Traffic Light Module
-
-```bash
-python3 pylot3.py --flagfile=configs/traffic_light.conf  > traffic_light.txt 2>&1
-```
+   
+   ```bash
+   python3 pylot3.py --flagfile=configs/traffic_light.conf  > traffic_light.txt 2>&1
+   ```
 
 3. MPC Control Module
-
-```bash
-python3 pylot3.py --flagfile=configs/mpc2.conf > mpc2.txt 2>&1
-```
+   
+   ```bash
+   python3 pylot3.py --flagfile=configs/mpc2.conf > mpc2.txt 2>&1
+   ```
 
 More module configurations can be found and used in `Neude/pylot/configs/`
 
