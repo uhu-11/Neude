@@ -94,19 +94,19 @@ Results and key data are saved in JSON format in the newly created `result/datas
 
 1. Obstacle Detection Module
    
-   ```bash
+   ```
    python3 pylot3.py --flagfile=configs/detection2.conf > detection2.txt 2>&1
    ```
 
 2. Traffic Light Module
    
-   ```bash
+   ```
    python3 pylot3.py --flagfile=configs/traffic_light.conf  > traffic_light.txt 2>&1
    ```
 
 3. MPC Control Module
    
-   ```bash
+   ```
    python3 pylot3.py --flagfile=configs/mpc2.conf > mpc2.txt 2>&1
    ```
 
