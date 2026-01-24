@@ -50,8 +50,6 @@ In order to reproduce our experiment, we should install the complete dependency.
 
 The dataset used for testing is collected using the Pylot data collection script, which gathers data from the Calar system. In addition to the visual data, the runtime information provided by Calar is also recorded, which supports consistent replay and offline analysis. 
 
-The dataset consists of six scenes—Town1, Town2, Town3, Town4, Town5, and Town6—each of which represents a different driving environment. Initial data from each scene is collected as seed data to ensure that the starting conditions are accurate.
-
 1. Download dependencies.
 
    The dependencies are stored in Baidu Netdisk. Download link:
