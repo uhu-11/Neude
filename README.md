@@ -117,7 +117,7 @@ More module configurations can be found and used in `Neude/pylot/configs/`
 1. Collect data using a custom dataset
 
    ```bash
-   python3 data_gatherer.py --data_path /media/lzq/D/town5 --simulator_town 2 -log_traffic_lights True --log_obstacles True --log_rgb_camera True --log_trajectories True --log_multiple_object_tracker True  --log_file_name /home/lzq/data_gather.log --tracking_num_steps 10 --log_every_nth_message 10
+   python3 data_gatherer.py --data_path town5 --simulator_town 2 -log_traffic_lights True --log_obstacles True --log_rgb_camera True --log_trajectories True --log_multiple_object_tracker True  --log_file_name data_gather.log --tracking_num_steps 10 --log_every_nth_message 10
    ```
 
 2. Adjust fuzzing settings in `Neude/pythonfuzz/pythonfuzz/main.py`
