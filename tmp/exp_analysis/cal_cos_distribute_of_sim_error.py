@@ -1,34 +1,4 @@
 
-'''
-计算触发不同错误的迭代之间不同模块的覆盖向量的余弦相似度。然后根据相似度大小将错误分为不同类别。
-具体任务如下：
-1.按错误类型划分计算相似度的对象。读取/home/lzq/result/datas/100_iter_errors.json文件，取出cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors列的数据。
-如果cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors中存在大于0的值，则认为该迭代存在对应模块的错误，按照这个标准确定该迭代是否发生了对应模块的错误。
-
-2.取出每次迭代的三个模块的覆盖向量。
-'/media/lzq/D/lzq/pylot_test/pylot/cov_vector'下有若干npy文件，迭代i的覆盖向量文件名为{i}_array_vector.npy。其中包含若干向量，
-取出其中的perception_vector，planning_vector，control_vector，other_vector。
-
-3.计算"发生cur_code_errors的迭代"和"没有发生cur_code_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
-对于每个错误，计算其与没有发生该错误的迭代之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector的余弦相似度，取平均值，
-根据相似度平均值将错误分为不同类别，类别为相似度大于等于1，小于1并且大于等于0.9，小于0.9并且大于等于0.8，小于0.8并且大于等于0.7，小于0.7并且大于等于0.6，小于0.6。
-最后，每行数据之和即为该错误类型的总数量。
-
-同样的，
-计算"发生cur_model_errors的迭代"和"没有发生cur_model_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。对于每个错误，计算其与没有发生该错误的迭代之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度，取平均值，
-根据相似度平均值将错误分为不同类别，类别为相似度大于等于1，小于1并且大于等于0.9，小于0.9并且大于等于0.8，小于0.8并且大于等于0.7，小于0.7并且大于等于0.6，小于0.6。
-最后，每行数据之和即为该错误类型的总数量。
-计算"发生cur_planning_errors的迭代"和"没有发生cur_planning_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。对于每个错误，计算其与没有发生该错误的迭代之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度，取平均值，
-根据相似度平均值将错误分为不同类别，类别为相似度大于等于1，小于1并且大于等于0.9，小于0.9并且大于等于0.8，小于0.8并且大于等于0.7，小于0.7并且大于等于0.6，小于0.6。
-最后，每行数据之和即为该错误类型的总数量。
-计算"发生cur_control_errors的迭代"和"没有发生cur_control_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。对于每个错误，计算其与没有发生该错误的迭代之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度，取平均值，
-根据相似度平均值将错误分为不同类别，类别为相似度大于等于1，小于1并且大于等于0.9，小于0.9并且大于等于0.8，小于0.8并且大于等于0.7，小于0.7并且大于等于0.6，小于0.6。
-最后，每行数据之和即为该错误类型的总数量。
-
-
-给出结果表。
-
-'''
 
 import os
 import json
