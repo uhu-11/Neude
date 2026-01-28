@@ -1,4 +1,3 @@
-absl-py @ file:///tmp/build/80754af9/absl-py_1600297518631/work
 addict==2.4.0
 aiofiles==22.1.0
 aiosqlite==0.17.0
@@ -59,7 +58,6 @@ h5py==3.1.0
 idna==3.10
 imageio==2.35.1
 imgaug==0.2.6
-importlib-metadata @ file:///croot/importlib_metadata-suite_1704813515092/work
 importlib_resources==6.4.5
 iniconfig==2.0.0
 ipykernel==6.29.5
@@ -95,14 +93,11 @@ kiwisolver==1.4.7
 lapsolver==1.1.0
 lark==1.2.2
 lazy_loader==0.4
-llvmlite @ file:///croot/llvmlite_1697031035361/work
 Markdown==3.7
 MarkupSafe==2.1.5
 matplotlib==3.4.3
 matplotlib-inline==0.1.7
 mistune==3.0.2
-mkl-fft @ file:///croot/mkl_fft_1695058164594/work
-mkl-random @ file:///croot/mkl_random_1695059800811/work
 mkl-service==2.4.0
 mmcv==1.3.10
 mmdet==2.14.0
@@ -223,4 +218,3 @@ xmltodict==0.14.2
 y-py==0.6.2
 yapf==0.40.2
 ypy-websocket==0.8.4
-zipp @ file:///croot/zipp_1729012354496/work

@@ -18,12 +18,9 @@ Neude
 │   ├── error_seeds/                    error-triggering seeds
 │   ├── error_infos/                    error information files
 │   ├── local_seeds_pool/               local seed pool for fuzzing
-├── Neude/                         		Neude framework
-│   ├── Neude/                     		core Neude engine
-│   ├── PTtool/                         fuzzing tools
-│   ├── ATS/                            automated test suite
+├── neude/                         		Neude framework
+│   ├── neude/                     		core Neude engine
 │   └── traj-dist/                      trajectory distance calculation
-├── scalpel/                            Python static analysis framework
 ├── tmp/                                temporary files and analysis tools
 ├── mutilprocess/                       multiprocessing test utilities
 └── coverage_test/                      coverage testing directory
@@ -65,11 +62,33 @@ For detailed instructions on Pylot deployment, visualizing components, and manua
 
 You can also directly use the Pylot in our project, which uses version 0.3.3. It has been configured to support distributed multi-process coverage collection.
 
-#### Pynguin
+Running Individual Modules：你可以运行单独模块来验证安装是否正确。
 
-For detailed installation procedures and usage methods, please refer to the [online documentation](https://pynguin.readthedocs.io/) and the [code](https://github.com/se2p/pynguin).
+- Obstacle Detection Module
+
+```
+python3 pylot3.py --flagfile=configs/detection2.conf > detection2.txt 2>&1
+```
+
+- Traffic Light Module
+
+```
+python3 pylot3.py --flagfile=configs/traffic_light.conf  > traffic_light.txt 2>&1
+```
+
+- MPC Control Module
+
+```
+python3 pylot3.py --flagfile=configs/mpc2.conf > mpc2.txt 2>&1
+```
+
+More module configurations can be found and used in `Neude/pylot/configs/`.
 
 ## Usage
+
+Neude combines observations of program execution and neural model coverage to guide input mutations toward unexplored state spaces, enabling systematic evaluation of the entire hybrid pipeline.
+
+Neude is more lightweight in terms of usage. For a function or framework that needs testing, tests can be quickly run by simply adding annotations. During the testing process, the input seed will be automatically mutated based on its type using the methods in `Mutations.py`. Below is an example of using Neude:
 
 1. Set the `PYLOT_HOME` environment variable.
 
@@ -87,7 +106,7 @@ For detailed installation procedures and usage methods, please refer to the [onl
 
 3. Select the method to be tested, add annotations, and run the test.
 
-   - Below is an example demonstrating the use of @Neude to apply our method, or @pythonfuzz to test the baseline.
+   - Below is an example demonstrating the use of @Neude to apply our method.
 
      ```python
      from neude.main import Neude
@@ -115,29 +134,29 @@ For detailed installation procedures and usage methods, please refer to the [onl
 
 Results and key data are saved in JSON format in the newly created `result/datas` directory.
 
-#### Running Individual Modules
+**Reports**: After the run is completed, you can view the coverage reports for each iteration and the overall coverage in the `covhtml` and `covreport` folders under the run directory. As shown in the figure below:
 
-1. Obstacle Detection Module
+![image-20260128210527850](image/image-20260128210527850.png)
 
-   ```
-   python3 pylot3.py --flagfile=configs/detection2.conf > detection2.txt 2>&1
-   ```
-
-2. Traffic Light Module
-
-   ```
-   python3 pylot3.py --flagfile=configs/traffic_light.conf  > traffic_light.txt 2>&1
-   ```
-
-3. MPC Control Module
-
-   ```
-   python3 pylot3.py --flagfile=configs/mpc2.conf > mpc2.txt 2>&1
-   ```
-
-More module configurations can be found and used in `Neude/pylot/configs/`.
+The report records the line coverage and branch coverage information for each file, as well as a visual representation of the coverage status of each line of code in each code file, including missing_lines, covered_lines, missing_branches, partial_branches, and so on, distinguished by different colors. This allows for a clear and immediate view of the code coverage information and comparisons between different iterations.
 
 ## Experiments
+
+Choose the specific method to use and run tests with different configurations. You can use the preset configurations we have provided:
+
+- **Neude_GWCC**（Global Weighted Compositional Coverage）：
+
+  ```
+  python fuzz_list_neude_gw.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
+  ```
+
+- **Neude_PNIC**（Path-Neuron Inclusion Coverage）：
+
+  ```
+  python fuzz_list_neude_gw.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
+  ```
+
+More specific configurations can be set in `neude/config.py`. The path to view the experimental results is described below.
 
 ##### RQ1: Fault Detection
 
@@ -149,7 +168,7 @@ Output results for perception, planning, and control from each test are saved in
 
 ##### RQ2: Coverage Improvement
 
-1. **code coverage**: The experiment saves code coverage reports for each iteration, including line coverage and branch coverage information, saved in the path `pylot/covreport`. If you need to view detailed statistics on missing_branches and covered_branches for branch coverage, you can use:
+1. **code coverage**: The experiment saves code coverage reports for each iteration, including line coverage and branch coverage information, saved in the path `pylot/covreport`. If you need to view detailed statistics on missing_branches, partial_branches and covered_branches for branch coverage, you can use:
 
    ```
    python tmp/calculate_branch_coverage.py
@@ -159,13 +178,22 @@ Output results for perception, planning, and control from each test are saved in
 
 ##### RQ3: Fault Propagation
 
-1. Quantitative analysis of error propagation. To view all the error propagation quantification results, you can use:
+1. Quantitative analysis of error propagation. The output results of each module obtained from the test are saved in the `datas/100.json` folder. Based on the output, it can be determined whether any errors have occurred in each module.. To view all the error propagation quantification results, you can use:
 
    ```
    python tmp/exp_analysis/define_mr_error_all.py
    ```
 
-2. Detailed report on cascading failure cases can be viewed in the `pylot/covhtml` folder.
+2. Detailed report on cascading failure cases can be viewed in the `pylot/covhtml` folder. Including the coverage status of each iteration and the overall coverage, providing intuitive code coverage information in HTML format. Users can locate the corresponding HTML file based on the iteration count and the file name requiring code coverage inspection for deeper analysis.
+
+### Baseline
+
+If you wish to use baseline  for testing, please refer to the official documentation and code provided below for configuration.
+
+1. **pythonfuzz**: A state-of-the-art fuzzer designed for deep learning models. Download repo from [link](https://gitlab.com/gitlab-org/security-products/analyzers/fuzzers/pythonfuzz).
+
+2. **deephunter**: A general-purpose coverage-guided fuzzer for Python applications. Download repo from [link](https://github.com/Shimmer93/Deephunter-backup).
+3. **Pynguin**: A tool used for automated unit testing. For detailed installation procedures and usage methods, please refer to the [online documentation](https://pynguin.readthedocs.io/) and the [code](https://github.com/se2p/pynguin).
 
 ## Custom Configuration
 
@@ -190,7 +218,7 @@ Output results for perception, planning, and control from each test are saved in
      --has-model, to justify the system is tested using model
      ```
 
-   - Select save paths, set `config.COV_HTML_PATH`, `config.COV_REPORT_PATH`, `config.CRASH_SEED_PATH`, `config.DATA_SAVE_PATH`, `config.SEED_SAVE_PATH`, `config.ITER_COV_REPORT_PATH`, `config.PROJECT_ERROR_LOG`, `config.ERROR_INFOS_DIR`, `config.LOCAL_SEED_POOL`, etc.
+   - Select save paths in `neude/config.py`, set `config.COV_HTML_PATH`, `config.COV_REPORT_PATH`, `config.CRASH_SEED_PATH`, `config.DATA_SAVE_PATH`, `config.SEED_SAVE_PATH`, `config.ITER_COV_REPORT_PATH`, `config.PROJECT_ERROR_LOG`, `config.ERROR_INFOS_DIR`, `config.LOCAL_SEED_POOL`, etc.
 
    - Custom mutation strategy: Select a combination of multiple mutation methods from `neude/neude/mutation_ops` and incorporate them into `Mutation.py`.
 
