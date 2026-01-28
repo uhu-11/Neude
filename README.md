@@ -62,7 +62,7 @@ For detailed instructions on Pylot deployment, visualizing components, and manua
 
 You can also directly use the Pylot in our project, which uses version 0.3.3. It has been configured to support distributed multi-process coverage collection.
 
-Running Individual Modules：你可以运行单独模块来验证安装是否正确。
+You can run individual modules to verify whether the installation is correct.
 
 - Obstacle Detection Module
 
