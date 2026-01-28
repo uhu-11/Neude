@@ -153,7 +153,7 @@ Choose the specific method to use and run tests with different configurations. Y
 - **Neude_PNIC**（Path-Neuron Inclusion Coverage）：
 
   ```
-  python fuzz_list_neude_gw.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
+  python fuzz_list_neude_pn.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
   ```
 
 More specific configurations can be set in `neude/config.py`. The path to view the experimental results is described below.
