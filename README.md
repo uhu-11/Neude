@@ -160,9 +160,9 @@ More specific configurations can be set in `neude/config.py`. The path to view t
 
 ##### RQ1: Fault Detection
 
-**Error seed**: Error seeds for each module are saved separately in `perception_error_seeds`, `planning_error_seeds`, and `control_error_seeds` under the `error_seeds` folder.
+1. **Error seed**: Error seeds for each module are saved separately in `perception_error_seeds`, `planning_error_seeds`, and `control_error_seeds` under the `error_seeds` folder.
 
-**Error informations**: Detailed information for each error is saved in `pylot/error_infos`, numbered by the iteration in which the error occurred.
+2. **Error informations**: Detailed information for each error is saved in `pylot/error_infos`, numbered by the iteration in which the error occurred.
 
 Output results for perception, planning, and control from each test are saved in the `ious`, `tdist`, and `steer_diff` columns in `datas/100.json`.
 
