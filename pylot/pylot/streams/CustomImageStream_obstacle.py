@@ -18,8 +18,8 @@ import numpy as np
 from pylot.drivers.sensor_setup import RGBCameraSetup
 from pylot.inputs import images
 from pylot.simulation.utils import set_asynchronous_mode
-pythonfuzz_path = "/media/lzq/D/lzq/pylot_test/pythonfuzz"  # 修改为你的 pythonfuzz 实际路径
-sys.path.append(pythonfuzz_path)
+neude_path = os.path.join(os.path.dirname(__file__), '..', '..', '..', 'neude', 'neude')  # 修改为你的 neude 实际路径
+sys.path.append(neude_path)
 
 
 

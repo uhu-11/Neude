@@ -36,7 +36,6 @@ We implement all the Neude systems with Tensorflow 2.5.1 and Python 3.8 in the L
 Run the following command to install the dependencies.
 
 ```
-cd pylot
 pip install -r requirements.txt
 ```
 
@@ -72,8 +71,6 @@ For detailed installation procedures and usage methods, please refer to the [onl
 
 ## Usage
 
-#### Running Tests
-
 1. Set the `PYLOT_HOME` environment variable.
 
    ```
@@ -81,19 +78,40 @@ For detailed installation procedures and usage methods, please refer to the [onl
    export PYLOT_HOME=`pwd`/
    ```
 
-2. Execute the specified script.
+2. Execute the specified script. This script configures the Python module search path to ensure that Pylot and CARLA modules can be imported correctly.
 
    ```
    cd $PYLOT_HOME/scripts/
    source ./set_pythonpath.sh
    ```
 
-3. Run the test.
+3. Select the method to be tested, add annotations, and run the test.
 
-   ```
-   cd  $PYLOT_HOME/
-   python fuzz_list.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
-   ```
+   - Below is an example demonstrating the use of @Neude to apply our method, or @pythonfuzz to test the baseline.
+
+     ```python
+     from neude.main import Neude
+     
+     @Neude
+     def fuzz_interface(imgs:list,y:list,planning_label:list,control_label:list,
+                        perfect_depth_estimation:bool,
+                        perfect_segmentation:bool, 
+                        log_detector_output:bool,
+                        log_lane_detection_camera:bool,log_traffic_light_detector_output:bool):
+         ...
+         target_process.start()
+         ...
+     
+     if __name__ == '__main__':
+         fuzz_interface()
+     ```
+
+   - Use our configuration to run the test.
+
+     ```
+     cd  $PYLOT_HOME/
+     python fuzz_list.py dirs seed_list2.txt --has-model True --use-nc True --batch-size 10 | tee terminal_output.txt
+     ```
 
 Results and key data are saved in JSON format in the newly created `result/datas` directory.
 
@@ -117,7 +135,7 @@ Results and key data are saved in JSON format in the newly created `result/datas
    python3 pylot3.py --flagfile=configs/mpc2.conf > mpc2.txt 2>&1
    ```
 
-More module configurations can be found and used in `Neude/pylot/configs/`
+More module configurations can be found and used in `Neude/pylot/configs/`.
 
 ## Experiments
 
@@ -131,7 +149,7 @@ Output results for perception, planning, and control from each test are saved in
 
 ##### RQ2: Coverage Improvement
 
-1. **code coverage**: The experiment saves code coverage reports for each iteration, including line coverage and branch coverage information, saved in the path below. If you need to view detailed statistics on missing_branches and covered_branches for branch coverage, you can use:
+1. **code coverage**: The experiment saves code coverage reports for each iteration, including line coverage and branch coverage information, saved in the path `pylot/covreport`. If you need to view detailed statistics on missing_branches and covered_branches for branch coverage, you can use:
 
    ```
    python tmp/calculate_branch_coverage.py
@@ -139,17 +157,25 @@ Output results for perception, planning, and control from each test are saved in
 
 2. **neuron coverage**: Results on how neuron coverage changes with the number of iterations can be found in the `max_nac_rate` column in `datas/100.json`.
 
-##### RQ3: Case Study
+##### RQ3: Fault Propagation
+
+1. Quantitative analysis of error propagation. To view all the error propagation quantification results, you can use:
+
+   ```
+   python tmp/exp_analysis/define_mr_error_all.py
+   ```
+
+2. Detailed report on cascading failure cases can be viewed in the `pylot/covhtml` folder.
 
 ## Custom Configuration
 
-1. Collect data using a custom dataset
+1. Collect data using a custom dataset.
 
    ```bash
    python3 data_gatherer.py --data_path town5 --simulator_town 2 -log_traffic_lights True --log_obstacles True --log_rgb_camera True --log_trajectories True --log_multiple_object_tracker True  --log_file_name data_gather.log --tracking_num_steps 10 --log_every_nth_message 10
    ```
 
-2. Adjust fuzzing settings in `Neude/pythonfuzz/pythonfuzz/main.py`
+2. Adjust fuzzing settings in `neude/neude/main.py`.
 
    - Fuzzing settings:
 
@@ -164,6 +190,8 @@ Output results for perception, planning, and control from each test are saved in
      --has-model, to justify the system is tested using model
      ```
 
-   - Select strategy and save paths, set `config.USE_FUNCTIONS` in `Neude/pythonfuzz/pythonfuzz/config.py`, as well as data save paths such as `config.COV_HTML_PATH`, `config.CRASH_SEED_PATH`, `config.ERROR_INFOS_DIR`, `config.LOCAL_SEED_POOL`, etc.
+   - Select save paths, set `config.COV_HTML_PATH`, `config.COV_REPORT_PATH`, `config.CRASH_SEED_PATH`, `config.DATA_SAVE_PATH`, `config.SEED_SAVE_PATH`, `config.ITER_COV_REPORT_PATH`, `config.PROJECT_ERROR_LOG`, `config.ERROR_INFOS_DIR`, `config.LOCAL_SEED_POOL`, etc.
 
-3. Set the dataset in `Neude/pylot/seed_list2.txt`，including the imgs dataset and the labels for perception, planning, and control modules.
+   - Custom mutation strategy: Select a combination of multiple mutation methods from `neude/neude/mutation_ops` and incorporate them into `Mutation.py`.
+
+3. Set the dataset in `pylot/seed_list2.txt`，including the imgs dataset and the labels for perception, planning, and control modules.

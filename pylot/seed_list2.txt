@@ -1,7 +1,7 @@
-imgs=/home/lzq/experiment_datatset/fuzz_test_dataset/town1/obstacles_dataset_datax
-y=/home/lzq/experiment_datatset/fuzz_test_dataset/town1/obstacles_y.npy
-planning_label=/home/lzq/experiment_datatset/fuzz_test_dataset/town1/plannings/town1_obstacle/planning_rs_label_y.npy
-control_label=/home/lzq/experiment_datatset/fuzz_test_dataset/town1/controls/town1_obstacle/control_rs_label_y.npy
+imgs=experiment_datatset/fuzz_test_dataset/town1/obstacles_dataset_datax
+experiment_datatset/fuzz_test_dataset/town1/obstacles_y.npy
+planning_label=experiment_datatset/fuzz_test_dataset/town1/plannings/town1_obstacle/planning_rs_label_y.npy
+control_label=experiment_datatset/fuzz_test_dataset/town1/controls/town1_obstacle/control_rs_label_y.npy
 perfect_depth_estimation=False
 perfect_segmentation=False
 log_detector_output=False

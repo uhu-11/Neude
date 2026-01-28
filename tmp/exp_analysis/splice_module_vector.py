@@ -1,119 +1,5 @@
-# 对每个迭代的覆盖向量按照模块拼接，将拼接后的几个模块覆盖向量 追加写入npy文件中，方便后面的计算。
-# 遍历/media/lzq/D/lzq/pylot_test/pylot/cov_vector下的以array_vector.npy结尾的文件(即{i}_array_vector.npy)，读取每个npy文件中的所有覆盖向量，按照模块拼接，追加写入对应的npy文件中。
-# 模块定义如下，如果某个npy文件缺少某些对应名称的数组，则用0填充对应长度。
+# 对每个迭代的覆盖向量按照模块拼接保证长度一致。
 
-'''
-模块定义：
-所有模块total_vector：所有文件的覆盖向量拼接的覆盖向量。
-感知模块（perception_vector，所有名称以pylot/perception开头的数组拼接的数组），包括：
-   
-  数组名称: pylot/perception/detection/obstacle.py_vector
-    数组形状: (342,)
-    总行数: 341, 覆盖: 24, 未覆盖: 118, 空行/注释: 199
-
-  数组名称: pylot/perception/detection/speed_limit_sign.py_vector
-    数组形状: (76,)
-    总行数: 75, 覆盖: 2, 未覆盖: 25, 空行/注释: 48
-
-  数组名称: pylot/perception/detection/traffic_light.py_vector
-    数组形状: (424,)
-    总行数: 423, 覆盖: 38, 未覆盖: 110, 空行/注释: 275
-
-  数组名称: pylot/perception/detection/utils.py_vector
-    数组形状: (595,)
-    总行数: 594, 覆盖: 74, 未覆盖: 187, 空行/注释: 333
-
-  数组名称: pylot/perception/point_cloud.py_vector
-    数组形状: (213,)
-    总行数: 212, 覆盖: 21, 未覆盖: 67, 空行/注释: 124
-
-  数组名称: pylot/perception/detection/detection_operator.py_vector
-    数组形状: (215,)
-    总行数: 214, 覆盖: 34, 未覆盖: 58, 空行/注释: 122
-
-  数组名称: pylot/perception/segmentation/segmented_frame.py_vector
-    数组形状: (323,)
-    总行数: 322, 覆盖: 12, 未覆盖: 119, 空行/注释: 191
-
-  数组名称: pylot/perception/tracking/multi_object_tracker.py_vector
-    数组形状: (21,)
-    总行数: 20, 覆盖: 4, 未覆盖: 3, 空行/注释: 13
-
-  数组名称: pylot/perception/tracking/object_tracker_operator.py_vector
-    数组形状: (161,)
-    总行数: 160, 覆盖: 55, 未覆盖: 51, 空行/注释: 54
-
-  数组名称: pylot/perception/tracking/obstacle_location_history_operator.py_vector
-    数组形状: (135,)
-    总行数: 134, 覆盖: 50, 未覆盖: 43, 空行/注释: 41
-
-  数组名称: pylot/perception/tracking/obstacle_trajectory.py_vector
-    数组形状: (89,)
-    总行数: 88, 覆盖: 8, 未覆盖: 40, 空行/注释: 40
-
-  数组名称: pylot/perception/tracking/sort_tracker.py_vector
-    数组形状: (70,)
-    总行数: 69, 覆盖: 34, 未覆盖: 1, 空行/注释: 34
-
-  数组名称: pylot/perception/detection/lane.py_vector
-    数组形状: (213,)
-    总行数: 212, 覆盖: 29, 未覆盖: 109, 空行/注释: 74
-
-规划模块（planning_vector，所有名称以pylot/planning开头的数组拼接的数组），包括：
-
-  数组名称: pylot/planning/behavior_planning_operator.py_vector
-    数组形状: (277,)
-    总行数: 276, 覆盖: 35, 未覆盖: 104, 空行/注释: 137
-
-  数组名称: pylot/planning/planner.py_vector
-    数组形状: (44,)
-    总行数: 43, 覆盖: 23, 未覆盖: 2, 空行/注释: 18
-
-  数组名称: pylot/planning/planning_operator.py_vector
-    数组形状: (294,)
-    总行数: 293, 覆盖: 56, 未覆盖: 98, 空行/注释: 139
-
-  数组名称: pylot/planning/waypoints.py_vector
-    数组形状: (218,)
-    总行数: 217, 覆盖: 27, 未覆盖: 99, 空行/注释: 91
-
-  数组名称: pylot/planning/world.py_vector
-    数组形状: (444,)
-    总行数: 443, 覆盖: 34, 未覆盖: 180, 空行/注释: 229
-
-  数组名称: pylot/planning/rrt_star/rrt_star_planner.py_vector
-    数组形状: (108,)
-    总行数: 107, 覆盖: 25, 未覆盖: 14, 空行/注释: 68
-
-
-控制模块（control_vector，所有名称以pylot/control开头的数组拼接的数组），包括：
-
-  数组名称: pylot/control/mpc/mpc_operator.py_vector
-    数组形状: (157,)
-    总行数: 156, 覆盖: 53, 未覆盖: 60, 空行/注释: 43
-
-  数组名称: pylot/control/mpc/mpc.py_vector
-    数组形状: (324,)
-    总行数: 323, 覆盖: 17, 未覆盖: 127, 空行/注释: 179
-
-  数组名称: pylot/control/pid.py_vector
-    数组形状: (129,)
-    总行数: 128, 覆盖: 7, 未覆盖: 51, 空行/注释: 70
-
-  数组名称: pylot/control/time_to_decision_operator.py_vector
-    数组形状: (52,)
-    总行数: 51, 覆盖: 10, 未覆盖: 24, 空行/注释: 17
-
-  数组名称: pylot/control/mpc/utils.py_vector
-    数组形状: (393,)
-    总行数: 392, 覆盖: 109, 未覆盖: 72, 空行/注释: 211
-
-
-其他模块（other_vector，所有名称不以pylot/perception、pylot/planning、pylot/control开头的数组拼接的数组）。
-
-
-
-'''
 
 import os
 import numpy as np
@@ -295,7 +181,7 @@ def splice_module_vectors(data_dict, array_max_lengths,
 
 
 def main():
-    vectors_dir = '/media/lzq/D/lzq/pylot_test/pylot/ori_cov_vector'
+    vectors_dir = 'pylot/ori_cov_vector'
     
     print("=" * 80)
     print("开始处理覆盖向量模块拼接")

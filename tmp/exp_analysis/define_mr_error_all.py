@@ -57,11 +57,6 @@ def main():
     # 初始化总计数
     total_counts = {error_type: 0 for error_type in error_types}
     
-    # 读取6个文件
-    # print("=" * 80)
-    # print("统计所有codelfuzz1实验的MR错误数量")
-    # print("=" * 80)
-    # print()
     
     file_counts = []
     

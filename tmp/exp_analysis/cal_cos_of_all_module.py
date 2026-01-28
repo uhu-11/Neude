@@ -147,8 +147,8 @@ def cosine_similarity(vec1, vec2):
 
 
 def main():
-    error_infos_dir = '/media/lzq/D/lzq/pylot_test/pylot/error_infos'
-    vectors_dir = '/media/lzq/D/lzq/pylot_test/pylot/cov_vector'
+    error_infos_dir = 'pylot/error_infos'
+    vectors_dir = 'pylot/cov_vector'
     
     # 按错误签名分组
     error_groups = defaultdict(list)

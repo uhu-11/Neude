@@ -1,7 +1,3 @@
-# 报错信息路径：/media/lzq/D/lzq/pylot_test/pylot/error_infos/x.txt，x代表迭代的次数
-# 向量路径：/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/x_error.pickle（error代表出现报错）
-#          /media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/x_normal.pickle（normal代表无报错）
-# 计算"触发相同错误的用例"和"触发不同错误的用例"的覆盖向量之间的余弦相似度
 
 import os
 import pickle
@@ -84,9 +80,9 @@ def calculate_similarities_for_group(vectors_data, vector_type='line_vector'):
     return similarities, length_info, invalid_pairs
 
 def main():
-    error_infos_dir = '/media/lzq/D/lzq/pylot_test/pylot/error_infos'
-    vectors_dir = '/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors'
-    output_file = '/media/lzq/D/lzq/pylot_test/tmp/similarity_analysis_result.txt'
+    error_infos_dir = 'pylot/error_infos'
+    vectors_dir = 'error_seeds_vectors'
+    output_file = 'similarity_analysis_result.txt'
     
     # 按错误签名分组
     error_groups = defaultdict(list)

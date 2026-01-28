@@ -1,9 +1,4 @@
 '''
-
-input_file_path 改为 '/home/lzq/result/datas/100_nac_vectors_exp35.json'
-
-神经元向量路径：读取/home/lzq/test_reslut/会议论文实验结果/exp35/100.json，取出json文件中的batch_nac_vectors，其中包含100次迭代的神经元向量，每次迭代都包含10个神经元向量，代表每次迭代的10个测试用例的神经元向量。取出每个向量的前2145长度再进行计算。
-
 判断是否发生cur_model_errors：
 读取/home/lzq/test_reslut/会议论文实验结果/exp35/100.json文件，取出ious列的数据，包含一百次迭代的ious，每次迭代的ious都是一个数组，包含十个元素，按位置对应了十个测试用例的测试值。
 正确的判断标准如下：
@@ -19,11 +14,6 @@ ious：感知模块IoU > 0.5 为正确，否则为错误。
 
 3.计算所有"发生cur_model_errors的测试用例"之间的覆盖向量nac_vector的余弦相似度。
 
-给出平均值、最小值、最大值、中位数。
-
-
-将向量划分为不同段，分别计算余弦相似度。
-找到"发生cur_model_errors的测试用例"和"没有发生cur_model_errors的测试用例"的平均相似度与"发生cur_model_errors的测试用例"之间平均相似度差别最大的段落。
 '''
 
 import json

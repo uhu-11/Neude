@@ -8,7 +8,7 @@ def read_pickle(file_path):
         return pickle.load(f)
 
 if __name__ == '__main__':
-    file_path = '/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/100.pickle'
+    file_path = 'pylot/error_seeds_vectors/100.pickle'
     data = read_pickle(file_path)
     
     # 统计向量的长度

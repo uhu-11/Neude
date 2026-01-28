@@ -1,33 +1,5 @@
 '''
 遍历每个迭代的覆盖向量，统计perception_vector，planning_vector，control_vector，nac_vector的种类数量，并计算每组神经元覆盖向量的相似性，和组间的相似性。
-每个迭代的perception_vector，planning_vector，control_vector，total_vector路径：/media/lzq/D/lzq/pylot_test/pylot/cov_vector下有若干npy文件，迭代i的覆盖向量文件名为{i}_array_vector.npy。
-神经元覆盖向量路径：/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/{i}_error.pickle（error代表出现代码报错）或者/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/{i}_normal.pickle（normal代表无代码报错），每次迭代i只对应一个pickle文件。每个pickle文件中包含若干字典，某字典的key为'nac_vector'，value为神经元覆盖向量。
-我需要
-1.统计perception_vector有多少种，并进行分组统计，统计每组神经元覆盖向量的种类数量。
-计算每组神经元覆盖向量的相似性，和组间的相似性。需要给出总的平均相似度，最小相似度，最大相似度，中位数相似度。
-
-2.统计planning_vector有多少种，并进行分组统计，统计每组神经元覆盖向量的种类数量。
-计算每组神经元覆盖向量的相似性，和组间的相似性。需要给出总的平均相似度，最小相似度，最大相似度，中位数相似度。
-
-3.统计control_vector有多少种，并进行分组统计，统计每组神经元覆盖向量的种类数量。
-计算每组神经元覆盖向量的相似性，和组间的相似性。需要给出总的平均相似度，最小相似度，最大相似度，中位数相似度。
-
-4.统计total_vector有多少种，并进行分组统计，统计每组神经元覆盖向量的种类数量。
-计算每组神经元覆盖向量的相似性，和组间的相似性。需要给出总的平均相似度，最小相似度，最大相似度，中位数相似度。
-
-另外，如果同组向量只有一个，则相似度记为1。
-
-每组的神经元没那么相似，但是组和组之间差距的更大。
-
-不需要在输出中给出每个组与组之间以及组内计算的神经元覆盖向量的相似度结果。
-
-5.另外，我想统计每组向量与发生错误之间的关联。即每种错误是否发生在某少数特定迭代组中。
-错误判断：读取/home/lzq/result/datas/100_iter_errors.json文件，取出cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors列的数据。如果cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors中存在大于0的值，则认为该迭代存在对应模块的错误，按照这个标准确定该迭代是否发生了对应模块的错误。
-统计发生这几类错误的迭代分布在哪些组中。perception_vector，planning_vector，control_vector，total_vector分别统计。
-
-注意，对于total_vector，需要对cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors都进行分类。
-并且，在对cur_code_errors分类时，需要再细分cur_code_errors的错误类型。
-cur_code_errors的错误信息路径：/media/lzq/D/lzq/pylot_test/pylot/error_infos/x.txt，x代表迭代的次数。没有出现的x代表该迭代没有出现cur_code_errors。
 '''
 
 import os
@@ -398,7 +370,7 @@ def analyze_module(module_name, module_vectors_dict, nac_vectors_dict, output_fi
             # 对于cur_code_errors，需要细分错误类型
             if error_key == 'cur_code_errors':
                 # 加载代码错误类型信息
-                error_infos_dir = '/media/lzq/D/lzq/pylot_test/pylot/error_infos'
+                error_infos_dir = pylot/error_infos'
                 code_error_types = load_code_error_types(error_infos_dir)
                 
                 # 按错误类型分组统计
@@ -510,10 +482,10 @@ def analyze_module(module_name, module_vectors_dict, nac_vectors_dict, output_fi
 
 
 def main():
-    vectors_dir = '/media/lzq/D/lzq/pylot_test/pylot/cov_vector'
-    nac_vectors_dir = '/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors'
-    error_data_file = '/home/lzq/result/datas/100_iter_errors.json'
-    output_file_path = '/media/lzq/D/lzq/pylot_test/tmp/handle_vector/module_vec_type_num_analys_output9_3.txt'
+    vectors_dir = 'pylot/cov_vector'
+    nac_vectors_dir = 'pylot/error_seeds_vectors'
+    error_data_file = 'result/datas/100_iter_errors.json'
+    output_file_path = 'module_vec_type_num_analys_output9_3.txt'
     
     print("=" * 80)
     print("开始分析模块向量类型和神经元覆盖向量相似性")

@@ -1,7 +1,8 @@
 import sys
-sys.path.append('/media/lzq/D/lzq/pylot_test/pylot')
-sys.path.append('/media/lzq/D/lzq/pylot_test/pythonfuzz')
-sys.path.append('/media/lzq/D/lzq/pylot_test/pythonfuzz/PTtool')
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pylot'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'neude', 'neude'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'neude', 'PTtool'))
 
 import numpy as np
 import os
@@ -9,7 +10,7 @@ import shutil
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from pylot2 import run_pylot_with_flags
 import random
-from pythonfuzz.main import PythonFuzz
+from neude.main import PythonFuzz
 import time
 @PythonFuzz
 def pylot_test(img):

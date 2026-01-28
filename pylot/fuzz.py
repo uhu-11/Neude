@@ -1,15 +1,16 @@
 import sys
-sys.path.append('/media/lzq/D/lzq/pylot_test/pylot')
-sys.path.append('/media/lzq/D/lzq/pylot_test/pylot/pylot')
-sys.path.append('/media/lzq/D/lzq/pylot_test/pythonfuzz')
-sys.path.append('/media/lzq/D/lzq/pylot_test/pythonfuzz/PTtool')
-sys.path.append('/media/lzq/D/lzq/pylot_test/pythonfuzz/ATS')
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pylot'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pylot', 'pylot'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'neude', 'neude'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'neude', 'PTtool'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'neude', 'ATS'))
 
 import numpy as np
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from tensorflow.keras.models import load_model
-from pythonfuzz.main import PythonFuzz
+from neude.main import PythonFuzz
 from pylot2 import run_pylot_with_flags
 import pylot.flags
 import random
@@ -18,7 +19,7 @@ import time
 import multiprocessing
 import shutil
 import coverage
-config_path = '/media/lzq/D/lzq/pylot_test/pylot/configs/traffic_light2.conf'
+config_path = './configs/traffic_light2.conf'
 
 def update_config(file_path, updates):
     # 读取配置文件内容
@@ -65,7 +66,7 @@ def fuzz_interface(img,y,simulator_num_people:int,traffic_light_det_min_score_th
     update_config(config_path, updates)
     time.sleep(5)
     print(img.size)
-    traffic_light_path = '/home/lzq/traffic_light'
+    traffic_light_path = 'traffic_light'
     # 检查文件夹是否存在
     if os.path.exists(traffic_light_path):
         # 删除现有文件夹

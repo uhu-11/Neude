@@ -6,8 +6,9 @@ import numpy as np
 
 from pylot.param_mutation import param_mutation
 import sys
-sys.path.append('/media/lzq/D/lzq/pylot_test/pythonfuzz/pythonfuzz')
-from pythonfuzz.config import USE_FUNCTIONS
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'neude', 'neude'))
+from neude.config import USE_FUNCTIONS
 
 class Rotation(object):
     """Used to represent the rotation of an actor or obstacle.
@@ -32,8 +33,19 @@ class Rotation(object):
         self.yaw = yaw
         self.roll = roll
 
-        # 使用参数变异
-        if USE_FUNCTIONS == 'codelfuzz2' or USE_FUNCTIONS == 'codelfuzz1':
+        # 测试参数变异：仅在neude、codelfuzz1或codelfuzz2时调用，pythonfuzz和deephunter不调用
+        if USE_FUNCTIONS == 'neude':
+            try:
+                from neude.config import NEUDE_METHOD
+                if NEUDE_METHOD == 'neude_gw':
+                    param_mutation(mode='codelfuzz1')
+                elif NEUDE_METHOD == 'neude_pn':
+                    param_mutation(mode='codelfuzz2')
+                else:
+                    param_mutation(mode='codelfuzz1')
+            except ImportError:
+                param_mutation(mode='codelfuzz1')
+        elif USE_FUNCTIONS == 'codelfuzz1' or USE_FUNCTIONS == 'codelfuzz2':
             param_mutation(mode=USE_FUNCTIONS)
 
     @classmethod

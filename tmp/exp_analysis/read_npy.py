@@ -1,11 +1,6 @@
 import os
 import numpy as np
 
-# 路径'/media/lzq/D/lzq/pylot_test/pylot/cov_vector'下有若干npy文件，文件名为{i}_vector.npy。
-# 读取符合条件的每个npy文件，其中包含若干个字典，字典名称为文件名，打印每个字典的名字和部分内容。
-
-# 读取'/media/lzq/D/lzq/pylot_test/pylot/cov_vector/1_vector.npy'，其中包含若干个字典，字典名称为文件名，打印每个字典的名字和部分内容。
-
 def read_npy_file(file_path):
     """
     读取npy文件并返回字典
@@ -112,7 +107,7 @@ def print_module_vectors_length(dict_data, file_name):
 
 def main():
     # 读取指定的文件
-    file_path = "/media/lzq/D/lzq/pylot_test/pylot/cov_vector/1_array_vector.npy"
+    file_path = "pylot/cov_vector/1_array_vector.npy"
     filename = "1_array_vector.npy"
     
     print("=" * 80)

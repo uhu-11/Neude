@@ -16,7 +16,8 @@ import tensorflow as tf
 import signal
 
 import sys
-sys.path.append('/media/lzq/D/lzq/pylot_test/pylot')
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'pylot'))
 
 import multiprocessing as mp
 import coverage

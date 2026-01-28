@@ -134,9 +134,9 @@ def classify_min_similarity(min_sim):
 
 def main():
     # 文件路径
-    json_file = "/home/lzq/result/datas/100_iter_errors.json"
-    vectors_dir = "/media/lzq/D/lzq/pylot_test/pylot/cov_vector"
-    pickle_dir = "/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors"
+    json_file = "result/datas/100_iter_errors.json"
+    vectors_dir = "pylot/cov_vector"
+    pickle_dir = "pylot/error_seeds_vectors"
     
     # 1. 读取JSON文件
     print("=" * 100)

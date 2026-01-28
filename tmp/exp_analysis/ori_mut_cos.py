@@ -4,23 +4,7 @@ import numpy as np
 
 '''
 计算原始种子神经元覆盖向量和变异种子代码、神经元覆盖向量的余弦相似度。
-原始种子代码覆盖向量路径：/media/lzq/D/lzq/pylot_test/pylot/ori_cov_vector/{iteration}_array_vector.npy
-变异种子代码覆盖向量路径：/media/lzq/D/lzq/pylot_test/pylot/cov_vector/{iteration}_array_vector.npy
-iteration范围：1-100
-每个npy文件中包含若干个覆盖向量，取出其中的perception_vector，planning_vector，control_vector，other_vector，分别代表感知模块、规划模块、控制模块、其他模块的覆盖向量。
-
-原始种子神经元覆盖向量路径：/media/lzq/D/lzq/pylot_test/pylot/ori_seeds_vectors/{i-1}.pickle。i代表迭代号，范围为1-100。取出每次迭代i对应pickle文件中的nac_vector，参与相似度计算。
-变异种子神经元覆盖向量路径：/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/{i}_error.pickle（error代表出现代码报错）或者/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/{i}_normal.pickle（normal代表无代码报错），每次迭代i只对应一个pickle文件。i代表迭代号，范围为1-100。取出每次迭代i对应pickle文件中的nac_vector，参与相似度计算。
-
-
-1.计算原始种子内部各模块覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度，两两迭代之间计算得到平均值、最小值、最大值、中位数。
-2.计算变异种子内部各模块覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度，两两迭代之间计算得到平均值、最小值、最大值、中位数。
-3.计算原始种子和变异种子覆盖向量之间各模块覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度，两两迭代之间计算得到平均值、最小值、最大值、中位数。
-
-
-另外，我需要统计原始种子和变异种子中，代码覆盖向量total_vector和神经元覆盖向量nac_vector的种类数量。即一模一样的向量算作一类，统计总的种类数量。
-其中，代码覆盖向量total_vector和各模块覆盖向量perception_vector，planning_vector，control_vector，other_vector一起保存在对应的{i}_array_vector.npy文件中。
-给出结果表，列名为（total_code_pattern，nac_pattern），行名为（原始种子，变异生成），值为种类数量。
+统计原始种子和变异种子中，代码覆盖向量total_vector和神经元覆盖向量nac_vector的种类数量。
 '''
 
 

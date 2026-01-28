@@ -2,11 +2,6 @@ import os
 import numpy as np
 from bs4 import BeautifulSoup
 
-# 路径为/media/lzq/D/lzq/pylot_test/pylot/covhtml/{iteration}/，iteration为0-99，每个iteration目录下包含若干html文件。
-# 每次遍历{iteration}目录下每个以_py.html结尾的html文件，每个html文件作为一个数组，数组命名为{file_name}_vector，行号作为索引，值为1（run覆盖）或0（mis未覆盖）或-1（空行或注释）。
-# 排除{iteration}目录下文件名包含pythonfuzz的文件
-# 将每个iteration中所有符合条件的html记录的数组都保存在npy文件，文件名为{iteration+1}_vector.npy，存在/media/lzq/D/lzq/pylot_test/pylot/cov_vector目录下。打印文件内容。
-
 def parse_html_file(file_path):
     """
     解析HTML文件，返回文件名和覆盖向量
@@ -79,9 +74,7 @@ def process_iteration(iteration):
     """
     处理单个iteration目录
     """
-    iteration_dir = f"/media/lzq/D/lzq/pylot_test/pylot/covhtml/{iteration}"
-    # ori_seeds目录：
-    # iteration_dir = f"/media/lzq/My Passport/pylot实验数据/实验结果/exp28/covhtml/{iteration}"
+    iteration_dir = f"pylot/covhtml/{iteration}"
     
     if not os.path.exists(iteration_dir):
         print(f"目录不存在: {iteration_dir}")

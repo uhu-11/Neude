@@ -4,38 +4,30 @@ import pickle
 import numpy as np
 
 '''
-我需要计算触发不同错误的迭代之间不同模块的覆盖向量的余弦相似度。
-具体任务如下：
-1.按错误类型划分计算相似度的对象。读取/home/lzq/result/datas/100_iter_errors.json文件，取出cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors列的数据。
-如果cur_code_errors，cur_model_errors，cur_planning_errors，cur_control_errors中存在大于0的值，则认为该迭代存在对应模块的错误，按照这个标准确定该迭代是否发生了对应模块的错误。
+计算触发不同错误的迭代之间不同模块的覆盖向量的余弦相似度。
 
-2.取出每次迭代的三个模块的覆盖向量。
-'/media/lzq/D/lzq/pylot_test/pylot/cov_vector'下有若干npy文件，迭代i的覆盖向量文件名为{i}_array_vector.npy。其中包含若干向量，
-取出其中的perception_vector，planning_vector，control_vector，other_vector。
-
-2.a 此外，我还需要计算神经元覆盖向量之间的余弦相似度。
-向量路径：/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/{i}_error.pickle（error代表出现代码报错）或者/media/lzq/D/lzq/pylot_test/pylot/error_seeds_vectors/{i}_normal.pickle（normal代表无代码报错），每次迭代i只对应一个pickle文件。
-i代表迭代号，范围为1-100。取出每次迭代i对应pickle文件中的nac_vector，参与相似度计算。
+1.按错误类型划分计算相似度的对象。
+2.取出每次迭代的三个模块的覆盖向量perception_vector，planning_vector，control_vector，other_vector。
 
 3.计算"发生cur_code_errors的迭代"和"没有发生cur_code_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算"发生cur_model_errors的迭代"和"没有发生cur_model_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算"发生cur_planning_errors的迭代"和"没有发生cur_planning_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算"发生cur_control_errors的迭代"和"没有发生cur_control_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 
-另外，我还需要计算触发相同错误的迭代之间不同模块的覆盖向量的余弦相似度。
+计算触发相同错误的迭代之间不同模块的覆盖向量的余弦相似度。
 4.计算所有"发生cur_code_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算所有"发生cur_model_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算所有"发生cur_planning_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算所有"发生cur_control_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 
-我还需要计算没有触发某错误的迭代之间不同模块的覆盖向量的余弦相似度。
+计算没有触发某错误的迭代之间不同模块的覆盖向量的余弦相似度。
 5.计算所有"没有发生cur_code_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算所有"没有发生cur_model_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算所有"没有发生cur_planning_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 计算所有"没有发生cur_control_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度。
 
 
-6.最后，我还需要统计各个模块中“发生某错误类型中迭代”和“没有发生某错误类型中迭代”之间的覆盖向量的余弦相似度的分布情况。
+统计各个模块中“发生某错误类型中迭代”和“没有发生某错误类型中迭代”之间的覆盖向量的余弦相似度的分布情况。
 如等于1的相似度数量，小于1并且大于等于0.9的相似度数量，小于0.9并且大于等于0.8的相似度数量，小于0.8并且大于等于0.7的相似度数量，小于0.7并且大于等于0.6的相似度数量，小于0.6的相似度数量。
 6.1"发生cur_code_errors的迭代"和"没有发生cur_code_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度的分布情况。。
 6.2"发生cur_model_errors的迭代"和"没有发生cur_model_errors的迭代"之间的覆盖向量perception_vector，planning_vector，control_vector，other_vector，nac_vector的余弦相似度的分布情况。
@@ -237,8 +229,8 @@ def calculate_similarity_distribution(similarities):
 
 def main():
     # 文件路径
-    json_file = "/home/lzq/result/datas/100_iter_errors.json"
-    vectors_dir = "/media/lzq/D/lzq/pylot_test/pylot/cov_vector"
+    json_file = "result/datas/100_iter_errors.json"
+    vectors_dir = "pylot/cov_vector"
     
     # 1. 读取JSON文件
     print("=" * 100)
