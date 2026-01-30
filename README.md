@@ -38,9 +38,9 @@ pip install -r requirements.txt
 
 **Coverage**: The coverage library (version 7.6.1) is used for coverage collection and reporting.
 
-#### CALAR Systems
+#### CARLA Systems
 
-The dataset used for testing is collected using the Pylot data collection script, which gathers data from the Calar system. In addition to the visual data, the runtime information provided by Calar is also recorded, which supports consistent replay and offline analysis. For more details and running options please refer to the [online documentation](http://carla.readthedocs.io).
+The dataset used for testing is collected using the Pylot data collection script, which gathers data from the Carla system. In addition to the visual data, the runtime information provided by Carla is also recorded, which supports consistent replay and offline analysis. For more details and running options please refer to the [online documentation](http://carla.readthedocs.io).
 
 You can also download and install the version we use：
 
