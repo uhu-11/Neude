@@ -23,10 +23,10 @@ class Mutation:
         self.numberOperators = self.numberMutationOperator.getOps()
         self.stringOperators = self.stringMutationOperator.getOps()
         self.imageOperators = self.imageMutationOperator.getOps()
-        if USE_FUNCTIONS == 'pythonfuzz':
-            self.imageOperators = self.imageMutationOperator.getOps_pythonfuzz()
-        elif USE_FUNCTIONS == 'deephunter':
-            self.imageOperators = self.imageMutationOperator.getOps_deephunter()
+        if USE_FUNCTIONS == 'test1':
+            self.imageOperators = self.imageMutationOperator.getOps_test1()
+        elif USE_FUNCTIONS == 'test2':
+            self.imageOperators = self.imageMutationOperator.getOps_test2()
         else:
             self.imageOperators = self.imageMutationOperator.getOps()
         self.integerOperators = self.integerMutationOperator.getOps()

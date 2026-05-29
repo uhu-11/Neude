@@ -166,7 +166,7 @@ def param_mutation(mode='codelfuzz1'):
             if pow_val < 1000:
                 branch_count += 1
 
-    if mode == 'pythonfuzz':
+    if mode == 'test1':
         try:
             sin_val = math.sin(math.radians(test_val))
             if sin_val > 0:
@@ -186,7 +186,7 @@ def param_mutation(mode='codelfuzz1'):
             if val1 != val2: 
                 branch_count += 1 
     
-    if mode == 'deephunter':
+    if mode == 'test2':
         try:
             sin_val = math.sin(math.radians(test_val))
             if sin_val > 0:

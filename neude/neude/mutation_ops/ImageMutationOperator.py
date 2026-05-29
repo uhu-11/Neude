@@ -262,7 +262,7 @@ class ImageMutationOperator:
         return [self.ops1,self.ops4,self.ops5,self.add_fog, self.add_rain, self.add_snow, self.defocus_blur, self.motion_blur,
                 self.impulse_noise, self.gaussian_noise]
 
-    def ops4_d(self, buf):
+    def ops4_2(self, buf):
         # 亮度调整
         res = buf[:]
         arr = np.array(res)
@@ -270,7 +270,7 @@ class ImageMutationOperator:
         image = cv2.convertScaleAbs(arr, alpha=alpha)
         return image.tolist()
 
-    def ops5_d(self, buf):
+    def ops5_2(self, buf):
         # 对比度调整
         res = buf[:]
         arr = np.array(res)
@@ -361,7 +361,7 @@ class ImageMutationOperator:
         return (np.clip(noisy, 0, 1) * 255).astype(np.uint8).tolist()
 
     
-    def ops1_p(self, buf):
+    def ops1_1(self, buf):
         arr = np.array(buf)
         # 获取图像的形状
         height, width, channels = arr.shape  # 假设 buf 是一个形状为 (height, width, channels) 的数组
@@ -379,11 +379,11 @@ class ImageMutationOperator:
             col = index % width
         return arr.tolist()  # 返回修改后的数组
 
-    def getOps_deephunter(self):
-        return [self.ops4_d,self.ops5_d, self.defocus_blur, self.motion_blur, self.gaussian_noise, self.impulse_noise]
+    def getOps_test2(self):
+        return [self.ops4_2,self.ops5_2]
 
-    def getOps_pythonfuzz(self):
-        return [self.ops1_p]
+    def getOps_test1(self):
+        return [self.ops1_1]
 
 from PIL import Image
 import os

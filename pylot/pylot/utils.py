@@ -33,7 +33,7 @@ class Rotation(object):
         self.yaw = yaw
         self.roll = roll
 
-        # 测试参数变异：仅在neude、codelfuzz1或codelfuzz2时调用，pythonfuzz和deephunter不调用
+        # 测试参数变异
         if USE_FUNCTIONS == 'neude':
             try:
                 from neude.config import NEUDE_METHOD

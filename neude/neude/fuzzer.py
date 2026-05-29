@@ -248,8 +248,8 @@ def worker(target, child_conn, close_fd_mask):
                     y = buf.get_params().get("y")
                     ious = cal_iou.get_set_iou(OB_TL_PREDICTIONS_NPYS, y)
                     answers_ob_tl = [1 if value > 0.5 else 0 for value in ious]
-                    print('iou in fuzzer:',ious)
-                    print('answers_ob_tl:',answers_ob_tl)
+                    # print('iou in fuzzer:',ious)
+                    # print('answers_ob_tl:',answers_ob_tl)
                     planning_label = buf.get_params().get("planning_label")
                     tdists = cal_tdist.get_set_tdist(PLANNING_PREDICTIONS_NPYS, planning_label, i, buf.get_params().get("planning_type_enum"))
                     # print('tdists:',tdists)
@@ -297,7 +297,7 @@ def worker(target, child_conn, close_fd_mask):
             
             
             pnac_map, pnac_rate, cur_seed_nac_vec, cur_seed_nac_rate,total_line_rate, total_1_count, total_1_and_0_count, cur_seed_line_vector, cur_seed_line_rate, batch_nac_vectors =pnac.get_PNAC(global_bacth_size)
-            print('用PNAC计算的line rate:', total_line_rate)
+            # print('用PNAC计算的line rate:', total_line_rate)
             coverage_files = glob.glob(f'{COV_FILE_PATH}/.coverage*')
             for file_path in coverage_files:
                 new_file_path = os.path.join(ITER_COV_REPORT_PATH, os.path.basename(file_path))
@@ -838,8 +838,8 @@ class Fuzzer(object):
                                 self._total_nac_vector = cur_seed_nac_vector.copy()
                             else:
                                 self._total_nac_vector = [a | b for a, b in zip(self._total_nac_vector, cur_seed_nac_vector)]
-                            print(f'len(cur_seed_nac_vector), len(self._total_nac_vector):{len(cur_seed_nac_vector)}, {len(self._total_nac_vector)}')
-                            self._max_nac_rate = sum(self._total_nac_vector) / float(len(self._total_nac_vector)) + self._max_pnac*0.1
+                            # print(f'len(cur_seed_nac_vector), len(self._total_nac_vector):{len(cur_seed_nac_vector)}, {len(self._total_nac_vector)}')
+                            self._max_nac_rate = sum(self._total_nac_vector) / float(len(self._total_nac_vector))
                             self._total_nac_rate = sum(self._total_nac_vector) / float(len(self._total_nac_vector))
                             cur_seed_vector = np.concatenate((cur_seed_line_vector, cur_seed_nac_vector))
                             self._cur_pnac = cur_pnac_rate
@@ -955,8 +955,8 @@ class Fuzzer(object):
                         logging.warning(f"Could not extract branch coverage from data: {e}")
                         total_branch_rate = 0.0
                     
-                    print('报错情况下的行覆盖：', total_line_rate)
-                    print('报错情况下的分支覆盖：', total_branch_rate)
+                    # print('报错情况下的行覆盖：', total_line_rate)
+                    # print('报错情况下的分支覆盖：', total_branch_rate)
                     
                     # 更新分支覆盖统计
                     self._cur_branch_rate = total_branch_rate
@@ -970,13 +970,13 @@ class Fuzzer(object):
                         self._total_nac_vector = [a | b for a, b in zip(self._total_nac_vector, cur_seed_nac_vec)]
                     self._cur_nac_rate = sum(cur_seed_nac_vec)/float(len(cur_seed_nac_vec))
                     self._total_nac_rate = sum(self._total_nac_vector) / float(len(self._total_nac_vector))
-                    self._max_nac_rate = sum(self._total_nac_vector) / float(len(self._total_nac_vector)) + self._max_pnac*0.1
-                    if self._use_functions == 'pythonfuzz':
+                    self._max_nac_rate = sum(self._total_nac_vector) / float(len(self._total_nac_vector))
+                    if self._use_functions == 'test1':
                         self._max_all_nac_rate = max(self._max_all_nac_rate, self._cur_nac_rate)
                         self._max_nac_rate = self._max_all_nac_rate
-                    elif self._use_functions == 'deephunter':
+                    elif self._use_functions == 'test2':
                         self._max_nac_rate = self._total_nac_rate
-                    print(f'len(cur_seed_nac_vector), len(self._total_nac_vector):{len(cur_seed_nac_vec)}, {len(self._total_nac_vector)}')
+                    # print(f'len(cur_seed_nac_vector), len(self._total_nac_vector):{len(cur_seed_nac_vec)}, {len(self._total_nac_vector)}')
                     
                     if total_line_rate > self._max_line_rate:
                         self._total_seedpool_size += 1
@@ -1067,14 +1067,14 @@ class Fuzzer(object):
 
                 self._max_all_nac_rate = max(self._max_all_nac_rate, self._cur_nac_rate)
 
-                if self._use_functions == 'pythonfuzz':
+                if self._use_functions == 'test1':
                     self._max_nac_rate = self._max_all_nac_rate
                     if total_line_rate > self._max_line_rate:
                         increase_cov = True
                         self._total_seedpool_size += 1
                         seed_ind = self._total_seedpool_size
                         SaveUtil.saveSeedToPickle(buf, str(seed_ind), config.LOCAL_SEED_POOL)
-                elif self._use_functions == 'deephunter':
+                elif self._use_functions == 'test2':
                     self._max_nac_rate = self._total_nac_rate
                     if self._max_nac_rate > self.pre_max_nac_rate: 
                         increase_cov = True
@@ -1329,6 +1329,29 @@ def save_total_coverage_reportM():
     with open(COV_REPORT_PATH+"/totalM"+"/coverage_report_totalM"+".txt", "w") as file:
         cov.report(file=file)
     logging.info("TotalM coverage report saved successfully.")
+
+def save_total_coverage_reportM2():
+    """合并所有覆盖率文件并生成总的覆盖率报告"""
+    coverage_files = glob.glob(f'{ITER_COV_REPORT_PATH}/.coverage*')
+    cov = cv.Coverage(branch=True)
+    cov.start()
+    cov.stop()
+    cov.save()
+    # 逐个合并文件，跳过不兼容的文件
+    for file_path in coverage_files:
+        try:
+            cov.combine(data_paths=[file_path], keep=True)
+        except Exception as e:
+            logging.warning(f"Skipping incompatible coverage file: {file_path}, error: {e}")
+            continue
+    os.makedirs(COV_HTML_PATH+"/totalM2", exist_ok=True)
+    os.makedirs(COV_REPORT_PATH+"/totalM2", exist_ok=True)
+
+    cov.html_report(directory=COV_HTML_PATH+"/totalM2")
+    # 命令行模式展示结果
+    with open(COV_REPORT_PATH+"/totalM2"+"/coverage_report_totalM2"+".txt", "w") as file:
+        cov.report(file=file)
+    logging.info("TotalM2 coverage report saved successfully.")
 
 '''
 在每轮测试中清空相应的结果保存文件夹
