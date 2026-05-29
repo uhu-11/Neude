@@ -169,7 +169,7 @@ def worker(target, child_conn, close_fd_mask):
             # uses_predict = use_predict.function_uses_predict(target)
             if global_has_model:
 
-                #print("buf.get_params()", buf.get_params())
+                # print("buf.get_params()", buf.get_params())
                 if not global_nc_cov:
                     y_predict = target(**buf.get_params())
                     # print("y_predict", y_predict)
@@ -188,7 +188,7 @@ def worker(target, child_conn, close_fd_mask):
                         y_predict_pool = np.concatenate((y_predict_pool, y_predict), axis=0)
                         y_pool = np.concatenate((y_pool, y), axis=0)
                     
-                    #print("fuzzer-y_pool", y_pool)
+                    # print("fuzzer-y_pool", y_pool)
                     pt_rate, region_length, _ = ptCoverage.get_coverage(y_predict_pool, y_pool, 10, 4)
                     _, _, pt_vector = ptCoverage.get_coverage(y_predict, y, 10, 4)
                     pt_rate = pt_rate*10
@@ -236,12 +236,7 @@ def worker(target, child_conn, close_fd_mask):
                     '''
                     # model_path = '/media/lzq/D/lzq/pylot_test/pylot/dependencies/models/traffic_light_detection/frozen_graph.pb'
                     x_path = '/media/lzq/D/lzq/pylot_test/pylot/dependencies/models/obstacle_detection/x.npy'
-                    # vec_path = '/media/lzq/D/lzq/pylot_test/pylot/dependencies/models/obstacle_detection/vec.json'
                     np.save(x_path ,x)
-                    # subprocess.run(['python', '/media/lzq/D/lzq/pylot_test/pythonfuzz/pythonfuzz/Coverages/NacCoverage.py', '--model_path', model_path, '--data_path', x_path, '--vec_path', vec_path])
-                    # with open(vec_path, 'r') as f:
-                    #     cur_seed_nac_vec = json.load(f)
-                    # cur_seed_nac_rate = sum(cur_seed_nac_vec)/float(len(cur_seed_nac_vec))
 
                     #判断被测系统预测的结果是否正确
                     #红绿灯或障碍物检测模块的输出判断
@@ -276,20 +271,6 @@ def worker(target, child_conn, close_fd_mask):
                 target(**buf.get_params())
 
 
-
-                # nc = NacCoverage(tf_model_path=model_path, x_test=x)
-                # # import gc
-                # cur_seed_nac_score, cur_seed_nac_vec = nc.get_coverage()
-                # tf.keras.backend.clear_session()  # 清除当前的 Keras 会话
-                # gc.collect()  
-
-                # tf.compat.v1.reset_default_graph()
-                # del nc 
-                # cur_seed_nac_vec = [item for array in cur_seed_nac_vec for item in array]
-                # print("cur_seed_nac_score:", cur_seed_nac_score)
-                
-                # target(**buf.get_params())
-            # get_recursive_coverage(target, cov)
             cov.stop()
             # 结果保存
             cov.save()
@@ -727,7 +708,6 @@ class Fuzzer(object):
                 
 
                 # print(f'buf的类型{type(buf)}, buf的shape{np.array(buf).shape}')
-                #通过管道 parent_conn 将输入发送给子进程
                 # flattened_list = [item for sub1 in buf for sub2 in sub1 for item in sub2]
                 parent_conn.send_bytes(pickle.dumps(buf))
                 parent_conn.send_bytes(pickle.dumps(self._y_predict_pool))
@@ -889,7 +869,7 @@ class Fuzzer(object):
                     
                     pnac = PNAC.PNAC()
                     pnac_map, pnac_rate, cur_seed_nac_vec, cur_seed_nac_rate,total_line_rate, total_1_count, total_1_and_0_count, cur_seed_line_vector, cur_seed_line_rate, batch_nac_vectors =pnac.get_PNAC(global_bacth_size)
-                    print('报错情况下的pnac_rate:', pnac_rate)
+                    # print('报错情况下的pnac_rate:', pnac_rate)
                     self._cur_pnac = pnac_rate
                     self.batch_nac_vectors_list.append(batch_nac_vectors)
                     #计算行覆盖向量
@@ -1021,7 +1001,7 @@ class Fuzzer(object):
                                                  'planning_error_number':0, 'control_error_number':0})
                     self._total_executions += 1
        
-                    if (self._total_executions == 98 or self._total_executions >= 99 and self._total_executions <= 100 or self._total_executions > 100 and self._total_executions % 25 == 0):
+                    if (self._total_executions >= 99 and self._total_executions <= 100 or self._total_executions > 100 and self._total_executions % 25 == 0):
                         plt.draw_coverage(self.plt_line_cov, self.plt_nac_cov, self.plt_combine_cov)
                         plt.draw_error(self.code_errors, self.model_errors)
                         m = {'plt_line_cov':self.plt_line_cov, 'plt_nac_cov':self.plt_nac_cov, 'plt_pnac_cov':self.plt_pnac_cov,
@@ -1111,8 +1091,8 @@ class Fuzzer(object):
                 self._pnac_map = pnac_map
                 self._max_pnac = max(self._max_pnac, cur_pnac_rate)
                 if global_has_model and global_nc_cov:
-                    print('answers_planning:',answers_planning)
-                    print('answers_control:',answers_control)
+                    # print('answers_planning:',answers_planning)
+                    # print('answers_control:',answers_control)
                     self._predict_error_number += answers_ob_tl.count(0) 
                     self._planning_error_number += answers_planning.count(0)
                     self._control_error_number += answers_control.count(0)
@@ -1186,7 +1166,7 @@ class Fuzzer(object):
                                                  'planning_error_number':answers_planning.count(0), 
                                                  'control_error_number':answers_control.count(0)})
                 
-                if (self._total_executions == 98 or self._total_executions >= 99 and self._total_executions <= 100 or self._total_executions > 100 and self._total_executions % 25 == 0):
+                if (self._total_executions >= 99 and self._total_executions <= 100 or self._total_executions > 100 and self._total_executions % 25 == 0):
                     plt.draw_coverage(self.plt_line_cov, self.plt_nac_cov, self.plt_combine_cov)
                     plt.draw_error(self.code_errors, self.model_errors)
                     m = {'plt_line_cov':self.plt_line_cov, 'plt_nac_cov':self.plt_nac_cov, 'plt_pnac_cov':self.plt_pnac_cov,
@@ -1270,6 +1250,7 @@ def terminate_extra_fuzz_pids():
 
         for pid in pids[2:]:  # 终止第 3 个及以后的进程
             print(f"Force killing process PID: {pid}")
+            # print(f"Force killing process PID: {pid}")
             os.kill(pid, signal.SIGKILL)  # 强制终止
 
         print(f"Process {second_pid} will reap zombies.")

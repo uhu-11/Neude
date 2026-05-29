@@ -22,7 +22,7 @@ if __name__ == '__main__':
             data.params.pop('log_detector_output')
             data.params.pop('log_lane_detection_camera')
             data.params.pop('log_traffic_light_detector_output')
-            print(data.params.keys())
+            # print(data.params.keys())
             # # 在这里对 data 进行修改
             # # 例如，如果 data 是 dict，你可以这样修改：
             # if isinstance(data, dict):
@@ -32,4 +32,4 @@ if __name__ == '__main__':
             with open(file_path, 'wb') as f:
                 pickle.dump(data, f)
 
-            # print(f"{filename} 处理完成")
+            print(f"{filename} 处理完成")
